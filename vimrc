@@ -26,6 +26,11 @@ set laststatus=2
 highlight StatusLine ctermbg=DarkGray ctermfg=LightGray
 highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 
+" Highlight current line
+set cursorline
+highlight CursorLine ctermbg=black
+highlight CursorLineNR ctermbg=LightGray
+
 " Mappings
 "" Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>

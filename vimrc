@@ -44,6 +44,13 @@ endif
 
 " NeoComplete
 let g:neocomplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+                        \ "\<Plug>(neosnippet_expand_or_jump)"
+                        \: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+                        \ "\<Plug>(neosnippet_expand_or_jump)"
+                        \: "\<TAB>"
 
 " Local config
 if filereadable(expand("~/.vimrc.local"))

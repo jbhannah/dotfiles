@@ -7,9 +7,12 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-" Bundles from Github repos
 Bundle 'chriskempson/base16-vim'
+Bundle 'danro/rename.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/neosnippet.vim'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 
 " Local config

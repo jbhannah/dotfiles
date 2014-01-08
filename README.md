@@ -17,13 +17,13 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb].
 
  4. Install dotfiles:
 
-        rcup -d ~/Code/jbhannah/dotfiles -x README.md -x LICENSE
+        rcup -d ~/Code/jbhannah/dotfiles -x README.md -x LICENSE -k
 
 ## Updating
 
 Update clone and re-up:
 
-    rcup
+    rcup -k
 
 ## Credits
 

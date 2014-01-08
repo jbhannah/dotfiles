@@ -22,7 +22,8 @@ highlight LineNr ctermbg=black ctermfg=DarkGray
 
 " Status bar
 set laststatus=2
-highlight StatusLine ctermbg=DarkGray ctermfg=white
+highlight StatusLine ctermbg=DarkGray ctermfg=LightGray
+highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 
 " Mappings
 "" Fugitive (from Janus)

@@ -7,6 +7,9 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
+" Bundles from Github repos
+Bundle 'tpope/vim-fugitive'
+
 " Local config
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

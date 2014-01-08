@@ -1,8 +1,9 @@
 set autowrite
+set expandtab
 set incsearch
 set nowrap
-set showcmd
 set ruler
+set showcmd
 
 syntax on
 

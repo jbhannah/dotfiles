@@ -1,6 +1,6 @@
 # dotfiles
 
-Dotfiles and miscellanea. Based on [Thoughtbot's dotfiles][tb].
+Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb].
 
 ## Setup
 

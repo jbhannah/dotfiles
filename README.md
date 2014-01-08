@@ -13,11 +13,11 @@ Dotfiles and miscellanea. Based on [Thoughtbot's dotfiles][tb].
 
  3. Clone dotfiles:
 
-        git clone https://github.com/jbhannah/dotfiles.git
+        git clone https://github.com/jbhannah/dotfiles.git ~/Code/jbhannah/dotfiles
 
  4. Install dotfiles:
 
-        rcup -d dotfiles -x README.md -x LICENSE
+        rcup -d ~/Code/jbhannah/dotfiles -x README.md -x LICENSE
 
 ## Updating
 

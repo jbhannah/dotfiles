@@ -16,4 +16,4 @@ if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
 
-filetype on
+filetype plugin indent on

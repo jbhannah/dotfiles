@@ -6,3 +6,5 @@ call vundle#rc()
 
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+
+filetype on

@@ -1,4 +1,2 @@
 #!/bin/sh
-
-echo "Installing Vim bundles..."
 vim -u $HOME/.vimrc.bundles +BundleInstall +qa

@@ -8,7 +8,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Local config
-if filereadable($HOME . "/.vimrc.bundles.local")
+if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
 

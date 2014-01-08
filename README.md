@@ -25,6 +25,11 @@ Update clone and re-up:
 
     rcup
 
+## Credits
+
+See [LICENSE][lic].
+
 [tb]:   https://github.com/thoughtbot/dotfiles
 [brew]: http://brew.sh/
 [rcm]:  https://github.com/thoughtbot/rcm
+[lic]:  https://github.com/jbhannah/dotfiles/blob/master/LICENSE

@@ -1,6 +1,6 @@
 [user]
 	name = Jesse B. Hannah
-	email = jesse@blufish.com
+	email = jesse@jbhannah.net
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore

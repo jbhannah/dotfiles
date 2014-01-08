@@ -1,6 +1,6 @@
 # dotfiles
 
-Dotfiles and miscellanea.
+Dotfiles and miscellanea. Based on [Thoughtbot's dotfiles][tb].
 
 ## Setup
 
@@ -25,5 +25,6 @@ Update clone and re-up:
 
     rcup
 
+[tb]:   https://github.com/thoughtbot/dotfiles
 [brew]: http://brew.sh/
 [rcm]:  https://github.com/thoughtbot/rcm

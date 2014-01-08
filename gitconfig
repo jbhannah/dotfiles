@@ -1,0 +1,10 @@
+[user]
+	name = Jesse B. Hannah
+	email = jesse@blufish.com
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
+[include]
+	path = .gitconfig.local

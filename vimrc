@@ -29,7 +29,7 @@ highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 " Highlight current line
 set cursorline
 highlight CursorLine ctermbg=black
-highlight CursorLineNR ctermbg=LightGray
+highlight CursorLineNR ctermbg=DarkGray ctermfg=LightGray
 
 " Mappings
 "" Fugitive (from Janus)

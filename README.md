@@ -8,7 +8,7 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
  2. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT:
 
-        brew tap thoughtbot/rcm
+        brew tap thoughtbot/formulae
         brew install rcm
         brew install ag
         brew install macvim --with-luajit

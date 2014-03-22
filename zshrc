@@ -1,7 +1,4 @@
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc"
-fi
+[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
 
 # Aliases
 alias l="ls -alh"

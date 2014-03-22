@@ -1,7 +1,4 @@
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile"
-fi
+[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" # Source Prezto
 
 # Editors
 export VISUAL=vim

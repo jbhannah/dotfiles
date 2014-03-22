@@ -1,8 +1,3 @@
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv"
-fi
+[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" # Source Prezto
 
-if [[ -d "/Applications/Postgres.app/Contents/Versions/9.3/bin" ]]; then
-  PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
-fi
+[[ -d "/Applications/Postgres.app/Contents/Versions/9.3/bin" ]] && PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH

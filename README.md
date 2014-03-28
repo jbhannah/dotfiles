@@ -22,7 +22,7 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
 Update clone and re-up:
 
-    rcup -k
+    rcup
 
 ## Credits
 

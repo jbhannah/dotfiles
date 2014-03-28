@@ -6,20 +6,17 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
  1. Install [Homebrew][brew].
 
- 2. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT:
-
-        brew tap thoughtbot/formulae
-        brew install rcm
-        brew install ag
-        brew install macvim --with-luajit
-
- 3. Clone dotfiles:
+ 2. Clone dotfiles:
 
         git clone https://github.com/jbhannah/dotfiles.git ~/Code/jbhannah/dotfiles
 
+ 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
+
+        brew bundle ~/Code/jbhannah/dotfiles/Brewfile
+
  4. Install dotfiles:
 
-        rcup -d ~/Code/jbhannah/dotfiles -x README.md -x LICENSE -k
+        rcup -d ~/Code/jbhannah/dotfiles -x Brewfile -x README.md -x LICENSE
 
 ## Updating
 

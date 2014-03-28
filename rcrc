@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE"
+EXCLUDES="Brewfile README.md LICENSE"
 DOTFILES_DIRS="$HOME/Code/jbhannah/dotfiles"

@@ -5,6 +5,7 @@ endif
 
 set autowrite
 set incsearch
+set mouse=a
 set nocompatible
 set nowrap
 set showcmd
@@ -45,6 +46,10 @@ nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gp :Git push<CR>
 nmap <Leader>gs :Gstatus<CR>
+
+"" Mouse scrolling
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

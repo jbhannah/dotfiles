@@ -10,7 +10,7 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
         git clone https://github.com/jbhannah/dotfiles.git ~/Code/jbhannah/dotfiles
 
- 3. Install `[rcm][]`, [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
+ 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
 
         brew bundle ~/Code/jbhannah/dotfiles/Brewfile
 

@@ -1,3 +1,5 @@
+[[ -n "${DOTFILES_DIR+x}" ]] && ( cd $DOTFILES_DIR; git pull 2>&1 >/dev/null ) # Update dotfiles
+
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
 
 # Aliases

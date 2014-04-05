@@ -69,6 +69,9 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
                         \: "\<TAB>"
 autocmd FileType gitcommit,markdown, nested NeoCompleteLock
 
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
+
 " Local config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local

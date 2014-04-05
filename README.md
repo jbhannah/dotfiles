@@ -1,6 +1,7 @@
 # dotfiles
 
-Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and tested on OS X Mavericks.
+Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and
+tested on OS X Mavericks.
 
 ## Setup
 
@@ -8,15 +9,16 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
  2. Clone dotfiles:
 
-        git clone https://github.com/jbhannah/dotfiles.git ~/Code/jbhannah/dotfiles
+        git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles
 
- 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
+ 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum)
+    LuaJIT from the Brewfile:
 
-        brew bundle ~/Code/jbhannah/dotfiles/Brewfile
+        brew bundle ~/.dotfiles/Brewfile
 
  4. Install dotfiles:
 
-        rcup -d ~/Code/jbhannah/dotfiles -x Brewfile -x README.md -x LICENSE
+        rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
 
 ## Maintenance
 
@@ -28,7 +30,12 @@ See the manpage for this utility for more information.
 
 ## Updating
 
-Update clone and, if any new files were added, re-up:
+The clone will be updated automatically whenever a new interactive shell is
+opened. The `$DOTFILES_DIR` environment variable is set in `.zshenv` to the
+location of the clone, and is used both in pulling updates and in telling
+`rcup` where to look for dotfiles after the initial installation.
+
+If any new files or Vim plugins were added, simply re-up:
 
     rcup
 

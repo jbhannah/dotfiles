@@ -15,6 +15,7 @@ Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/neosnippet.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/Auto-Pairs'
 
 " Local config

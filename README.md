@@ -20,7 +20,7 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
 ## Updating
 
-Update clone and re-up:
+Update clone and, if any new files were added, re-up:
 
     rcup
 

@@ -10,13 +10,21 @@ Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and 
 
         git clone https://github.com/jbhannah/dotfiles.git ~/Code/jbhannah/dotfiles
 
- 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
+ 3. Install `[rcm][]`, [The Silver Searcher][ag], and MacVim with (at minimum) LuaJIT from the Brewfile:
 
         brew bundle ~/Code/jbhannah/dotfiles/Brewfile
 
  4. Install dotfiles:
 
         rcup -d ~/Code/jbhannah/dotfiles -x Brewfile -x README.md -x LICENSE
+
+## Maintenance
+
+To add dotfiles, use the `mkrc` utility included with `rcm`:
+
+        mkrc ~/.somefile
+
+See the manpage for this utility for more information.
 
 ## Updating
 

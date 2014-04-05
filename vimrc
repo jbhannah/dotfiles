@@ -1,7 +1,6 @@
 set autowrite
 set incsearch
 set nowrap
-set ruler
 set showcmd
 
 syntax on
@@ -22,6 +21,7 @@ highlight LineNr ctermbg=black ctermfg=DarkGray
 
 " Status bar
 set laststatus=2
+set ruler
 highlight StatusLine ctermbg=DarkGray ctermfg=LightGray
 highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 

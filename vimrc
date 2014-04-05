@@ -1,14 +1,14 @@
+" Vundle
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
 set autowrite
 set incsearch
 set nowrap
 set showcmd
 
 syntax on
-
-" Vundle
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
 
 " Colors
 set background=dark

@@ -5,9 +5,11 @@ endif
 
 set autowrite
 set incsearch
+set nocompatible
 set nowrap
 set showcmd
 
+filetype plugin indent on
 syntax on
 
 " Colors

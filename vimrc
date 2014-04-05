@@ -1,5 +1,4 @@
 set autowrite
-set expandtab
 set incsearch
 set nowrap
 set ruler
@@ -30,6 +29,11 @@ highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 set cursorline
 highlight CursorLine ctermbg=black
 highlight CursorLineNR ctermbg=DarkGray ctermfg=LightGray
+
+" Indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " Mappings
 "" Fugitive (from Janus)

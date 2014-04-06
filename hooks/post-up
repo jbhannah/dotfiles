@@ -12,6 +12,6 @@ if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 fi
 
-echo "Updating Vim plugins..."
+echo "Updating Vim plugins...\c"
 vim -u $HOME/.vimrc.bundles -e -s +PluginInstall! +qa
-echo "...done!"
+echo "done!"

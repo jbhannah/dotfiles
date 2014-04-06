@@ -6,3 +6,5 @@ rcm
 LuaJIT
 Brewfile
 plugins
+vim
+rvm

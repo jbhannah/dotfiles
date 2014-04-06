@@ -41,7 +41,6 @@ set softtabstop=2
 " Spell checking
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
-autocmd FileType gitcommit,markdown, nested setlocal spell
 
 " Mappings
 "" Fugitive (from Janus)
@@ -80,9 +79,6 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
-
-"" Disable in Git commits and Markdown files
-autocmd FileType gitcommit,markdown, nested NeoCompleteLock
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1

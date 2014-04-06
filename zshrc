@@ -5,6 +5,5 @@
 
 # Aliases
 alias gst="git status"
-alias l="ls -alh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

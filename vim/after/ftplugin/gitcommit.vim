@@ -1,3 +1,3 @@
 setlocal spell
-setlocal textwidth=80
+setlocal textwidth=72
 NeoCompleteLock

@@ -61,6 +61,8 @@ endif
 
 " NeoComplete
 let g:neocomplete#enable_at_startup = 1
+
+"" SuperTab-like behavior
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
                         \ "\<Plug>(neosnippet_expand_or_jump)"
@@ -68,6 +70,13 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
                         \ "\<Plug>(neosnippet_expand_or_jump)"
                         \: "\<TAB>"
+
+"" For snippet_complete marker
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+"" Disable in Git commits and Markdown files
 autocmd FileType gitcommit,markdown, nested NeoCompleteLock
 
 " vim-markdown

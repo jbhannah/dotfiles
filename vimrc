@@ -5,7 +5,6 @@ endif
 
 set autowrite
 set incsearch
-set mouse=a
 set nocompatible
 set nowrap
 set showcmd
@@ -42,26 +41,25 @@ set softtabstop=2
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 
-" Mappings
-"" Fugitive (from Janus)
+" Mouse scrolling
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+
+" Use The Silver Searcher for Ctrl+P and searching (https://github.com/ggreer/the_silver_searcher)
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
+
+" Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gc :Gcommit<CR>
 nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gp :Git push<CR>
 nmap <Leader>gs :Gstatus<CR>
-
-"" Mouse scrolling
-map <ScrollWheelUp> <C-Y>
-map <ScrollWheelDown> <C-E>
-
-" Use The Silver Searcher for Ctrl+P and searching
-" https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
-endif
 
 " NeoComplete
 let g:neocomplete#enable_at_startup = 1

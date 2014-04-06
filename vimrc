@@ -30,8 +30,8 @@ highlight StatusLineNC ctermbg=DarkGray ctermfg=black
 
 " Highlight current line
 set cursorline
-highlight CursorLine ctermbg=black
-highlight CursorLineNR ctermbg=DarkGray ctermfg=LightGray
+highlight CursorLine ctermbg=237
+highlight CursorLineNR ctermbg=237
 
 " Indentation
 set expandtab

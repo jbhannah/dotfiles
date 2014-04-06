@@ -33,9 +33,12 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
-  'homebrew' \
+  'osx' \
   'git' \
-  'ruby'
+  'homebrew' \
+  'node' \
+  'python' \
+  'ruby' \
 
 #
 # Editor

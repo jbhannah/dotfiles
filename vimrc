@@ -32,6 +32,9 @@ set cursorline
 highlight CursorLine ctermbg=237
 highlight CursorLineNR ctermbg=237
 
+" Visual mode highlight
+highlight Visual ctermbg=240
+
 " Indentation
 set expandtab
 set shiftwidth=2

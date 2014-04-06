@@ -18,7 +18,9 @@ Bundle 'Shougo/neosnippet-snippets'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/Auto-Pairs'
 
 " Local config

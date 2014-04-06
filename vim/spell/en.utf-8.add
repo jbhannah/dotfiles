@@ -2,12 +2,12 @@ Brewfile
 Homebrew
 LuaJIT
 MacVim
-Plugin
 Prezto
 README
-Thoughtbot's
+Thoughtbot
 Vundle
 dotfiles
+plugin
 plugins
 rcm
 rvm

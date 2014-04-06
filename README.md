@@ -26,7 +26,7 @@ To add dotfiles, use the `mkrc` utility included with `rcm`:
 
         mkrc ~/.somefile
 
-See the manpage for this utility for more information.
+See the man page for this utility for more information.
 
 ## Updating
 

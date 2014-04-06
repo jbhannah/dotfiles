@@ -38,6 +38,11 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Spell checking
+set spelllang=en
+set spellfile=$HOME/.vim/spell/en.utf-8.add
+autocmd FileType gitcommit,markdown, nested setlocal spell
+
 " Mappings
 "" Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>

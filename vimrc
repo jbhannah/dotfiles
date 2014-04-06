@@ -61,7 +61,7 @@ nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gc :Gcommit<CR>
 nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gl :Glog<CR>
-nmap <Leader>gp :Git push<CR>
+nmap <Leader>gp :Gpedit! push<CR><C-W>k
 nmap <Leader>gs :Gstatus<CR>
 
 " NeoComplete

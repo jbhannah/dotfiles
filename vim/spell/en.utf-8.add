@@ -8,3 +8,5 @@ Brewfile
 plugins
 vim
 rvm
+Plugin
+Vundle

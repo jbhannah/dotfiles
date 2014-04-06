@@ -11,14 +11,23 @@ tested on OS X Mavericks.
 
         git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles
 
- 3. Install [rcm][], [The Silver Searcher][ag], and MacVim with (at minimum)
-    LuaJIT from the Brewfile:
+ 3. Install [`rcm`][rcm], [The Silver Searcher][ag], and MacVim with (at
+    minimum) LuaJIT from the `Brewfile`:
 
         brew bundle ~/.dotfiles/Brewfile
 
  4. Install dotfiles:
 
         rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
+
+    This will also clone [Prezto][prz] and [Vundle.vim][vun] and install the Vim
+    plugins specified in `vimrc.bundles`.
+
+ 5. Set your shell to [`zsh`][zsh]:
+
+        chsh -s /bin/zsh
+
+ 6. Launch a new terminal session.
 
 ## Maintenance
 
@@ -35,16 +44,20 @@ opened. The `$DOTFILES_DIR` environment variable is set in `.zshenv` to the
 location of the clone, and is used both in pulling updates and in telling
 `rcup` where to look for dotfiles after the initial installation.
 
-If any new files or Vim plugins were added, simply re-up:
+If any new files or Vim plugins were added, or to update Prezto and the
+installed Vim plugins, simply re-up:
 
     rcup
 
 ## Credits
 
-See [LICENSE][lic].
+See [`LICENSE`][lic].
 
 [tb]:   https://github.com/thoughtbot/dotfiles
 [brew]: http://brew.sh/
 [rcm]:  https://github.com/thoughtbot/rcm
 [ag]:   https://github.com/ggreer/the_silver_searcher
+[prz]:  https://github.com/sorin-ionescu/prezto
+[vun]:  https://github.com/gmarik/Vundle.vim
+[zsh]:  http://www.zsh.org/
 [lic]:  https://github.com/jbhannah/dotfiles/blob/master/LICENSE

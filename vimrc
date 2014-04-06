@@ -25,7 +25,7 @@ highlight LineNr ctermbg=black ctermfg=DarkGray
 set laststatus=2
 set ruler
 highlight StatusLine ctermbg=DarkGray ctermfg=LightGray
-highlight StatusLineNC ctermbg=DarkGray ctermfg=black
+highlight StatusLineNC ctermbg=239 ctermfg=black
 
 " Highlight current line
 set cursorline
@@ -34,6 +34,9 @@ highlight CursorLineNR ctermbg=237
 
 " Visual mode highlight
 highlight Visual ctermbg=240
+
+" Vertical split bar color
+highlight VertSplit ctermbg=DarkGray ctermfg=LightGray
 
 " Indentation
 set expandtab

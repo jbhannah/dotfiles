@@ -39,15 +39,16 @@ See the man page for this utility for more information.
 
 ## Updating
 
-The clone will be updated automatically whenever a new interactive shell is
-opened. The `$DOTFILES_DIR` environment variable is set in `.zshenv` to the
-location of the clone, and is used both in pulling updates and in telling
-`rcup` where to look for dotfiles after the initial installation.
-
-If any new files or Vim plugins were added, or to update Prezto and the
-installed Vim plugins, simply re-up:
+In `.zshenv`, `$DOTFILES_DIR` is set to the location of the clone. Whenever a
+new interactive shell is opened, `zsh` silently `cd`s to `$DOTFILES_DIR` and
+pulls from Git, and `rcup` is run to silently update Prezto and the installed
+Vim plugins. If, for any reason, you want to manually update without opening a
+new shell, simply run:
 
     rcup
+
+You may have to launch a new shell anyway, however, for any changes to `zsh`
+configuration files or any updates to Prezto to take effect.
 
 ## Credits
 

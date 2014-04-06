@@ -1,2 +1,2 @@
 #!/bin/sh
-vim -u $HOME/.vimrc.bundles +BundleInstall +qa
+vim -u $HOME/.vimrc.bundles +PluginInstall! +qa

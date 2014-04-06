@@ -3,6 +3,8 @@ Homebrew
 LuaJIT
 MacVim
 Plugin
+Prezto
+README
 Thoughtbot's
 Vundle
 dotfiles
@@ -10,6 +12,4 @@ plugins
 rcm
 rvm
 vim
-Prezto
 zsh
-README

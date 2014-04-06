@@ -33,7 +33,7 @@ tested on OS X Mavericks.
 
 To add dotfiles, use the `mkrc` utility included with `rcm`:
 
-        mkrc ~/.somefile
+    mkrc ~/.somefile
 
 See the man page for this utility for more information.
 

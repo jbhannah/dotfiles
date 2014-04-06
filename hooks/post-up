@@ -1,5 +1,12 @@
 #!/bin/sh
+if [ -d $HOME/.zprezto/.git ]; then
+  ( cd $HOME/.zprezto && git pull && git submodule update --init --recursive )
+else
+  git clone https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive )
+fi
+
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 fi
+
 vim -u $HOME/.vimrc.bundles +PluginInstall! +qa

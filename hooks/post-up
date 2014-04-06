@@ -1,11 +1,14 @@
 #!/bin/sh
 if [ -d $HOME/.zprezto/.git ]; then
+  echo "Updating Prezto..."
   ( cd $HOME/.zprezto && git pull && git submodule update --init --recursive )
 else
+  echo "Installing Prezto..."
   git clone https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive )
 fi
 
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
+  echo "Installing Vundle..."
   git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 fi
 

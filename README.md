@@ -40,7 +40,7 @@ See the man page for this utility for more information.
 ## Updating
 
 In `.zshenv`, `$DOTFILES_DIR` is set to the location of the clone. Whenever a
-new interactive shell is opened, `zsh` silently `cd`s to `$DOTFILES_DIR` and
+new interactive shell is opened, `.zshrc` silently `cd`s to `$DOTFILES_DIR` and
 pulls from Git, and `rcup` is run to silently update Prezto and the installed
 Vim plugins. If, for any reason, you want to manually update without opening a
 new shell, simply run:

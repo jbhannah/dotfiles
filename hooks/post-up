@@ -4,9 +4,11 @@ if [ -d $HOME/.zprezto/.git ]; then
   ( cd $HOME/.zprezto && git pull && git submodule update --init --recursive ) &> /dev/null
   echo "done!"
 else
-  echo "Installing Prezto...\c"
-  ( git clone https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive ) ) &> /dev/null
-  echo "done!"
+  if [ ! -d $HOME/.zprezto ]
+    echo "Installing Prezto...\c"
+    ( git clone https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive ) ) &> /dev/null
+    echo "done!"
+  fi
 fi
 
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then

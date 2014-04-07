@@ -44,6 +44,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Spell checking
+set spell
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 

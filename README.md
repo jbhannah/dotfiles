@@ -5,6 +5,13 @@ tested on OS X Mavericks.
 
 ## Setup
 
+### Prerequisites
+
+  * Xcode and command line tools
+  * Git
+
+### Instructions
+
  1. Install [Homebrew][brew].
 
  2. Clone dotfiles:
@@ -49,6 +56,30 @@ new shell, simply run:
 
 You may have to launch a new shell anyway, however, for any changes to `zsh`
 configuration files or any updates to Prezto to take effect.
+
+## Contents
+
+  * Prezto
+
+### Vim plugins
+
+  * Vundle
+  * [Base16 Vim][https://github.com/chriskempson/base16-vim]
+  * [rename.vim][https://github.com/danro/rename.vim]
+  * [Tabular][https://github.com/godlygeek/tabular]
+  * [vim-coffee-script][https://github.com/kchmck/vim-coffee-script]
+  * [ctrlp.vim][https://github.com/kien/ctrlp.vim]
+  * [vim-markdown][https://github.com/plasticboy/vim-markdown]
+  * [Neocomplete][https://github.com/Shougo/neocomplete.vim]
+  * [Neosnippet][https://github.com/Shougo/neosnippet.vim]
+  * [neosnippet-snippets][https://github.com/Shougo/neosnippet-snippets]
+  * [vim-multiple-cursors][https://github.com/terryma/vim-multiple-cursors]
+  * [TComment][https://github.com/tomtom/tcomment_vim]
+  * [fugitive.vim][https://github.com/tpope/vim-fugitive]
+  * [rvm.vim][https://github.com/tpope/vim-rvm]
+  * [surround.vim][https://github.com/tpope/vim-surround]
+  * [vim-ruby][https://github.com/vim-ruby/vim-ruby]
+  * [Auto-Pairs][https://github.com/vim-scripts/Auto-Pairs]
 
 ## Credits
 

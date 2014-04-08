@@ -76,6 +76,7 @@ configuration files or any updates to Prezto to take effect.
   * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   * [TComment](https://github.com/tomtom/tcomment_vim)
   * [fugitive.vim](https://github.com/tpope/vim-fugitive)
+  * [rails.vim](https://github.com/tpope/vim-rails)
   * [rvm.vim](https://github.com/tpope/vim-rvm)
   * [surround.vim](https://github.com/tpope/vim-surround)
   * [vim-ruby](https://github.com/vim-ruby/vim-ruby)

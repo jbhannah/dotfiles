@@ -34,7 +34,7 @@ highlight CursorLineNR ctermbg=237
 highlight Visual ctermbg=240
 
 " Vertical split bar color
-highlight VertSplit ctermbg=DarkGray ctermfg=LightGray
+highlight VertSplit ctermbg=237 ctermfg=237
 
 " Indentation
 set expandtab

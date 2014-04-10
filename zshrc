@@ -3,4 +3,6 @@
 
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
 
+PROMPT=%m%f\ $PROMPT
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -8,6 +8,7 @@ call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
 Plugin 'danro/rename.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'kchmck/vim-coffee-script'

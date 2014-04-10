@@ -24,8 +24,6 @@ highlight LineNr ctermbg=black ctermfg=DarkGray
 " Status bar
 set laststatus=2
 set ruler
-highlight StatusLine ctermbg=DarkGray ctermfg=LightGray
-highlight StatusLineNC ctermbg=239 ctermfg=black
 
 " Highlight current line
 set cursorline

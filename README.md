@@ -65,6 +65,7 @@ configuration files or any updates to Prezto to take effect.
 
   * Vundle
   * [Base16 Vim](https://github.com/chriskempson/base16-vim)
+  * [vim-airline](https://github.com/bling/vim-airline)
   * [rename.vim](https://github.com/danro/rename.vim)
   * [Tabular](https://github.com/godlygeek/tabular)
   * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
@@ -75,7 +76,9 @@ configuration files or any updates to Prezto to take effect.
   * [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets)
   * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   * [TComment](https://github.com/tomtom/tcomment_vim)
+  * [dispatch.vim](https://github.com/tpope/vim-dispatch)
   * [fugitive.vim](https://github.com/tpope/vim-fugitive)
+  * [heroku.vim](https://github.com/tpope/vim-heroku)
   * [rails.vim](https://github.com/tpope/vim-rails)
   * [rvm.vim](https://github.com/tpope/vim-rvm)
   * [surround.vim](https://github.com/tpope/vim-surround)

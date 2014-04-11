@@ -71,8 +71,10 @@ configuration files or any updates to Prezto to take effect.
   * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
   * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
   * [vim-markdown](https://github.com/plasticboy/vim-markdown)
+  * [Syntastic](https://github.com/scrooloose/syntastic)
   * [Neocomplete](https://github.com/Shougo/neocomplete.vim)
   * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
+  * [vimlint](https://github.com/syngan/vim-vimlint)
   * [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets)
   * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   * [TComment](https://github.com/tomtom/tcomment_vim)
@@ -84,6 +86,7 @@ configuration files or any updates to Prezto to take effect.
   * [surround.vim](https://github.com/tpope/vim-surround)
   * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
   * [Auto-Pairs](https://github.com/vim-scripts/Auto-Pairs)
+  * [vimlparser](https://github.com/ynkdir/vim-vimlparser)
 
 ## Credits
 

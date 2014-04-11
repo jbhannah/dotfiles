@@ -7,16 +7,18 @@ call vundle#rc()
 " Let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
+Plugin 'chriskempson/base16-vim'
 Plugin 'danro/rename.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'syngan/vim-vimlint'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-dispatch'
@@ -27,6 +29,7 @@ Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/Auto-Pairs'
+Plugin 'ynkdir/vim-vimlparser'
 
 " Local config
 if filereadable(expand("~/.vimrc.bundles.local"))

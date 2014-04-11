@@ -68,6 +68,7 @@ configuration files or any updates to Prezto to take effect.
   * [csv.vim](https://github.com/chrisbra/csv.vim)
   * [vim-airline](https://github.com/bling/vim-airline)
   * [rename.vim](https://github.com/danro/rename.vim)
+  * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
   * [Tabular](https://github.com/godlygeek/tabular)
   * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
   * [ctrlp.vim](https://github.com/kien/ctrlp.vim)

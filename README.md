@@ -65,6 +65,7 @@ configuration files or any updates to Prezto to take effect.
 
   * Vundle
   * [Base16 Vim](https://github.com/chriskempson/base16-vim)
+  * [csv.vim](https://github.com/chrisbra/csv.vim)
   * [vim-airline](https://github.com/bling/vim-airline)
   * [rename.vim](https://github.com/danro/rename.vim)
   * [Tabular](https://github.com/godlygeek/tabular)

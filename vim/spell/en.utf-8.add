@@ -1,8 +1,12 @@
+Blufish
 Brewfile
+CSS
 Coffeescript
+HTML5
 Homebrew
 LuaJIT
 MacVim
+PHP
 Prezto
 Prezto's
 README
@@ -12,8 +16,10 @@ Thoughtbot's
 VimL
 Vundle
 Xcode
+doctype
 dotfiles
 hostname
+inline
 plugin
 plugins
 rcm

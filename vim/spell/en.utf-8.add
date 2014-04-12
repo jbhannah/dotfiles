@@ -3,6 +3,7 @@ Brewfile
 CSS
 Coffeescript
 HTML5
+HTML5's
 Homebrew
 LuaJIT
 MacVim
@@ -10,12 +11,14 @@ PHP
 Prezto
 Prezto's
 README
+RGB
 Syntastic
 Thoughtbot
 Thoughtbot's
 VimL
 Vundle
 Xcode
+docblock
 doctype
 dotfiles
 hostname
@@ -25,5 +28,6 @@ plugins
 rcm
 rcup
 rvm
+stylesheet
 vim
 zsh

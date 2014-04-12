@@ -72,11 +72,11 @@ let g:neocomplete#enable_at_startup = 1
 
 "" SuperTab-like behavior
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-                        \ "\<Plug>(neosnippet_expand_or_jump)"
-                        \: pumvisible() ? "\<C-n>" : "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)"
+  \: pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-                        \ "\<Plug>(neosnippet_expand_or_jump)"
-                        \: "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)"
+  \: "\<TAB>"
 
 "" For snippet_complete marker
 if has('conceal')

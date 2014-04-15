@@ -35,7 +35,6 @@ tested on OS X Mavericks.
         chsh -s /bin/zsh
 
  6. Fix two files in `/etc` that will cause path problems:
-
     * Move `/etc/zshenv` to `/etc/zshrc`.
     * Edit `/etc/paths` so that `/usr/local/bin` is at the top of the file.
 

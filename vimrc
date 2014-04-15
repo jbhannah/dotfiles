@@ -44,7 +44,7 @@ set softtabstop=2
 " Spell checking
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
-nnoremap \s a<C-X><C-S>
+nnoremap <Leader>s a<C-X><C-S>
 
 " Mouse scrolling
 set mouse=a

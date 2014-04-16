@@ -86,6 +86,9 @@ endif
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 
+" Define OpenURL command for rails.vim
+command -bar -nargs=1 OpenURL :!open <args>
+
 " Local config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local

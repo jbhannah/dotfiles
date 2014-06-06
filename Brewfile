@@ -1,4 +1,4 @@
 tap thoughtbot/formulae
 install rcm
 install ag
-install macvim --with-luajit
+install macvim --with-luajit --override-system-vim

@@ -1,7 +1,7 @@
 # dotfiles
 
 Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and
-tested on OS X Mavericks.
+tested on OS X Mavericks and OS X Yosemite.
 
 ## Setup
 

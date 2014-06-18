@@ -34,6 +34,7 @@ Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/Auto-Pairs'
+Plugin 'wavded/vim-stylus'
 Plugin 'ynkdir/vim-vimlparser'
 
 " Local config

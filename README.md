@@ -64,6 +64,7 @@ configuration files or any updates to Prezto to take effect.
 ## Contents
 
   * Prezto
+  * [Base16 Shell](https://github.com/chriskempson/base16-shell)
 
 ### Vim plugins
 

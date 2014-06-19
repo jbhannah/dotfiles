@@ -14,7 +14,7 @@ syntax on
 
 " Colors
 set background=dark
-colorscheme base16-eighties
+colorscheme base16-default
 
 " Line numbers
 set number

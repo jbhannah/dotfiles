@@ -81,6 +81,7 @@ configuration files or any updates to Prezto to take effect.
   * [Syntastic](https://github.com/scrooloose/syntastic)
   * [Neocomplete](https://github.com/Shougo/neocomplete.vim)
   * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
+  * [vim-slim](https://github.com/slim-template/vim-slim)
   * [vimlint](https://github.com/syngan/vim-vimlint)
   * [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets)
   * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)

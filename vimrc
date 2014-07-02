@@ -86,6 +86,9 @@ endif
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 
+" Syntastic
+let g:syntastic_html_tidy_empty_tags = ['i']
+
 " Define OpenURL command for rails.vim
 command -bar -nargs=1 OpenURL :!open <args>
 

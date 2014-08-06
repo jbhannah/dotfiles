@@ -27,8 +27,8 @@ set ruler
 
 " Highlight current line
 set cursorline
-highlight CursorLine ctermbg=237
-highlight CursorLineNR ctermbg=237
+highlight CursorLine ctermbg=235
+highlight CursorLineNR ctermbg=235
 
 " Visual mode highlight
 highlight Visual ctermbg=240

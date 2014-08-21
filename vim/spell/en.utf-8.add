@@ -4,6 +4,7 @@ Blufish
 Brewfile
 CSS
 Coffeescript
+Django
 FactoryGirl
 GitHub
 HTML5
@@ -13,6 +14,7 @@ Homebrew
 Javascript
 Javascripts
 LuaJIT
+MacVim
 MacVim
 PHP
 PaperTrail
@@ -53,5 +55,5 @@ tagline
 uploader
 vim
 vimrc
+virtualenv
 zsh
-MacVim

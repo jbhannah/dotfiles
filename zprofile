@@ -3,3 +3,6 @@
 # Editors
 export VISUAL=vim
 export EDITOR=$VISUAL
+
+# Timezone
+export TZ=US/Arizona

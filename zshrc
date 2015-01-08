@@ -11,3 +11,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 PROMPT=%B%F{magenta}%m%f\ $PROMPT
 
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" # Aliases
+
+# added by travis gem
+[ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh

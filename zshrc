@@ -12,5 +12,7 @@ PROMPT=%B%F{magenta}%m%f\ $PROMPT
 
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" # Aliases
 
+command -v boot2docker >/dev/null 2>&1 && $(boot2docker shellinit 2>/dev/null) # boot2docker
+
 # added by travis gem
 [ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh

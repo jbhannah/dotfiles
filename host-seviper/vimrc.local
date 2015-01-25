@@ -1,2 +1,0 @@
-let g:pymode_indent = 0
-let g:pymode_lint_options_pep8 = { 'ignore': 'E111' }

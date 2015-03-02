@@ -1,4 +1,5 @@
-tap thoughtbot/formulae
-install rcm
-install ag
-install macvim --with-luajit --override-system-vim
+tap 'thoughtbot/formulae'
+brew 'rcm'
+brew 'ag'
+brew 'ctags'
+brew 'macvim', args: ['with-luajit', 'override-system-vim']

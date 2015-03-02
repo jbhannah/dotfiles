@@ -12,20 +12,23 @@ tested on OS X Mavericks and OS X Yosemite.
 
 ### Instructions
 
- 1. Install [Homebrew][brew].
+ 1. Install [Homebrew][brew] and [Brewdler][brewdler]:
+
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        brew tap Homebrew/brewdler
 
  2. Clone dotfiles:
 
-        git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles
+        git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
 
- 3. Install [`rcm`][rcm], [The Silver Searcher][ag], and MacVim with (at
-    minimum) LuaJIT from the `Brewfile`:
+ 3. Install [`rcm`][rcm], [The Silver Searcher][ag], Exuberant Ctags, and MacVim
+    with (at minimum) LuaJIT from the `Brewfile`:
 
-        brew bundle ~/.dotfiles/Brewfile
+        brew brewdle
 
  4. Install dotfiles:
 
-        rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
+        cd ~ && rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
 
     This will also clone [Prezto][prz] and [Vundle.vim][vun] and install the Vim
     plugins specified in `vimrc.bundles`.
@@ -100,11 +103,12 @@ configuration files or any updates to Prezto to take effect.
 
 See [`LICENSE`][lic].
 
-[tb]:   https://github.com/thoughtbot/dotfiles
-[brew]: http://brew.sh/
-[rcm]:  https://github.com/thoughtbot/rcm
-[ag]:   https://github.com/ggreer/the_silver_searcher
-[prz]:  https://github.com/sorin-ionescu/prezto
-[vun]:  https://github.com/gmarik/Vundle.vim
-[zsh]:  http://www.zsh.org/
-[lic]:  https://github.com/jbhannah/dotfiles/blob/master/LICENSE
+[tb]:       https://github.com/thoughtbot/dotfiles
+[brew]:     http://brew.sh/
+[brewdler]: https://github.com/Homebrew/homebrew-brewdler
+[rcm]:      https://github.com/thoughtbot/rcm
+[ag]:       https://github.com/ggreer/the_silver_searcher
+[prz]:      https://github.com/sorin-ionescu/prezto
+[vun]:      https://github.com/gmarik/Vundle.vim
+[zsh]:      http://www.zsh.org/
+[lic]:      https://github.com/jbhannah/dotfiles/blob/master/LICENSE

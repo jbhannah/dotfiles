@@ -91,6 +91,7 @@ let g:syntastic_html_tidy_empty_tags = ['i']
 
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
+nnoremap <Leader>cb :TagbarToggle<cr>
 
 " Define OpenURL command for rails.vim
 command -bar -nargs=1 OpenURL :!open <args>

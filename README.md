@@ -80,7 +80,7 @@ configuration files or any updates to Prezto to take effect.
   * [Tabular](https://github.com/godlygeek/tabular)
   * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
   * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-  * [Python-mode](https://github.com/kien/python-mode)
+  * [Python-mode](https://github.com/klen/python-mode)
   * [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars)
   * [vim-markdown](https://github.com/plasticboy/vim-markdown)
   * [Syntastic](https://github.com/scrooloose/syntastic)

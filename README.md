@@ -21,8 +21,9 @@ tested on OS X Mavericks and OS X Yosemite.
 
         git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
 
- 3. Install [`rcm`][rcm], [The Silver Searcher][ag], Exuberant Ctags, and MacVim
-    with (at minimum) LuaJIT from the `Brewfile`:
+ 3. Install [`rcm`][rcm], [The Silver Searcher][ag], Exuberant Ctags,
+    [The Fuck][thefuck], and MacVim with (at minimum) LuaJIT from the
+    `Brewfile`:
 
         brew brewdle
 
@@ -112,6 +113,7 @@ See [`LICENSE`][lic].
 [brewdler]: https://github.com/Homebrew/homebrew-brewdler
 [rcm]:      https://github.com/thoughtbot/rcm
 [ag]:       https://github.com/ggreer/the_silver_searcher
+[thefuck]:  https://github.com/nvbn/thefuck
 [prz]:      https://github.com/sorin-ionescu/prezto
 [vun]:      https://github.com/gmarik/Vundle.vim
 [zsh]:      http://www.zsh.org/

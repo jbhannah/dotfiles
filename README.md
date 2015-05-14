@@ -73,6 +73,7 @@ configuration files or any updates to Prezto to take effect.
 ### Vim plugins
 
   * Vundle
+  * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
   * [vim-airline](https://github.com/bling/vim-airline)
   * [csv.vim](https://github.com/chrisbra/csv.vim)
   * [Base16 Vim](https://github.com/chriskempson/base16-vim)

@@ -1,7 +1,9 @@
 AWS
+Affero
 Allman
 Blufish
 Brewfile
+CMS
 CSS
 Coffeescript
 Django
@@ -13,6 +15,7 @@ Haml
 Homebrew
 Javascript
 Javascripts
+Leet
 LuaJIT
 MacVim
 PHP
@@ -46,6 +49,7 @@ livestream
 plugin
 plugins
 podcast
+podcasters
 podcasts
 rcm
 rcup

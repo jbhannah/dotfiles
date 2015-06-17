@@ -2,7 +2,7 @@
 
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" # Source Prezto
 
-[[ -d "/Applications/Postgres.app/Contents/Versions/9.4/bin" ]] && PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
-[[ -d "$HOME/bin" ]] && PATH=$HOME/bin:$PATH
+[[ -d "/Applications/Postgres.app/Contents/Versions/9.4/bin" ]] && export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
+[[ -d "$HOME/bin" ]] && export PATH=$HOME/bin:$PATH
 
-[[ -d "$HOME/Code/go" ]] && GOPATH=$HOME/Code/go && PATH=$GOPATH/bin:$PATH
+[[ -d "$HOME/Code/go" ]] && export GOPATH=$HOME/Code/go && export PATH=$GOPATH/bin:$PATH

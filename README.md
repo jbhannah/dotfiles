@@ -100,6 +100,7 @@ configuration files or any updates to Prezto to take effect.
   * [heroku.vim](https://github.com/tpope/vim-heroku)
   * [rails.vim](https://github.com/tpope/vim-rails)
   * [rvm.vim](https://github.com/tpope/vim-rvm)
+  * [sensible.vim](https://github.com/tpope/vim-sensible)
   * [surround.vim](https://github.com/tpope/vim-surround)
   * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
   * [Auto-Pairs](https://github.com/vim-scripts/Auto-Pairs)

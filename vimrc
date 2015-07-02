@@ -4,13 +4,8 @@ if filereadable(expand("~/.vimrc.bundles"))
 endif
 
 set autowrite
-set incsearch
 set nocompatible
 set nowrap
-set showcmd
-
-filetype plugin indent on
-syntax on
 
 " Colors
 set background=dark
@@ -20,10 +15,6 @@ colorscheme base16-default
 set number
 set numberwidth=5
 highlight LineNr ctermbg=black ctermfg=DarkGray
-
-" Status bar
-set laststatus=2
-set ruler
 
 " Highlight current line
 set cursorline

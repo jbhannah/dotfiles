@@ -14,5 +14,5 @@ PROMPT=%B%F{magenta}%m%f\ $PROMPT
 
 command -v boot2docker >/dev/null 2>&1 && $(boot2docker shellinit 2>/dev/null) # boot2docker
 
-# added by travis gem
+# added by Travis gem
 [ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh

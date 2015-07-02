@@ -33,6 +33,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Spell checking
+set spell
 set spelllang=en
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 nnoremap <Leader>s a<C-X><C-S>
@@ -83,9 +84,6 @@ let g:syntastic_html_tidy_empty_tags = ['i']
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
 nnoremap <Leader>cb :TagbarToggle<cr>
-
-" Define OpenURL command for rails.vim
-command -bar -nargs=1 OpenURL :!open <args>
 
 " Local config
 if filereadable(expand("~/.vimrc.local"))

@@ -9,12 +9,13 @@ set nowrap
 
 " Colors
 set background=dark
+let base16colorspace=256
 colorscheme base16-default
 
 " Line numbers
 set number
 set numberwidth=5
-highlight LineNr ctermbg=black ctermfg=DarkGray
+highlight LineNr ctermbg=0 ctermfg=236
 
 " Highlight current line
 set cursorline
@@ -22,7 +23,7 @@ highlight CursorLine ctermbg=235
 highlight CursorLineNR ctermbg=235
 
 " Visual mode highlight
-highlight Visual ctermbg=240
+highlight Visual ctermbg=237
 
 " Vertical split bar color
 highlight VertSplit ctermbg=237 ctermfg=237

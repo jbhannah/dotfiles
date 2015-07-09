@@ -19,6 +19,9 @@ set numberwidth=5
 " Highlight current line
 set cursorline
 
+" Git gutter
+let g:gitgutter_sign_column_always = 1
+
 " Indentation
 set expandtab
 set shiftwidth=2

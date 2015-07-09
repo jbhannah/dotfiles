@@ -15,18 +15,9 @@ colorscheme base16-default
 " Line numbers
 set number
 set numberwidth=5
-highlight LineNr ctermbg=0 ctermfg=236
 
 " Highlight current line
 set cursorline
-highlight CursorLine ctermbg=235
-highlight CursorLineNR ctermbg=235
-
-" Visual mode highlight
-highlight Visual ctermbg=237
-
-" Vertical split bar color
-highlight VertSplit ctermbg=237 ctermfg=237
 
 " Indentation
 set expandtab

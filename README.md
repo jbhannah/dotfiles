@@ -103,6 +103,7 @@ configuration files or any updates to Prezto to take effect.
   * [sensible.vim](https://github.com/tpope/vim-sensible)
   * [surround.vim](https://github.com/tpope/vim-surround)
   * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
+  * [AfterColors.vim](https://github.com/vim-scripts/AfterColors.vim)
   * [Auto-Pairs](https://github.com/vim-scripts/Auto-Pairs)
   * [vimlparser](https://github.com/ynkdir/vim-vimlparser)
 

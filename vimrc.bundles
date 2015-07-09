@@ -38,6 +38,7 @@ Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/Auto-Pairs'
 Plugin 'ynkdir/vim-vimlparser'
 

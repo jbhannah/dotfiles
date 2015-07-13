@@ -1,50 +1,53 @@
 set nocompatible
-filetype off
+set rtp+=~/.vim/bundle/neobundle.vim/
 
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'chrisbra/csv.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'danro/rename.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'godlygeek/tabular'
-Plugin 'guns/xterm-color-table.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'klen/python-mode'
-Plugin 'majutsushi/tagbar'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'slim-template/vim-slim'
-Plugin 'syngan/vim-vimlint'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-heroku'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rvm'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/AfterColors.vim'
-Plugin 'vim-scripts/Auto-Pairs'
-Plugin 'ynkdir/vim-vimlparser'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'chrisbra/csv.vim'
+NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'danro/rename.vim'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'guns/xterm-color-table.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'klen/python-mode'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'syngan/vim-vimlint'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-heroku'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-rvm'
+NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'vim-scripts/AfterColors.vim'
+NeoBundle 'vim-scripts/Auto-Pairs'
+NeoBundle 'ynkdir/vim-vimlparser'
 
 " Local config
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
 
+call neobundle#end()
+
 filetype plugin indent on
+
+NeoBundleCheck

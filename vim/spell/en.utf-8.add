@@ -20,6 +20,7 @@ Javascripts
 Leet
 LuaJIT
 MacVim
+NeoBundle
 NeoComplete
 PHP
 PaperTrail
@@ -37,8 +38,6 @@ Syntastic
 Thoughtbot
 Thoughtbot's
 VimL
-Vundle
-Vundle
 Xcode
 admin
 app

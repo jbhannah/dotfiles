@@ -23,12 +23,12 @@ else
   fi
 fi
 
-if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
-  echo "Installing Vundle...\c"
-  ( git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim ) &> /dev/null
+if [ ! -d $HOME/.vim/bundle/neobundle.vim ]; then
+  echo "Installing NeoBundle...\c"
+  ( git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim ) &> /dev/null
   echo "done!"
 fi
 
 echo "Updating Vim plugins...\c"
-vim -u $HOME/.vimrc.bundles -e -s +PluginInstall! +qa
+vim -u $HOME/.vimrc.bundles -e -s +NeoBundleInstall! +NeoBundleClean! +qa
 echo "done!"

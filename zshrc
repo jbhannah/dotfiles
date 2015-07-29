@@ -16,3 +16,6 @@ command -v boot2docker >/dev/null 2>&1 && $(boot2docker shellinit 2>/dev/null) #
 
 # added by Travis gem
 [ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

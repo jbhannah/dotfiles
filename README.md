@@ -80,6 +80,7 @@ configuration files or any updates to Prezto to take effect.
   * [rename.vim](https://github.com/danro/rename.vim)
   * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
   * [Tabular](https://github.com/godlygeek/tabular)
+  * [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax)
   * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
   * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
   * [Python-mode](https://github.com/klen/python-mode)

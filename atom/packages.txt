@@ -1,4 +1,5 @@
 color-picker
+file-icons
 git-plus
 merge-conflicts
 minimap

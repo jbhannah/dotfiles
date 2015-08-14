@@ -27,7 +27,6 @@ NeoBundle 'danro/rename.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'guns/xterm-color-table.vim'
-NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'klen/python-mode'
@@ -51,6 +50,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/AfterColors.vim'
 NeoBundle 'vim-scripts/Auto-Pairs'
 NeoBundle 'ynkdir/vim-vimlparser'
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 " Local config
 if filereadable(expand("~/.vimrc.bundles.local"))

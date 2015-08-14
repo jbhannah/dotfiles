@@ -16,3 +16,4 @@
   minimap:
     plugins:
       "git-diff": true
+    displayPluginsControls: false

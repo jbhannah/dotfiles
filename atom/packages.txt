@@ -3,4 +3,5 @@ file-icons
 git-plus
 merge-conflicts
 minimap
+minimap-git-diff
 pigments

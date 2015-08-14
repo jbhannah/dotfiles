@@ -1,0 +1,5 @@
+color-picker
+git-plus
+merge-conflicts
+minimap
+pigments

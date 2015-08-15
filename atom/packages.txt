@@ -6,3 +6,4 @@ merge-conflicts
 minimap
 minimap-git-diff
 pigments
+sort-lines

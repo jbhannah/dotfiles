@@ -17,5 +17,3 @@
     plugins:
       "git-diff": true
     displayPluginsControls: false
-  "tree-view":
-    hideVcsIgnoredFiles: true

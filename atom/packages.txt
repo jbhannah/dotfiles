@@ -1,6 +1,7 @@
 color-picker
 file-icons
 git-plus
+language-nunjucks
 merge-conflicts
 minimap
 minimap-git-diff

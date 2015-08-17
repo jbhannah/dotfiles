@@ -4,6 +4,7 @@ file-icons
 git-plus
 language-nunjucks
 linter
+linter-coffeelint
 merge-conflicts
 minimap
 minimap-git-diff

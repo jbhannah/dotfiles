@@ -12,7 +12,8 @@
 exec = require('child_process').exec
 
 savePackages = ->
-  exec "/usr/local/bin/apm list --installed --bare | grep '^[^@]\\+' -o > $HOME/.atom/packages.txt"
+  exec "/usr/local/bin/apm list --installed --bare | grep '^[^@]\\+' -o > \
+    $HOME/.atom/packages.txt"
 
 atom.packages.onDidLoadPackage savePackages
 atom.packages.onDidUnloadPackage savePackages

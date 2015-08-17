@@ -1,4 +1,5 @@
 color-picker
+ex-mode
 file-icons
 git-plus
 language-nunjucks
@@ -7,3 +8,6 @@ minimap
 minimap-git-diff
 pigments
 sort-lines
+vim-mode
+vim-mode-visual-block
+vim-surround

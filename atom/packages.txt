@@ -5,6 +5,7 @@ git-plus
 language-nunjucks
 linter
 linter-coffeelint
+linter-jshint
 merge-conflicts
 minimap
 minimap-git-diff

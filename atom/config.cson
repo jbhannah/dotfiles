@@ -24,3 +24,5 @@
   linter: {}
   autosave:
     enabled: true
+  "linter-jshint":
+    lintInlineJavaScript: true

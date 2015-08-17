@@ -22,3 +22,5 @@
   "vim-mode": {}
   "vim-surround": {}
   linter: {}
+  autosave:
+    enabled: true

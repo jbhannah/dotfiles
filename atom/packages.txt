@@ -3,9 +3,11 @@ ex-mode
 file-icons
 git-plus
 language-nunjucks
+linter
 merge-conflicts
 minimap
 minimap-git-diff
+minimap-linter
 pigments
 sort-lines
 vim-mode

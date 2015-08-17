@@ -17,5 +17,8 @@
     plugins:
       "git-diff": true
     displayPluginsControls: false
+  "git-plus": {}
   "tree-view": {}
   "vim-mode": {}
+  "vim-surround": {}
+  linter: {}

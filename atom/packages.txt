@@ -2,6 +2,7 @@ color-picker
 ex-mode
 file-icons
 git-plus
+language-docker
 language-nunjucks
 linter
 linter-coffeelint

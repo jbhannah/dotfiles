@@ -16,9 +16,3 @@ command -v docker-machine >/dev/null 2>&1 && $(docker-machine env $(docker-machi
 
 # added by Travis gem
 [ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-command -v brew >/dev/null 2>&1 && [ -s "$(brew --prefix nvm)" ] && . "$(brew --prefix nvm)/nvm.sh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

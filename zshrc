@@ -20,3 +20,5 @@ command -v boot2docker >/dev/null 2>&1 && $(boot2docker shellinit 2>/dev/null) #
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 command -v brew >/dev/null 2>&1 && [ -s "$(brew --prefix nvm)" ] && . "$(brew --prefix nvm)/nvm.sh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

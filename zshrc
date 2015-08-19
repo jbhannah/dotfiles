@@ -12,7 +12,7 @@ PROMPT=%B%F{magenta}%m%f\ $PROMPT
 
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" # Aliases
 
-command -v docker-machine >/dev/null 2>&1 && $(docker-machine env $(docker-machine ls -q) 2>/dev/null)
+command -v docker-machine >/dev/null 2>&1 && eval "$(docker-machine env $(docker-machine ls -q))"
 
 # added by Travis gem
 [ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh

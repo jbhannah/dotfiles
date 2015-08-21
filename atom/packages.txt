@@ -1,3 +1,4 @@
+atom-ternjs
 color-picker
 ex-mode
 file-icons

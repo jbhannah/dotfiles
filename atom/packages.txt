@@ -1,5 +1,6 @@
 atom-ternjs
 color-picker
+editorconfig
 ex-mode
 file-icons
 git-plus

@@ -26,3 +26,6 @@
     enabled: true
   "linter-jshint":
     lintInlineJavaScript: true
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true

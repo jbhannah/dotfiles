@@ -10,6 +10,7 @@ language-viml
 linter
 linter-coffeelint
 linter-jshint
+linter-ruby
 merge-conflicts
 minimap
 minimap-git-diff

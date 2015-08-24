@@ -31,7 +31,7 @@ tested on OS X Mavericks and OS X Yosemite.
 
         cd ~ && rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
 
-    This will also clone [Prezto][prz] and [Vundle.vim][vun] and install the Vim
+    This will also clone [Prezto][prz] and [NeoBundle][nb] and install the Vim
     plugins specified in `vimrc.bundles`.
 
  5. Set your shell to [`zsh`][zsh]:
@@ -72,7 +72,7 @@ configuration files or any updates to Prezto to take effect.
 
 ### Vim plugins
 
-  * Vundle
+  * NeoBundle
   * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
   * [vim-airline](https://github.com/bling/vim-airline)
   * [csv.vim](https://github.com/chrisbra/csv.vim)
@@ -119,6 +119,6 @@ See [`LICENSE`][lic].
 [ag]:       https://github.com/ggreer/the_silver_searcher
 [thefuck]:  https://github.com/nvbn/thefuck
 [prz]:      https://github.com/sorin-ionescu/prezto
-[vun]:      https://github.com/gmarik/Vundle.vim
+[nb]:       https://github.com/Shougo/neobundle.vim
 [zsh]:      http://www.zsh.org/
 [lic]:      https://github.com/jbhannah/dotfiles/blob/master/LICENSE

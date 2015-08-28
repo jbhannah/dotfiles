@@ -15,6 +15,7 @@ minimap
 minimap-git-diff
 minimap-linter
 pigments
+script
 sort-lines
 vim-mode
 vim-mode-visual-block

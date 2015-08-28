@@ -15,5 +15,7 @@ savePackages = ->
   exec "/usr/local/bin/apm list --installed --bare | grep '^[^@]\\+' -o > \
     $HOME/.atom/packages.txt"
 
+savePackages()
+
 atom.packages.onDidLoadPackage savePackages
 atom.packages.onDidUnloadPackage savePackages

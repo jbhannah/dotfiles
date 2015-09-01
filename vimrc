@@ -46,6 +46,9 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+" Airline
+let g:airline_powerline_fonts = 1
+
 " Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gc :Gcommit<CR>

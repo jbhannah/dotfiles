@@ -4,6 +4,7 @@
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
+    fontFamily: "Hack"
   core:
     themes: [
       "one-dark-ui"

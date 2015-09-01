@@ -12,20 +12,18 @@ tested on OS X Mavericks and OS X Yosemite.
 
 ### Instructions
 
- 1. Install [Homebrew][brew] and [Brewdler][brewdler]:
+ 1. Install [Homebrew][brew] and [Brew Bundle][bundle]:
 
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        brew tap Homebrew/brewdler
+        brew tap Homebrew/bundle
 
  2. Clone dotfiles:
 
         git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
 
- 3. Install [`rcm`][rcm], [The Silver Searcher][ag], Exuberant Ctags,
-    [The Fuck][thefuck], and MacVim with (at minimum) LuaJIT from the
-    `Brewfile`:
+ 3. Install the contents of the `Brewfile`:
 
-        brew brewdle
+        brew bundle
 
  4. Install dotfiles:
 
@@ -70,55 +68,16 @@ configuration files or any updates to Prezto to take effect.
   * Prezto
   * [Base16 Shell](https://github.com/chriskempson/base16-shell)
 
-### Vim plugins
-
-  * NeoBundle
-  * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-  * [vim-airline](https://github.com/bling/vim-airline)
-  * [csv.vim](https://github.com/chrisbra/csv.vim)
-  * [Base16 Vim](https://github.com/chriskempson/base16-vim)
-  * [rename.vim](https://github.com/danro/rename.vim)
-  * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
-  * [Tabular](https://github.com/godlygeek/tabular)
-  * [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax)
-  * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-  * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-  * [Python-mode](https://github.com/klen/python-mode)
-  * [Tagbar](https://github.com/majutsushi/tagbar)
-  * [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars)
-  * [vim-markdown](https://github.com/plasticboy/vim-markdown)
-  * [Syntastic](https://github.com/scrooloose/syntastic)
-  * [Neocomplete](https://github.com/Shougo/neocomplete.vim)
-  * [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets)
-  * [Neosnippet](https://github.com/Shougo/neosnippet.vim)
-  * [vim-slim](https://github.com/slim-template/vim-slim)
-  * [vimlint](https://github.com/syngan/vim-vimlint)
-  * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
-  * [TComment](https://github.com/tomtom/tcomment_vim)
-  * [bundler.vim](https://github.com/tpope/vim-bundler)
-  * [dispatch.vim](https://github.com/tpope/vim-dispatch)
-  * [fugitive.vim](https://github.com/tpope/vim-fugitive)
-  * [heroku.vim](https://github.com/tpope/vim-heroku)
-  * [rails.vim](https://github.com/tpope/vim-rails)
-  * [rvm.vim](https://github.com/tpope/vim-rvm)
-  * [sensible.vim](https://github.com/tpope/vim-sensible)
-  * [surround.vim](https://github.com/tpope/vim-surround)
-  * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
-  * [AfterColors.vim](https://github.com/vim-scripts/AfterColors.vim)
-  * [Auto-Pairs](https://github.com/vim-scripts/Auto-Pairs)
-  * [vimlparser](https://github.com/ynkdir/vim-vimlparser)
+See the contents of `vimrc.bundles` and `Brewfile` for other installed packages.
 
 ## Credits
 
 See [`LICENSE`][lic].
 
-[tb]:       https://github.com/thoughtbot/dotfiles
-[brew]:     http://brew.sh/
-[brewdler]: https://github.com/Homebrew/homebrew-brewdler
-[rcm]:      https://github.com/thoughtbot/rcm
-[ag]:       https://github.com/ggreer/the_silver_searcher
-[thefuck]:  https://github.com/nvbn/thefuck
-[prz]:      https://github.com/sorin-ionescu/prezto
-[nb]:       https://github.com/Shougo/neobundle.vim
-[zsh]:      http://www.zsh.org/
-[lic]:      https://github.com/jbhannah/dotfiles/blob/master/LICENSE
+[tb]:      https://github.com/thoughtbot/dotfiles
+[brew]:    http://brew.sh/
+[bundle]:  https://github.com/Homebrew/homebrew-brewdler
+[prz]:     https://github.com/sorin-ionescu/prezto
+[nb]:      https://github.com/Shougo/neobundle.vim
+[zsh]:     http://www.zsh.org/
+[lic]:     https://github.com/jbhannah/dotfiles/blob/master/LICENSE

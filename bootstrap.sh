@@ -17,8 +17,11 @@ if echo $platform | grep -q Darwin; then
   brew bundle
 
   sudo mv /etc/zshenv /etc/zshrc
+  # TODO: move /usr/local/bin to the top of /etc/paths
 elif echo $platform | grep -q Ubuntu; then
   echo "== Ubuntu Installation =="
+  # TODO: curl rcm, extract, sudo make install
+  # TODO: install full vim-nox with Lua and other packages
   echo "Not yet implemented!"
   exit 1
 fi

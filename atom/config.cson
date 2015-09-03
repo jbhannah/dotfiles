@@ -19,7 +19,8 @@
       "git-diff": true
     displayPluginsControls: false
   "git-plus": {}
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-surround": {}
   linter: {}

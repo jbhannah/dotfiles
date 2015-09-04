@@ -27,7 +27,7 @@ tested on OS X Mavericks and OS X Yosemite.
 
  4. Install dotfiles:
 
-        cd ~ && rcup -d ~/.dotfiles -x Brewfile -x README.md -x LICENSE
+        cd ~ && rcup -d ~/.dotfiles -x bootstrap.sh -x Brewfile -x README.md -x LICENSE
 
     This will also clone [Prezto][prz] and [NeoBundle][nb] and install the Vim
     plugins specified in `vimrc.bundles`.

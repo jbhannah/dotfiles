@@ -10,6 +10,12 @@
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
+    disabledPackages: [
+      "welcome"
+      "styleguide"
+      "update-package-dependencies"
+      "package-generator"
+    ]
   "exception-reporting":
     userId: "688efa6f-1275-312c-2dfc-b7cfa19831e1"
   welcome:
@@ -32,3 +38,8 @@
     enableVcsColoring: true
     usePreviewTabs: true
   "atom-ternjs": {}
+  "linter-ruby": {}
+  "autocomplete-plus": {}
+  pigments: {}
+  "fuzzy-finder": {}
+  "status-bar": {}

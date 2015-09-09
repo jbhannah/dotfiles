@@ -3,6 +3,7 @@
 [user]
 	name = Jesse B. Hannah
 	email = jesse@jbhannah.net
+	signingkey = 17BAAFA4
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore

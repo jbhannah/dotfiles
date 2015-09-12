@@ -5,6 +5,7 @@ file-icons
 git-plus
 language-docker
 language-nunjucks
+language-slim
 language-viml
 linter
 linter-coffeelint

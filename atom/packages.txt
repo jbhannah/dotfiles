@@ -11,6 +11,7 @@ linter
 linter-coffeelint
 linter-jshint
 linter-ruby
+linter-slim
 merge-conflicts
 minimap
 minimap-git-diff

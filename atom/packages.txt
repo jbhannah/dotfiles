@@ -4,6 +4,7 @@ ex-mode
 file-icons
 git-plus
 language-docker
+language-latex
 language-nunjucks
 language-slim
 language-viml

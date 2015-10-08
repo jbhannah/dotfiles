@@ -3,6 +3,7 @@ editorconfig
 ex-mode
 file-icons
 git-plus
+highlight-line
 language-docker
 language-latex
 language-nunjucks

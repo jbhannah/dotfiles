@@ -18,6 +18,9 @@
       "package-generator"
     ]
     projectHome: "~/Code/jbhannah"
+    packagesWithKeymapsDisabled: [
+      "highlight-line"
+    ]
   "exception-reporting":
     userId: "688efa6f-1275-312c-2dfc-b7cfa19831e1"
   welcome:
@@ -45,3 +48,4 @@
   "fuzzy-finder": {}
   "status-bar": {}
   "linter-slim": {}
+  "highlight-line": {}

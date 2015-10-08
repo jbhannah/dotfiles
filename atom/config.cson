@@ -33,7 +33,8 @@
   "tree-view": {}
   "vim-mode": {}
   "vim-surround": {}
-  linter: {}
+  linter:
+    gutterPosition: "Left"
   autosave:
     enabled: true
   "linter-jshint":

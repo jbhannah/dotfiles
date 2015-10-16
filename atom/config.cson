@@ -37,8 +37,6 @@
     gutterPosition: "Left"
   autosave:
     enabled: true
-  "linter-jshint":
-    lintInlineJavaScript: true
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
@@ -50,3 +48,5 @@
   "status-bar": {}
   "linter-slim": {}
   "highlight-line": {}
+  react: {}
+  "linter-eslint": {}

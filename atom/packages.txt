@@ -11,7 +11,7 @@ language-slim
 language-viml
 linter
 linter-coffeelint
-linter-jshint
+linter-eslint
 linter-ruby
 linter-slim
 merge-conflicts
@@ -20,6 +20,7 @@ minimap-git-diff
 minimap-linter
 pigments
 pretty-json
+react
 script
 sort-lines
 vim-mode

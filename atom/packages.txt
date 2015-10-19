@@ -18,6 +18,7 @@ merge-conflicts
 minimap
 minimap-git-diff
 minimap-linter
+pain-split
 pigments
 pretty-json
 react

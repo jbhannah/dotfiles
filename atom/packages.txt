@@ -12,6 +12,7 @@ language-viml
 linter
 linter-coffeelint
 linter-eslint
+linter-jshint
 linter-ruby
 linter-slim
 merge-conflicts

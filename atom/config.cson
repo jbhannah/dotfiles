@@ -49,4 +49,5 @@
   "linter-slim": {}
   "highlight-line": {}
   react: {}
-  "linter-eslint": {}
+  "linter-eslint":
+    useGlobalEslint: true

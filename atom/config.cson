@@ -32,7 +32,8 @@
   "git-plus": {}
   "tree-view": {}
   "vim-mode": {}
-  "vim-surround": {}
+  "vim-surround":
+    surroundCommand: "S"
   linter:
     gutterPosition: "Left"
   autosave:

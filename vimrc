@@ -62,7 +62,13 @@ nmap <Leader>gs :Gstatus<CR>
 let g:vim_markdown_folding_disabled=1
 
 " Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 let g:syntastic_html_tidy_empty_tags = ['i']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>

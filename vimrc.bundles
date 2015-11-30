@@ -39,6 +39,7 @@ NeoBundle 'tpope/vim-fugitive', { 'depends' : 'tpope/vim-dispatch' }
 NeoBundle 'tpope/vim-heroku'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'vim-scripts/AfterColors.vim'
 NeoBundle 'vim-scripts/Auto-Pairs'
 

@@ -20,6 +20,7 @@ set numberwidth=5
 set cursorline
 
 " Git gutter
+set updatetime=250
 let g:gitgutter_sign_column_always = 1
 
 " Indentation

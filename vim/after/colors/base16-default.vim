@@ -8,6 +8,10 @@ highlight CursorLine guibg=#1c1c1c
 highlight CursorLineNr ctermbg=234 ctermfg=236
 highlight CursorLineNr guibg=#1c1c1c guifg=#303030
 
+" Wrap marker
+highlight ColorColumn ctermbg=234
+highlight ColorColumn guibg=#1c1c1c
+
 " Visual mode highlight
 highlight Visual ctermbg=237
 

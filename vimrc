@@ -6,6 +6,7 @@ endif
 set autowrite
 set nocompatible
 set nowrap
+set colorcolumn=80
 
 " Colors
 set background=dark

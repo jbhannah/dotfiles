@@ -6,6 +6,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Vim functionality
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
@@ -21,38 +22,39 @@ NeoBundle 'Valloric/YouCompleteMe', {
 \     'others' : './install.py --clang-completer --gocode-completer',
 \    },
 \ }
+
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'danro/rename.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'guns/xterm-color-table.vim'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'klen/python-mode'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'syngan/vim-vimlint'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive', { 'depends' : 'tpope/vim-dispatch' }
 NeoBundle 'tpope/vim-heroku'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-rvm'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/AfterColors.vim'
 NeoBundle 'vim-scripts/Auto-Pairs'
-NeoBundle 'ynkdir/vim-vimlparser'
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+
+" Language integrations
+NeoBundle 'chrisbra/csv.vim'
+NeoBundleLazy 'jelera/vim-javascript-syntax', { 'autoload' : { 'filetypes' : ['javascript'] } }
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'klen/python-mode'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'syngan/vim-vimlint', { 'depends' : 'ynkdir/vim-vimlparser' }
+NeoBundle 'tpope/vim-bundler', { 'depends' : 'tpope/vim-dispatch' }
+NeoBundle 'tpope/vim-rails', { 'depends' : 'tpope/vim-dispatch' }
+NeoBundle 'tpope/vim-rvm'
+NeoBundle 'vim-ruby/vim-ruby'
 
 " Local config
 if filereadable(expand("~/.vimrc.bundles.local"))

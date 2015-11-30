@@ -16,9 +16,11 @@ NeoBundle 'Shougo/vimproc.vim', {
 \    },
 \ }
 
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Valloric/YouCompleteMe', {
+\ 'build' : {
+\     'others' : './install.py --clang-completer --gocode-completer',
+\    },
+\ }
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'chrisbra/csv.vim'

@@ -58,22 +58,6 @@ nmap <Leader>gl :Glog<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gs :Gstatus<CR>
 
-" NeoComplete
-let g:neocomplete#enable_at_startup = 1
-
-"" SuperTab-like behavior
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-  \ "\<Plug>(neosnippet_expand_or_jump)"
-  \: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-  \ "\<Plug>(neosnippet_expand_or_jump)"
-  \: "\<TAB>"
-
-"" For snippet_complete marker
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 

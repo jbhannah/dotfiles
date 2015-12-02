@@ -91,6 +91,11 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 nnoremap <Leader>ct :CtrlPTag<cr>
 nnoremap <Leader>cb :TagbarToggle<cr>
 
+" Transpose characters
+nnoremap <silent> <Plug>TransposeCharacters xp
+      \:call repeat#set("\<Plug>TransposeCharacters")<CR>
+nmap cp <Plug>TransposeCharacters
+
 " Local config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local

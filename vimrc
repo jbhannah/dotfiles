@@ -16,7 +16,7 @@ autocmd InsertLeave * :setlocal hlsearch
 
 " Colors
 set background=dark
-let base16colorspace=256
+let g:base16colorspace=256
 colorscheme base16-default
 
 " Line numbers

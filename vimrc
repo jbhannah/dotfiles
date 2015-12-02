@@ -8,6 +8,12 @@ set nocompatible
 set nowrap
 set colorcolumn=80
 
+" Search highlighting
+set hlsearch
+nnoremap <C-l> :nohlsearch<CR><C-l>
+autocmd InsertEnter * :setlocal nohlsearch
+autocmd InsertLeave * :setlocal hlsearch
+
 " Colors
 set background=dark
 let base16colorspace=256

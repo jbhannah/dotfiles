@@ -16,13 +16,12 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
-
+NeoBundle 'SirVer/ultisnips', { 'depends' : 'honza/vim-snippets' }
 NeoBundle 'Valloric/YouCompleteMe', {
 \ 'build' : {
 \     'others' : './install.py --clang-completer --gocode-completer',
 \    },
 \ }
-
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'chriskempson/base16-vim'

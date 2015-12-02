@@ -5,4 +5,4 @@
 [[ -d "/Applications/Postgres.app/Contents/Versions/9.4/bin" ]] && export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 [[ -d "$HOME/bin" ]] && export PATH=$HOME/bin:$PATH
 
-[[ -d "$HOME/Code/go" ]] && export GOPATH=$HOME/Code/go && export PATH=$GOPATH/bin:$PATH
+[[ -d "$HOME/Code" ]] && export GOPATH=$HOME/Code && export PATH=$GOPATH/bin:$PATH

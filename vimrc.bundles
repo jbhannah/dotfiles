@@ -22,6 +22,7 @@ NeoBundle 'Valloric/YouCompleteMe', {
 \     'others' : './install.py --clang-completer --gocode-completer',
 \    },
 \ }
+NeoBundle 'Xuyuanp/nerdtree-git-plugin', { 'depends' : 'scrooloose/nerdtree' }
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'chriskempson/base16-vim'

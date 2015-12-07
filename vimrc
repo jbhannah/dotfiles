@@ -87,10 +87,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
-" Nerdtree
-autocmd VimEnter * NERDTree
-nmap <Leader>t :NERDTreeToggle<cr>
-
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
 nnoremap <Leader>cb :TagbarToggle<cr>

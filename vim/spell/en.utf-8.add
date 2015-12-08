@@ -48,6 +48,7 @@ Thoughtbot's
 Uglifier
 VimL
 Xcode
+YouCompleteMe
 admin
 api
 app
@@ -62,6 +63,7 @@ def
 docblock
 doctype
 dotfiles
+fmt
 github
 github
 grepping
@@ -90,7 +92,6 @@ tagline
 thetallgrass
 thoughtbot
 uploader
-vim
 vim
 vimrc
 virtualenv

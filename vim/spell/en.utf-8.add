@@ -58,6 +58,7 @@ capistrano
 config
 coursely
 cron
+def
 docblock
 doctype
 dotfiles

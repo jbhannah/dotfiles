@@ -23,9 +23,13 @@ else
   fi
 fi
 
-if [ ! -d $HOME/.vim/bundle/neobundle.vim ]; then
-  echo "Installing NeoBundle...\c"
-  ( git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim ) &> /dev/null
+if [ ! -d $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ]; then
+  echo "Uninstalling NeoBundle...\c"
+  rm -rf $HOME/.vim/bundle
+  echo "done!"
+  echo "Installing Dein.vim...\c"
+  mkdir -p $HOME/.vim/bundle/repos/github.com/Shougo
+  ( git clone https://github.com/Shougo/dein.vim $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ) &> /dev/null
   echo "done!"
 fi
 

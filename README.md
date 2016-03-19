@@ -29,7 +29,7 @@ tested on OS X Mavericks and OS X Yosemite.
 
         cd ~ && rcup -d ~/.dotfiles -x bootstrap.sh -x Brewfile -x README.md -x LICENSE
 
-    This will also clone [Prezto][prz] and [NeoBundle][nb] and install the Vim
+    This will also clone [Prezto][prz] and [Dein.vim][dv] and install the Vim
     plugins specified in `vimrc.bundles`.
 
  5. Set your shell to [`zsh`][zsh]:
@@ -78,6 +78,6 @@ See [`LICENSE`][lic].
 [brew]:    http://brew.sh/
 [bundle]:  https://github.com/Homebrew/homebrew-brewdler
 [prz]:     https://github.com/sorin-ionescu/prezto
-[nb]:      https://github.com/Shougo/neobundle.vim
+[dv]:      https://github.com/Shougo/dein.vim
 [zsh]:     http://www.zsh.org/
 [lic]:     https://github.com/jbhannah/dotfiles/blob/master/LICENSE

@@ -1,1 +1,1 @@
-setlocal textwidth=80
+markdown.vim

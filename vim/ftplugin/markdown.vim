@@ -1,1 +1,1 @@
-mkd.vim
+setlocal textwidth=80

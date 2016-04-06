@@ -7,3 +7,8 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R

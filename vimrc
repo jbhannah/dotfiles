@@ -6,6 +6,7 @@ endif
 set autowrite
 set nocompatible
 set nowrap
+set textwidth=80
 set colorcolumn=80
 
 " Search highlighting

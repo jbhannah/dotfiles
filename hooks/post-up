@@ -36,3 +36,11 @@ if command -v apm >/dev/null 2>&1 && [ -f $HOME/.atom/packages.txt ]; then
   apm install --packages-file $HOME/.atom/packages.txt &> /dev/null
   echo "done!"
 fi
+
+echo "Pruning missing dotfiles...\c"
+dotteds=$(find $HOME -maxdepth 1 -regex "$HOME\/\..*")
+
+for dotted in $dotteds; do
+  find -L $dotted -type l -exec rm -i {} +
+done
+echo "done!"

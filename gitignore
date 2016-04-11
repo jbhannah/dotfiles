@@ -1,4 +1,7 @@
 *~
+.swn
+.swo
+.swp
 .*.swp
 .DS_Store
 .ropeproject

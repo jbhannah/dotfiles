@@ -1,54 +1,57 @@
 "*":
-  editor:
-    fontSize: 12
-    invisibles: {}
-    scrollPastEnd: true
-    showIndentGuide: true
-    fontFamily: "Hack"
-    backUpBeforeSaving: true
+  "atom-ternjs": {}
+  "autocomplete-plus": {}
+  autosave:
+    enabled: true
   core:
-    themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
-    ]
     disabledPackages: [
       "welcome"
       "styleguide"
       "update-package-dependencies"
       "package-generator"
     ]
-    projectHome: "~/Code/jbhannah"
     packagesWithKeymapsDisabled: [
       "highlight-line"
     ]
+    projectHome: "~/Code/jbhannah"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Hack"
+    fontSize: 12
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
   "exception-reporting":
     userId: "688efa6f-1275-312c-2dfc-b7cfa19831e1"
-  welcome:
-    showOnStartup: false
+  "fuzzy-finder": {}
+  "git-plus": {}
+  "highlight-line": {}
+  linter:
+    gutterPosition: "Left"
+  "linter-eslint":
+    useGlobalEslint: true
+  "linter-ruby": {}
+  "linter-slim": {}
   minimap:
+    displayPluginsControls: false
     plugins:
       "git-diff": true
-    displayPluginsControls: false
-  "git-plus": {}
+  pigments: {}
+  react: {}
+  "status-bar": {}
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
   "tree-view": {}
   "vim-mode": {}
   "vim-surround":
     surroundCommand: "S"
-  linter:
-    gutterPosition: "Left"
-  autosave:
-    enabled: true
-  tabs:
-    enableVcsColoring: true
-    usePreviewTabs: true
-  "atom-ternjs": {}
-  "linter-ruby": {}
-  "autocomplete-plus": {}
-  pigments: {}
-  "fuzzy-finder": {}
-  "status-bar": {}
-  "linter-slim": {}
-  "highlight-line": {}
-  react: {}
-  "linter-eslint":
-    useGlobalEslint: true
+  welcome:
+    showOnStartup: false
+".html.php.text":
+  editor:
+    tabLength: 4

@@ -1,6 +1,9 @@
 packages: [
   "atom-ternjs"
   "autocomplete-go"
+  "build"
+  "build-gulp"
+  "build-npm-apm"
   "builder-go"
   "ex-mode"
   "file-icons"

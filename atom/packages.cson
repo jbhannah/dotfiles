@@ -15,6 +15,7 @@ packages: [
   "gometalinter-linter"
   "gorename"
   "highlight-line"
+  "highlight-selected"
   "language-docker"
   "language-latex"
   "language-nunjucks"

@@ -9,3 +9,4 @@ if has("gui_running")
 endif
 
 set guioptions-=lLrR
+set linespace=4

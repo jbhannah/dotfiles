@@ -31,12 +31,6 @@ echo "Updating Vim plugins...\c"
 vim -u $HOME/.vimrc.bundles -e -s +NeoBundleInstall! +NeoBundleClean! +qa
 echo "done!"
 
-if command -v apm >/dev/null 2>&1 && [ -f $HOME/.atom/packages.txt ]; then
-  echo "Updating Atom packages...\c"
-  apm install --packages-file $HOME/.atom/packages.txt &> /dev/null
-  echo "done!"
-fi
-
 echo "Pruning missing dotfiles...\c"
 dotteds=$(find $HOME -maxdepth 1 -regex "$HOME\/\..*")
 

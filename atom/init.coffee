@@ -9,13 +9,3 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
-exec = require('child_process').exec
-
-savePackages = ->
-  exec "/usr/bin/env apm list --installed --bare | grep '^[^@]\\+' -o > \
-    $HOME/.atom/packages.txt"
-
-savePackages()
-
-atom.packages.onDidLoadPackage savePackages
-atom.packages.onDidUnloadPackage savePackages

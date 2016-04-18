@@ -40,6 +40,8 @@
     displayPluginsControls: false
     plugins:
       "git-diff": true
+  "package-sync":
+    forceOverwrite: true
   pigments: {}
   react: {}
   "status-bar": {}

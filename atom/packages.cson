@@ -40,6 +40,7 @@ packages: [
   "sort-lines"
   "tester-go"
   "vim-mode"
+  "vim-mode-transpose"
   "vim-mode-visual-block"
   "vim-surround"
 ]

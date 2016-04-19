@@ -1,6 +1,10 @@
 packages: [
+  "atom-autocomplete-php"
   "atom-ternjs"
   "autocomplete-go"
+  "autocomplete-modules"
+  "autocomplete-nunjucks"
+  "autocomplete-python"
   "build"
   "build-gulp"
   "build-npm-apm"

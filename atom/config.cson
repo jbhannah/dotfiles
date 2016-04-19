@@ -27,6 +27,7 @@
   "fuzzy-finder": {}
   "git-plus":
     pullBeforePush: "pull --rebase"
+    splitPane: "Down"
   "highlight-line": {}
   linter:
     gutterPosition: "Left"

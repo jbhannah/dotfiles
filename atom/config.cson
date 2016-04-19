@@ -1,6 +1,7 @@
 "*":
   "atom-ternjs": {}
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    enableBuiltinProvider: false
   autosave:
     enabled: true
   core:

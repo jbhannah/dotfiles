@@ -6,9 +6,6 @@
   core:
     disabledPackages: [
       "welcome"
-      "styleguide"
-      "update-package-dependencies"
-      "package-generator"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-line"
@@ -40,6 +37,9 @@
     displayPluginsControls: false
     plugins:
       "git-diff": true
+  "package-generator":
+    createInDevMode: true
+    packageSyntax: "coffeescript"
   "package-sync":
     forceOverwrite: true
   pigments: {}

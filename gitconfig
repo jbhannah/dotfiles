@@ -36,3 +36,5 @@
 	required = true
 [include]
 	path = .gitconfig.local
+[commit]
+	gpgsign = true

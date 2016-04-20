@@ -1,6 +1,7 @@
 packages: [
   "atom-autocomplete-php"
   "atom-ternjs"
+  "atom-typescript"
   "autocomplete-go"
   "autocomplete-modules"
   "autocomplete-nunjucks"

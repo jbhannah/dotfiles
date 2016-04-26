@@ -46,6 +46,7 @@
     createInDevMode: true
     packageSyntax: "coffeescript"
   "package-sync":
+    createOnChange: true
     forceOverwrite: true
   pigments: {}
   react: {}

@@ -50,6 +50,7 @@
     forceOverwrite: true
   pigments: {}
   react: {}
+  "ruby-test": {}
   "status-bar": {}
   tabs:
     enableVcsColoring: true

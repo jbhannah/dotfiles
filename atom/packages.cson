@@ -49,6 +49,7 @@ packages: [
   "react"
   "ruby-test"
   "script"
+  "set-syntax"
   "sort-lines"
   "tester-go"
   "vim-mode"

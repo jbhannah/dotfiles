@@ -8,5 +8,9 @@ if has("gui_running")
   endif
 endif
 
-set guioptions-=lLrR
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
+
 set linespace=4

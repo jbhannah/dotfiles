@@ -50,8 +50,8 @@ map <ScrollWheelDown> <C-E>
 " Use The Silver Searcher for Ctrl+P and searching
 " http://robots.thoughtbot.com/faster-grepping-in-vim
 if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  set grepprg=ag\ --nogroup\ --nocolor\ --hidden
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
   let g:ctrlp_use_caching = 0
 endif
 

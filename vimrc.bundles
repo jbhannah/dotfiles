@@ -8,6 +8,7 @@ call dein#add('Shougo/dein.vim')
 " Vim functionality
 call dein#add('Shougo/vimproc.vim', { 'build' : 'make' })
 call dein#add('SirVer/ultisnips', { 'depends' : 'honza/vim-snippets' })
+call dein#add('Xuyuanp/nerdtree-git-plugin', { 'depends' : 'scrooloose/nerdtree' })
 call dein#add('Valloric/YouCompleteMe', { 'build' : './install.py --clang-completer --gocode-completer --tern-completer' })
 call dein#add('airblade/vim-gitgutter')
 call dein#add('bling/vim-airline')

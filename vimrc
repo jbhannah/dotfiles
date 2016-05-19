@@ -95,6 +95,10 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 
+" NERDTree
+nnoremap <Leader>nt :NERDTreeToggle<cr>
+nnoremap <Leader>nf :NERDTreeFind<cr>
+
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
 nnoremap <Leader>cb :TagbarToggle<cr>

@@ -2,3 +2,5 @@
 --tag-relative=yes
 --languages=-javascript,sql
 --exclude=.git
+--exclude=tmp
+--exclude=log

@@ -36,6 +36,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Custom filetypes
+autocmd BufRead,BufNewFile Envfile setfiletype ruby
+
 " Spell checking
 set spell
 set spelllang=en

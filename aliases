@@ -3,3 +3,6 @@ alias crap='$(thefuck $(fc -ln -1))'
 
 # Docker
 alias dcr="docker-compose run"
+alias dcrr="docker-compose run --rm"
+alias dcu="docker-compose up"
+alias dps="docker ps -a"

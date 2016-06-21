@@ -2,7 +2,8 @@ alias l="ls -alh"
 alias crap='$(thefuck $(fc -ln -1))'
 
 # Docker
+alias dps="docker ps -a"
+alias dco="docker-compose"
 alias dcr="docker-compose run --rm"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
-alias dps="docker ps -a"

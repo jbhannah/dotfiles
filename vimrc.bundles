@@ -6,6 +6,7 @@ call dein#begin(expand('~/.vim/bundle/'))
 call dein#add('Shougo/dein.vim')
 
 " Vim functionality
+call dein#add('DataWraith/auto_mkdir')
 call dein#add('Shougo/vimproc.vim', { 'build' : 'make' })
 call dein#add('SirVer/ultisnips', { 'depends' : 'honza/vim-snippets' })
 call dein#add('Xuyuanp/nerdtree-git-plugin', { 'depends' : 'scrooloose/nerdtree' })

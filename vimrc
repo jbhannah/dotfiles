@@ -112,7 +112,7 @@ nnoremap <silent> <Plug>TransposeCharacters xp
 nmap cp <Plug>TransposeCharacters
 
 " Because letting go of the shift key is for suckers
-command W write
+command! W write
 
 " Local config
 if filereadable(expand("~/.vimrc.local"))

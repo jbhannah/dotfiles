@@ -1,12 +1,12 @@
 " Line numbers
-highlight LineNr ctermbg=bg ctermfg=236
-highlight LineNr guibg=bg guifg=#303030
+highlight LineNr ctermbg=bg ctermfg=8
+highlight LineNr guibg=bg guifg=#585858
 
 " Highlight current line
 highlight CursorLine ctermbg=234
 highlight CursorLine guibg=#1c1c1c
-highlight CursorLineNr ctermbg=234 ctermfg=236
-highlight CursorLineNr guibg=#1c1c1c guifg=#303030
+highlight CursorLineNr ctermbg=234 ctermfg=8
+highlight CursorLineNr guibg=#1c1c1c guifg=#585858
 
 " Wrap marker
 highlight ColorColumn ctermbg=234

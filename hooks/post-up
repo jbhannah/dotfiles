@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 if [ -d $HOME/.zprezto/.git ]; then
   echo "Updating Prezto...\c"
   ( cd $HOME/.zprezto && git pull && git submodule update --init --recursive ) &> /dev/null

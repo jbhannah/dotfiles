@@ -28,7 +28,7 @@ if [ ! -d $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ]; then
 fi
 
 echo "Updating Vim plugins...\c"
-vim -u $HOME/.vimrc.bundles -e -s "+call dein#update()" +qa
+$VISUAL -u $HOME/.vimrc.bundles -e -s "+call dein#update()" +qa
 echo "done!"
 
 echo "Pruning missing dotfiles...\c"

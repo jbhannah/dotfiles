@@ -42,6 +42,7 @@ call dein#add('vim-scripts/Auto-Pairs')
 " Language integrations
 call dein#add('sheerun/vim-polyglot')
 call dein#add('chrisbra/csv.vim')
+call dein#add('fatih/vim-go', { 'on_ft': 'go' })
 call dein#add('keith/rspec.vim')
 call dein#add('klen/python-mode')
 call dein#add('plasticboy/vim-markdown')

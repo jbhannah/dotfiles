@@ -1,5 +1,4 @@
 packages: [
-  "atom-autocomplete-php"
   "atom-ternjs"
   "atom-typescript"
   "autocomplete-go"
@@ -33,8 +32,6 @@ packages: [
   "linter-erb"
   "linter-eslint"
   "linter-haml"
-  "linter-php"
-  "linter-phpcs"
   "linter-ruby"
   "linter-slim"
   "merge-conflicts"

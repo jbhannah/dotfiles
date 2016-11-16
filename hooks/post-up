@@ -12,9 +12,15 @@ else
 fi
 
 if [ -d $HOME/.config/base16-shell/.git ]; then
-  echo "Removing Base16 Shell...\c"
-  ( rm -rf $HOME/.config/base16-shell ) &> /dev/null
+  echo "Updating Base16 Shell...\c"
+  ( cd $HOME/.config/base16-shell && git pull ) &> /dev/null
   echo "done!"
+else
+  if [ ! -d $HOME/.config/base16-shell ]; then
+    echo "Installing Base16 Shell...\c"
+    ( git clone https://github.com/chriskempson/base16-shell.git $HOME/.config/base16-shell ) &> /dev/null
+    echo "done!"
+  fi
 fi
 
 if [ ! -d $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ]; then

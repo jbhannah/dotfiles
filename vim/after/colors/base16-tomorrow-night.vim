@@ -1,5 +1,5 @@
 " Line numbers
-highlight LineNr ctermbg=bg ctermfg=8
+highlight LineNr ctermbg=0 ctermfg=8
 highlight LineNr guibg=bg guifg=#585858
 
 " Highlight current line

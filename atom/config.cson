@@ -31,6 +31,8 @@
   "git-plus":
     pullBeforePush: "pull --rebase"
     splitPane: "Down"
+  "go-plus":
+    panelDisplayMode: "closed"
   "highlight-line": {}
   linter:
     gutterPosition: "Left"

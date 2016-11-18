@@ -4,13 +4,13 @@ highlight LineNr guibg=bg guifg=#585858
 
 " Highlight current line
 highlight CursorLine ctermbg=234
-highlight CursorLine guibg=#1c1c1c
-highlight CursorLineNr ctermbg=234 ctermfg=8
-highlight CursorLineNr guibg=#1c1c1c guifg=#585858
+highlight CursorLine guibg=#181818
+highlight CursorLineNr ctermbg=234 ctermfg=8 term=NONE
+highlight CursorLineNr guibg=#181818 guifg=#585858 gui=NONE
 
 " Wrap marker
 highlight ColorColumn ctermbg=234
-highlight ColorColumn guibg=#1c1c1c
+highlight ColorColumn guibg=#181818
 
 " Visual mode highlight
 highlight Visual ctermbg=237

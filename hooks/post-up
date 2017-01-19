@@ -36,11 +36,3 @@ fi
 echo "Updating Vim plugins...\c"
 $VISUAL -u $HOME/.vimrc.bundles -e -s "+call dein#update()" +qa
 echo "done!"
-
-echo "Pruning missing dotfiles...\c"
-dotteds=$(find $HOME -maxdepth 1 -regex "$HOME\/\..*")
-
-for dotted in $dotteds; do
-  find -L $dotted -type l -exec rm -i {} +
-done
-echo "done!"

@@ -8,6 +8,10 @@ set nowrap
 set textwidth=80
 set colorcolumn=80
 
+" Backup and temp files
+set backupdir=~/.vim/_backup//
+set directory=~/.vim/_temp//
+
 " Search highlighting
 set hlsearch
 nnoremap <C-l> :nohlsearch<CR><C-l>

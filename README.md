@@ -66,7 +66,6 @@ configuration files or any updates to Prezto to take effect.
 ## Contents
 
   * Prezto
-  * [Base16 Shell](https://github.com/chriskempson/base16-shell)
 
 See the contents of `vimrc.bundles` and `Brewfile` for other installed packages.
 

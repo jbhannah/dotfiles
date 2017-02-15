@@ -20,8 +20,7 @@ autocmd InsertLeave * :setlocal hlsearch
 
 " Colors
 set background=dark
-let g:base16colorspace=256
-colorscheme base16-tomorrow-night
+colorscheme solarized
 
 " Line numbers
 set number
@@ -67,7 +66,7 @@ endif
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
-let g:airline_theme = 'base16_tomorrow'
+let g:airline_theme = 'solarized'
 
 " Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>
@@ -122,24 +121,6 @@ nnoremap <Leader>cb :TagbarToggle<cr>
 nnoremap <silent> <Plug>TransposeCharacters xp
       \:call repeat#set("\<Plug>TransposeCharacters")<CR>
 nmap cp <Plug>TransposeCharacters
-
-" NeoVim terminal
-let g:terminal_color_0 = "#1b1d1e"
-let g:terminal_color_1 = "#c55b5b"
-let g:terminal_color_2 = "#acb45d"
-let g:terminal_color_3 = "#eebe69"
-let g:terminal_color_4 = "#7698b6"
-let g:terminal_color_5 = "#a989b3"
-let g:terminal_color_6 = "#7fb6ae"
-let g:terminal_color_7 = "#bec1bf"
-let g:terminal_color_8 = "#8b8d8b"
-let g:terminal_color_9 = "#c55b5b"
-let g:terminal_color_10 = "#acb45d"
-let g:terminal_color_11 = "#eebe69"
-let g:terminal_color_12 = "#7698b6"
-let g:terminal_color_13 = "#a989b3"
-let g:terminal_color_14 = "#7fb6ae"
-let g:terminal_color_15 = "#ffffff"
 
 " Because letting go of the shift key is for suckers
 command! W write

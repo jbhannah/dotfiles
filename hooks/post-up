@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 if [ -d $HOME/.zprezto/.git ]; then
   echo "Updating Prezto...\c"
-  ( cd $HOME/.zprezto && git pull && git submodule update --init --recursive ) &> /dev/null
+  cd $HOME/.zprezto
+  ( git remote rm origin && git remote add origin https://github.com/zsh-users/prezto.git ) &> /dev/null
+  ( git pull && git submodule update --init --recursive ) &> /dev/null
   echo "done!"
 else
   if [ ! -d $HOME/.zprezto ]; then
     echo "Installing Prezto...\c"
-    ( git clone https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive ) ) &> /dev/null
+    ( git clone https://github.com/zsh-users/prezto.git $HOME/.zprezto && ( cd $HOME/.zprezto && git submodule update --init --recursive ) ) &> /dev/null
     echo "done!"
   fi
 fi

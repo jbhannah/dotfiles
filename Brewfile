@@ -1,5 +1,4 @@
-tap 'thoughtbot/formulae'
-brew 'rcm'
+brew 'stow'
 brew 'ag'
 brew 'ctags'
 brew 'macvim', args: ['with-luajit', 'override-system-vim']

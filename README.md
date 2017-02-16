@@ -1,14 +1,21 @@
 # dotfiles
 
 Dotfiles and miscellanea. Inspired by [Thoughtbot's dotfiles][tb]. Designed and
-tested on OS X El Capitan and Ubuntu 15.10.
+tested on macOS Sierra and Ubuntu 16.04.
 
 ## Setup
 
 ### Prerequisites
 
+#### macOS
+
   * Xcode and command line tools
   * Git
+  * An account that can run as `sudo`
+
+#### Ubuntu
+
+  * An account that can run as `sudo`
 
 ### Instructions
 
@@ -25,40 +32,36 @@ tested on OS X El Capitan and Ubuntu 15.10.
 
         brew bundle
 
- 4. Install dotfiles:
+ 4. Install dotfiles with [Stow][stow]:
 
-        cd ~ && rcup -d ~/.dotfiles -x bootstrap.sh -x Brewfile -x README.md -x LICENSE
+        ./bootstrap.sh
 
-    This will also clone [Prezto][prz] and [Dein.vim][dv] and install the Vim
-    plugins specified in `vimrc.bundles`.
+    This will also clone [Prezto][prz] and [Dein.vim][dv] and change your shell
+    to [`zsh`][zsh]. The Vim plugins specified in `vimrc.bundles` will be
+    installed the next time you run Vim.
 
- 5. Set your shell to [`zsh`][zsh]:
+ 5. On macOS, edit `/etc/paths` so that `/usr/local/bin` is at the top of the
+    file.
 
-        chsh -s /bin/zsh
-
- 6. Fix two files in `/etc` that will cause path problems:
-    * Move `/etc/zshenv` to `/etc/zshrc`.
-    * Edit `/etc/paths` so that `/usr/local/bin` is at the top of the file.
-
- 7. Launch a new terminal session.
+ 6. Launch a new terminal session.
 
 ## Maintenance
 
-To add dotfiles, use the `mkrc` utility included with `rcm`:
+Move the file into the appropriate package and run
 
-    mkrc ~/.somefile
+    $STOW_DIR/up.sh
 
-See the man page for this utility for more information.
+TODO: learn how the `--adopt` option works.
 
 ## Updating
 
-In `.zshenv`, `$DOTFILES_DIR` is set to the location of the clone. Whenever a
-new interactive shell is opened, `.zshrc` silently `cd`s to `$DOTFILES_DIR` and
-pulls from Git, and `rcup` is run to silently update Prezto and the installed
-Vim plugins. If, for any reason, you want to manually update without opening a
-new shell, simply run:
+In `.zshenv`, `$STOW_DIR` is set to the location of the clone. Whenever a
+new interactive shell is opened, `.zshrc` silently `cd`s to `$STOW_DIR` and
+pulls from Git, and `up.sh` is run to silently update Prezto and add any new
+files. If, for any reason, you want to manually update without opening a new
+shell, simply run:
 
-    rcup
+    $STOW_DIR/up.sh
 
 You may have to launch a new shell anyway, however, for any changes to `zsh`
 configuration files or any updates to Prezto to take effect.
@@ -66,6 +69,7 @@ configuration files or any updates to Prezto to take effect.
 ## Contents
 
   * Prezto
+  * Dein.vim
 
 See the contents of `vimrc.bundles` and `Brewfile` for other installed packages.
 
@@ -76,7 +80,8 @@ See [`LICENSE`][lic].
 [tb]:      https://github.com/thoughtbot/dotfiles
 [brew]:    http://brew.sh/
 [bundle]:  https://github.com/Homebrew/homebrew-brewdler
-[prz]:     https://github.com/sorin-ionescu/prezto
+[stow]:    https://www.gnu.org/software/stow/
+[prz]:     https://github.com/zsh-users/prezto
 [dv]:      https://github.com/Shougo/dein.vim
 [zsh]:     http://www.zsh.org/
 [lic]:     https://github.com/jbhannah/dotfiles/blob/master/LICENSE

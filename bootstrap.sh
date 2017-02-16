@@ -1,12 +1,12 @@
 #!/bin/sh
 
 platform=`uname -a`
-dotfiles=`dirname $0`
+export STOW_DIR=`dirname $0`
 
 echo "= Dotfiles Setup ="
 
 if echo $platform | grep -q Darwin; then
-  echo "== OS X Installation =="
+  echo "== macOS Installation =="
 
   if ! command brew >/dev/null 2>&1; then
     echo "=== Installing Homebrew ==="
@@ -20,13 +20,14 @@ if echo $platform | grep -q Darwin; then
   # TODO: move /usr/local/bin to the top of /etc/paths
 elif echo $platform | grep -q Ubuntu; then
   echo "== Ubuntu Installation =="
-  # TODO: curl rcm, extract, sudo make install
-  # TODO: install full vim-nox with Lua and other packages
-  echo "Not yet implemented!"
-  exit 1
+  sudo apt-get install build-essential zsh vim-nox luajit python3 python3-dev python3-pip silversearcher-ag stow exuberant-ctags
+  sudo -H pip3 install thefuck
 fi
 
-cd ~
-rcup -d $dotfiles -x bootstrap.sh -x Brewfile -x README.md -x LICENSE
+cd $HOME
+ls -A -1 $STOW_DIR/common | xargs rm -rf
+ls -A -1 $STOW_DIR/desktop | xargs rm -rf
+ls -A -1 $STOW_DIR/server | xargs rm -rf
+stow -t $HOME common
 chsh -s /bin/zsh
 cd $dotfiles

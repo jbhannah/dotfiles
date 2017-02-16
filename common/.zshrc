@@ -1,5 +1,5 @@
-[[ -n "${DOTFILES_DIR+x}" ]] && ( cd $DOTFILES_DIR; git stash --quiet; git pull --quiet --rebase; git stash pop --quiet ) &> /dev/null # Update dotfiles
-( rcup & ) &> /dev/null
+[[ $STOW_DIR ]] && ( cd $STOW_DIR; git stash --quiet; git pull --quiet --rebase; git stash pop --quiet ) &> /dev/null # Update dotfiles
+( $STOW_DIR/up.sh & ) &> /dev/null
 
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
 

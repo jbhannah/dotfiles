@@ -1,4 +1,4 @@
-[[ -h "$HOME/.zshenv" ]] && export STOW_DIR=$(dirname $(readlink $HOME/.zshenv)) # Set dotfiles directory
+[[ -f "$HOME/.stowdir" ]] && export STOW_DIR=$(cat $HOME/.stowdir) # Set dotfiles directory
 
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" # Source Prezto
 

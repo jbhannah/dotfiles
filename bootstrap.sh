@@ -1,7 +1,9 @@
 #!/bin/sh
 
 platform=`uname -a`
-export STOW_DIR=`dirname $0`
+dotfiles="`dirname \"$0\"`"
+export STOW_DIR="`( cd \"$dotfiles\" && pwd )`"
+echo $STOW_DIR > $HOME/.stowdir
 
 echo "= Dotfiles Setup ="
 
@@ -28,6 +30,6 @@ cd $HOME
 ls -A -1 $STOW_DIR/common | xargs rm -rf
 ls -A -1 $STOW_DIR/desktop | xargs rm -rf
 ls -A -1 $STOW_DIR/server | xargs rm -rf
-stow -t $HOME common
+$STOW_DIR/up.sh
 chsh -s /bin/zsh
 cd $dotfiles

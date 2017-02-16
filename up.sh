@@ -27,7 +27,7 @@ fi
 
 if [[ $STOW_DIR ]]; then
   echo "Stowing common dotfiles...\c"
-  stow -t $HOME -R common
+  stow --no-folding -t $HOME -R common
   echo "done!"
 fi
 

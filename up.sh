@@ -32,7 +32,7 @@ if [[ $STOW_DIR ]]; then
 fi
 
 echo "Pruning broken dotfile links...\c"
-for dotted in .*; do
+for dotted in $HOME/.*; do
   find -L $dotted -type l | xargs rm
 done
 echo "done!"

@@ -26,6 +26,7 @@ tested on macOS Sierra and Ubuntu 16.04.
     * Installs [Homebrew][brew] and [Brew Bundle][bundle] on macOS
     * Installs dependencies with your platform's package manager
     * Clones [Prezto][prezto] and [dein.vim][dein]
+    * Installs common dotfiles with [GNU Stow][stow]
     * Changes your shell to [`zsh`][zsh]
 
     The Vim plugins listed in `vimrc.bundles` will be installed the next time

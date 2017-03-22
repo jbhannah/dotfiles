@@ -47,11 +47,11 @@ TODO: learn how the `--adopt` option works.
 
 ## Updating
 
-In `.zshenv`, `$STOW_DIR` is set to the location of the clone. Whenever a
-new interactive shell is opened, `.zshrc` silently `cd`s to `$STOW_DIR` and
-pulls from Git, and `up.sh` is run to silently update Prezto and add any new
-files. If, for any reason, you want to manually update without opening a new
-shell, simply run:
+In `.zshenv`, `$STOW_DIR` is set to the location of the clone. Whenever a new
+interactive shell is opened, `.zshrc` silently `cd`s to `$STOW_DIR` and pulls
+from Git, and `up.sh` is run to silently update Prezto and add any new files.
+If, for any reason, you want to manually update without opening a new shell,
+simply run:
 
     $STOW_DIR/up.sh
 

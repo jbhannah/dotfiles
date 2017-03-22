@@ -11,3 +11,5 @@ export EDITOR=$VISUAL
 
 # Timezone
 export TZ=US/Arizona
+
+[[ -f "${ZDOTDIR:-$HOME}/.zprofile.local" ]] && source "${ZDOTDIR:-$HOME}/.zprofile.local"

@@ -13,4 +13,4 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
-set linespace=4
+set linespace=1

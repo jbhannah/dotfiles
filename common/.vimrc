@@ -6,7 +6,7 @@ endif
 set autowrite
 set nowrap
 set textwidth=80
-set colorcolumn=80
+set colorcolumn=+1
 
 " Backup and temp files
 set backupdir=~/.vim/_backup//

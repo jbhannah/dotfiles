@@ -12,6 +12,7 @@ Coursely
 Coursely's
 Ctags
 Ctrl
+CtrlP
 DLite
 Django
 Dockerfile
@@ -30,6 +31,7 @@ Javascripts
 Leet
 LuaJIT
 MacVim
+NERDTree
 Neo4j
 NeoBundle
 NeoComplete
@@ -72,9 +74,11 @@ containered
 coursely
 cron
 def
+dein
 docblock
 doctype
 dotfiles
+filetypes
 fmt
 gemsets
 github

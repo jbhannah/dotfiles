@@ -39,13 +39,7 @@ tested on macOS Sierra and Ubuntu 16.04.
 
 ## Maintenance
 
-Move the file into the appropriate package and run
-
-    $STOW_DIR/up.sh
-
-TODO: learn how the `--adopt` option works.
-
-## Updating
+### Updating
 
 In `.zshenv`, `$STOW_DIR` is set to the location of the clone. Whenever a new
 interactive shell is opened, `.zshrc` silently `cd`s to `$STOW_DIR` and pulls
@@ -57,6 +51,16 @@ simply run:
 
 You may have to launch a new shell anyway, however, for any changes to `zsh`
 configuration files or any updates to Prezto to take effect.
+
+### Adding files
+
+ 1. Create an empty copy of a file to adopt in the appropriate package:
+
+        touch $STOW_DIR/common/.new_file
+
+ 2. Adopt the file into the package:
+
+        stow --no-folding -t $HOME --adopt -R common
 
 ## Contents
 

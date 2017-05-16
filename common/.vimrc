@@ -53,7 +53,7 @@ map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
 " CtrlP
-let g:ctrlp_extensions = ['tag', 'quickfix', 'undo']
+let g:ctrlp_extensions = ['tag', 'branches', 'quickfix', 'undo']
 
 " Use The Silver Searcher for Ctrl+P and searching
 " http://robots.thoughtbot.com/faster-grepping-in-vim

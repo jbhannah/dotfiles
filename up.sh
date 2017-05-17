@@ -12,16 +12,16 @@ else
   echo "done!"
 fi
 
-if [ -d $HOME/.config/base16-shell ]; then
-  echo "Removing Base16 Shell...\c"
-  rm -rf $HOME/.config/base16-shell
-  echo "done!"
-fi
-
 if [ ! -d $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ]; then
   echo "Installing Dein.vim...\c"
   [ -d $HOME/.vim/bundle ] && rm -rf $HOME/.vim/bundle
   ( git clone https://github.com/Shougo/dein.vim $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ) &> /dev/null
+  echo "done!"
+fi
+
+if [ ! -d $HOME/.emacs.d ]; then
+  echo "Installing Spacemacs...\c"
+  ( git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d ) &> /dev/null
   echo "done!"
 fi
 

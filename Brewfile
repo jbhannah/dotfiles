@@ -7,3 +7,6 @@ brew 'thefuck'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 cask 'font-hack'
+
+tap 'd12frosted/emacs-plus'
+brew 'emacs-plus'

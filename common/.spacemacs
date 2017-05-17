@@ -329,6 +329,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq
    calendar-week-start-day 1
+   git-commit-fill-column 72
+   git-commit-summary-max-length 50
    org-directory "~/Dropbox/org"
    org-agenda-files '("~/Dropbox/org/")
    org-agenda-use-time-grid nil

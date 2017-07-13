@@ -20,7 +20,7 @@ autocmd InsertLeave * :setlocal hlsearch
 
 " Colors
 set background=dark
-colorscheme solarized
+colorscheme solarized8_dark
 
 " Line numbers
 set number

@@ -1,5 +1,6 @@
-alias l="ls -alh"
 alias crap='$(thefuck $(fc -ln -1))'
+alias git=hub
+alias l="ls -alh"
 
 # Docker
 alias dps="docker ps -a"

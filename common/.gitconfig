@@ -46,3 +46,5 @@
 	diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
 [include]
 	path = .gitconfig.local
+[hub]
+	protocol = https

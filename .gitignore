@@ -1,3 +1,5 @@
 common/.vim/spell/en.utf-8.spl
 common/.vim/spell/en.utf-8.sug
+desktop/.atom/.apm
+desktop/.atom/blob-store
 *.gpg

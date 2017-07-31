@@ -6,6 +6,7 @@
   autosave:
     enabled: true
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
       "welcome"
       "metrics"
@@ -14,6 +15,7 @@
       "highlight-line"
     ]
     projectHome: "~/Code/src/github.com/jbhannah"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
@@ -32,10 +34,10 @@
     pullBeforePush: "pull --rebase"
     splitPane: "Down"
   "go-plus":
+    panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
-  linter:
-    gutterPosition: "Left"
+  linter: {}
   "linter-eslint":
     useGlobalEslint: true
   "linter-ruby": {}

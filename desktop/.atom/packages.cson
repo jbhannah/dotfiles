@@ -48,8 +48,7 @@ packages: [
   "script"
   "set-syntax"
   "sort-lines"
-  "vim-mode"
+  "vim-mode-plus"
+  "vim-mode-plus-keymaps-for-surround"
   "vim-mode-transpose"
-  "vim-mode-visual-block"
-  "vim-surround"
 ]

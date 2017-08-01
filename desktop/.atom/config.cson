@@ -3,6 +3,12 @@
     lint: true
   "autocomplete-plus":
     enableBuiltinProvider: false
+    suppressActivationForEditorClasses: [
+      "vim-mode-plus.normal-mode"
+      "vim-mode-plus.visual-mode"
+      "vim-mode-plus.operator-pending-mode"
+      "vim-mode-plus.insert-mode.replace"
+    ]
   "autocomplete-ruby":
     suggestionPriority: true
   autosave:
@@ -44,6 +50,8 @@
     useGlobalEslint: true
   "linter-ruby": {}
   "linter-slim": {}
+  "linter-ui-default":
+    panelHeight: 69
   minimap:
     displayPluginsControls: false
     plugins:
@@ -63,6 +71,16 @@
     usePreviewTabs: true
   "tree-view": {}
   "vim-mode": {}
+  "vim-mode-plus":
+    charactersToAddSpaceOnSurround: [
+      "("
+      "{"
+      "["
+      "<"
+    ]
+    clearMultipleCursorsOnEscapeInsertMode: true
+    incrementalSearch: true
+    keymapPToPutWithAutoIndent: true
   "vim-surround":
     surroundCommand: "S"
   welcome:

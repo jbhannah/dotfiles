@@ -19,6 +19,7 @@
       "welcome"
       "metrics"
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "highlight-line"
     ]

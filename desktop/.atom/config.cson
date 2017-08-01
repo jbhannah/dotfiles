@@ -3,6 +3,8 @@
     lint: true
   "autocomplete-plus":
     enableBuiltinProvider: false
+  "autocomplete-ruby":
+    suggestionPriority: true
   autosave:
     enabled: true
   core:

@@ -46,6 +46,8 @@
     panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
+  kite:
+    showKiteTourOnStatup: false
   linter: {}
   "linter-eslint":
     useGlobalEslint: true

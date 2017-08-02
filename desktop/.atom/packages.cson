@@ -5,6 +5,7 @@ packages: [
   "autocomplete-nunjucks"
   "autocomplete-python"
   "autocomplete-ruby"
+  "blame"
   "build"
   "build-gulp"
   "build-npm-apm"

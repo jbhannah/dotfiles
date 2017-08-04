@@ -49,8 +49,7 @@
   kite:
     showKiteTourOnStatup: false
   linter: {}
-  "linter-eslint":
-    useGlobalEslint: true
+  "linter-eslint": {}
   "linter-ruby": {}
   "linter-slim": {}
   "linter-ui-default":

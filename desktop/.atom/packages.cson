@@ -19,6 +19,7 @@ packages: [
   "go-signature-statusbar"
   "highlight-line"
   "highlight-selected"
+  "Hydrogen"
   "hyperclick"
   "intentions"
   "kite"

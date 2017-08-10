@@ -1,4 +1,5 @@
 packages: [
+  "atom-build-yarn"
   "atom-ternjs"
   "atom-typescript"
   "autocomplete-modules"

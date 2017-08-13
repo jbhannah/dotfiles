@@ -18,6 +18,7 @@
     disabledPackages: [
       "welcome"
       "metrics"
+      "linter-haml"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -53,7 +54,7 @@
   "linter-ruby": {}
   "linter-slim": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 114
   minimap:
     displayPluginsControls: false
     plugins:

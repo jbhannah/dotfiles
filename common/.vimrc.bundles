@@ -19,6 +19,7 @@ call dein#add('gko/vim-coloresque', { 'on_ft' : [ 'html', 'css', 'scss', 'sass',
 call dein#add('godlygeek/tabular')
 call dein#add('guns/xterm-color-table.vim')
 call dein#add('honza/vim-snippets')
+call dein#add('idanarye/vim-merginal', { 'depends' : 'tpope/vim-fugitive' })
 call dein#add('imkmf/ctrlp-branches', { 'depends' : 'ctrlpvim/ctrlp.vim' })
 call dein#add('lifepillar/vim-solarized8')
 call dein#add('majutsushi/tagbar')

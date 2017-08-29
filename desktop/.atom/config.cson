@@ -86,6 +86,8 @@
     keymapPToPutWithAutoIndent: true
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".html.php.text":
   editor:
     tabLength: 4

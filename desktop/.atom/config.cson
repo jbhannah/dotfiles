@@ -20,7 +20,6 @@
     disabledPackages: [
       "welcome"
       "metrics"
-      "linter-haml"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [

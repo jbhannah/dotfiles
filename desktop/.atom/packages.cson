@@ -7,6 +7,7 @@ packages: [
   "autocomplete-python"
   "autocomplete-ruby"
   "blame"
+  "bracket-padder"
   "build"
   "build-gulp"
   "build-npm-apm"

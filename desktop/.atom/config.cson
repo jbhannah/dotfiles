@@ -74,7 +74,6 @@
     enableVcsColoring: true
     usePreviewTabs: true
   "tree-view": {}
-  "vim-mode": {}
   "vim-mode-plus":
     charactersToAddSpaceOnSurround: [
       "("
@@ -85,8 +84,6 @@
     clearMultipleCursorsOnEscapeInsertMode: true
     incrementalSearch: true
     keymapPToPutWithAutoIndent: true
-  "vim-surround":
-    surroundCommand: "S"
   welcome:
     showOnStartup: false
 ".html.php.text":

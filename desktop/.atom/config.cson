@@ -52,10 +52,11 @@
     showKiteTourOnStatup: false
   linter: {}
   "linter-eslint": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-ruby": {}
   "linter-slim": {}
-  "linter-ui-default":
-    panelHeight: 114
+  "linter-ui-default": {}
   minimap:
     displayPluginsControls: false
     plugins:
@@ -68,7 +69,9 @@
     forceOverwrite: true
   pigments: {}
   react: {}
-  "ruby-test": {}
+  "ruby-test":
+    specFramework: "rspec"
+    testFramework: "minitest"
   "status-bar": {}
   tabs:
     enableVcsColoring: true
@@ -88,6 +91,9 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".haml.text":
+  editor:
+    autoIndentOnPaste: true
 ".html.php.text":
   editor:
     tabLength: 4

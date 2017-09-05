@@ -36,6 +36,8 @@ packages: [
   "linter-erb"
   "linter-eslint"
   "linter-haml"
+  "linter-reek"
+  "linter-rubocop"
   "linter-ruby"
   "linter-slim"
   "linter-ui-default"

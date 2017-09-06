@@ -56,8 +56,7 @@
     disableWhenNoConfigFile: true
   "linter-ruby": {}
   "linter-slim": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     displayPluginsControls: false
     plugins:

@@ -1,5 +1,6 @@
 packages: [
   "atom-build-yarn"
+  "atom-elixir"
   "atom-ternjs"
   "atom-typescript"
   "autocomplete-modules"
@@ -26,6 +27,7 @@ packages: [
   "kite"
   "language-babel"
   "language-docker"
+  "language-elixir"
   "language-emacs-lisp"
   "language-gherkin"
   "language-graphql"
@@ -37,6 +39,7 @@ packages: [
   "language-vue"
   "linter"
   "linter-coffeelint"
+  "linter-elixirc"
   "linter-erb"
   "linter-eslint"
   "linter-haml"

@@ -46,8 +46,16 @@
     userId: "688efa6f-1275-312c-2dfc-b7cfa19831e1"
   "fuzzy-finder": {}
   "git-plus":
+    experimental:
+      useSplitDiff: true
     pullBeforePush: "pull --rebase"
+    remoteInteractions:
+      pullRebase: true
     splitPane: "Down"
+    tags:
+      signTags: true
+  github:
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "go-plus":
     panel: {}
     panelDisplayMode: "closed"
@@ -75,6 +83,9 @@
   "ruby-test":
     specFramework: "rspec"
     testFramework: "minitest"
+  "split-diff":
+    ignoreWhitespace: true
+    syncHorizontalScroll: true
   "status-bar": {}
   tabs:
     enableVcsColoring: true

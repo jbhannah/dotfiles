@@ -114,6 +114,3 @@
 ".html.php.text":
   editor:
     tabLength: 4
-".sql.text":
-  editor:
-    tabLength: 4

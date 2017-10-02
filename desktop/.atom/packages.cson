@@ -25,7 +25,6 @@ packages: [
   "highlight-line"
   "highlight-selected"
   "intentions"
-  "kite"
   "language-babel"
   "language-docker"
   "language-elixir"

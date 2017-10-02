@@ -15,6 +15,9 @@
       "vim-mode-plus.operator-pending-mode"
       "vim-mode-plus.insert-mode.replace"
     ]
+  "autocomplete-python":
+    useKite: false
+    useSnippets: "all"
   "autocomplete-ruby":
     suggestionPriority: true
   autosave:

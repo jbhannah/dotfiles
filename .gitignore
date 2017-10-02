@@ -1,6 +1,12 @@
+*.gpg
 common/.vim/spell/en.utf-8.spl
 common/.vim/spell/en.utf-8.sug
 desktop/.atom/.apm
+desktop/.atom/.node-gyp
+desktop/.atom/.npm
 desktop/.atom/blob-store
+desktop/.atom/compile-cache
+desktop/.atom/dev
+desktop/.atom/packages
 desktop/.atom/split-diff
-*.gpg
+desktop/.atom/storage

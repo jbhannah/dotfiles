@@ -108,9 +108,9 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-".text.haml":
+".haml.text":
   editor:
     autoIndentOnPaste: true
-".text.html.php":
+".html.php.text":
   editor:
     tabLength: 4

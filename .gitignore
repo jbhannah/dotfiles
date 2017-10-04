@@ -8,5 +8,6 @@ desktop/.atom/blob-store
 desktop/.atom/compile-cache
 desktop/.atom/dev
 desktop/.atom/packages
+desktop/.atom/recovery
 desktop/.atom/split-diff
 desktop/.atom/storage

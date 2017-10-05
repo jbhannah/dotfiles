@@ -63,9 +63,6 @@
     panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
-  kite:
-    showKiteTourOnStatup: false
-  linter: {}
   "linter-eslint": {}
   "linter-rubocop":
     disableWhenNoConfigFile: true
@@ -82,7 +79,6 @@
     createOnChange: true
     forceOverwrite: true
   pigments: {}
-  react: {}
   "ruby-test":
     specFramework: "rspec"
     testFramework: "minitest"

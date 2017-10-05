@@ -63,5 +63,4 @@ packages: [
   "split-diff"
   "vim-mode-plus"
   "vim-mode-plus-keymaps-for-surround"
-  "vim-mode-transpose"
 ]

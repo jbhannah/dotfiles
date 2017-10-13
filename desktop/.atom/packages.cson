@@ -25,7 +25,6 @@ packages: [
   "ide-flowtype"
   "ide-java"
   "ide-python"
-  "ide-typescript"
   "intentions"
   "language-babel"
   "language-docker"

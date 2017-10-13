@@ -34,10 +34,6 @@
     ]
     projectHome: "~/Code/src/github.com/jbhannah"
     telemetryConsent: "limited"
-    themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
-    ]
   editor:
     backUpBeforeSaving: true
     fontFamily: "Hack"

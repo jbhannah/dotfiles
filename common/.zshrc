@@ -8,6 +8,6 @@ PROMPT=%B%F{magenta}%m%f\ $PROMPT
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" # Aliases
 
 # added by Travis gem
-[ -f /Users/jbhannah/.travis/travis.sh ] && source /Users/jbhannah/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

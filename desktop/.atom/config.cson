@@ -59,8 +59,7 @@
     panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
-  "ide-rust":
-    rlsToolchain: "stable"
+  "ide-rust": {}
   "linter-eslint": {}
   "linter-rubocop":
     disableWhenNoConfigFile: true

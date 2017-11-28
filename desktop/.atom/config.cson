@@ -59,6 +59,8 @@
     panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
+  "ide-rust":
+    rlsToolchain: "stable"
   "linter-eslint": {}
   "linter-rubocop":
     disableWhenNoConfigFile: true
@@ -96,7 +98,6 @@
     clearMultipleCursorsOnEscapeInsertMode: true
     incrementalSearch: true
     keymapPToPutWithAutoIndent: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   welcome:
     showOnStartup: false
   whitespace:

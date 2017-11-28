@@ -11,3 +11,5 @@ fi
 [[ -d "$HOME/bin" ]] && export PATH=$HOME/bin:$PATH
 [[ -d "$HOME/Code" ]] && export GOPATH=$HOME/Code && export PATH=$GOPATH/bin:$PATH
 command -v yarn > /dev/null 2>&1 && export PATH=`yarn global bin`:$PATH
+
+[[ -d "$HOME/.cargo" ]] && source "$HOME/.cargo/env"

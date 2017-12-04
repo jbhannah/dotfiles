@@ -2,6 +2,7 @@ packages: [
   "atom-build-yarn"
   "atom-elixir"
   "atom-ide-ui"
+  "atom-maven"
   "autocomplete-modules"
   "autocomplete-nunjucks"
   "autocomplete-ruby"

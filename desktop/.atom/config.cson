@@ -108,3 +108,6 @@
 ".html.php.text":
   editor:
     tabLength: 4
+".java.source":
+  editor:
+    tabLength: 4

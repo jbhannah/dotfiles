@@ -23,6 +23,8 @@ packages: [
   "go-signature-statusbar"
   "highlight-line"
   "highlight-selected"
+  "Hydrogen"
+  "hydrogen-launcher"
   "ide-java"
   "ide-python"
   "ide-rust"

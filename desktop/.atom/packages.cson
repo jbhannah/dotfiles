@@ -18,6 +18,7 @@ packages: [
   "ex-mode"
   "file-icons"
   "git-plus"
+  "gitignore-snippets"
   "go-debug"
   "go-plus"
   "go-signature-statusbar"

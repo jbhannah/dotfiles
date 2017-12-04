@@ -41,6 +41,7 @@
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "688efa6f-1275-312c-2dfc-b7cfa19831e1"
   "fuzzy-finder": {}

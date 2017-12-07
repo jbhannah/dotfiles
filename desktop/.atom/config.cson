@@ -7,7 +7,10 @@
     lint: true
     snippetsFirst: true
     useSnippets: true
+  "autocomplete-modules":
+    webpack: true
   "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
     enableBuiltinProvider: false
     suppressActivationForEditorClasses: [
       "vim-mode-plus.normal-mode"
@@ -60,7 +63,8 @@
     panel: {}
     panelDisplayMode: "closed"
   "highlight-line": {}
-  "ide-rust": {}
+  "ide-rust":
+    rlsToolchain: "stable"
   "linter-eslint": {}
   "linter-rubocop":
     disableWhenNoConfigFile: true
@@ -77,6 +81,9 @@
     createOnChange: true
     forceOverwrite: true
   pigments: {}
+  racer:
+    racerBinPath: "~/.cargo/bin/racer"
+    rustSrcPath: "~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
   "ruby-test":
     specFramework: "rspec"
     testFramework: "minitest"

@@ -109,6 +109,9 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".bibtex.text":
+  editor:
+    softWrapAtPreferredLineLength: false
 ".haml.text":
   editor:
     autoIndentOnPaste: true
@@ -118,3 +121,6 @@
 ".java.source":
   editor:
     tabLength: 4
+".latex.tex.text":
+  editor:
+    softWrapAtPreferredLineLength: true

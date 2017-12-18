@@ -21,6 +21,7 @@ packages: [
   "docker"
   "ex-mode"
   "file-icons"
+  "file-types"
   "git-plus"
   "gitignore-snippets"
   "go-debug"

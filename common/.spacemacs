@@ -334,7 +334,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (add-to-list 'auto-mode-alist '("Dockerfile.*\\'" . dockerfile-mode))
   (setq-default
-   powerline-default-separator 'utf-8
    calendar-week-start-day 1
    css-indent-offset 2
    evil-want-Y-yank-to-eol nil
@@ -342,6 +341,7 @@ you should place your code here."
    git-commit-summary-max-length 50
    js-indent-level 2
    org-agenda-use-time-grid nil
+   powerline-default-separator 'utf-8
    )
   (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
   )

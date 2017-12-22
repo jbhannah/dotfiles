@@ -50,6 +50,7 @@ values."
           org-enable-github-support t
           org-projectile-file "~/Dropbox/org/projects.org")
      osx
+     python
      (ruby :variables ruby-enable-enh-ruby-mode t)
      ruby-on-rails
      rust

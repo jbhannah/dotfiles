@@ -1,9 +1,14 @@
 brew 'stow'
 brew 'ag'
 brew 'ctags'
-brew 'macvim', args: ['with-luajit', 'override-system-vim']
+brew 'python3'
 brew 'thefuck'
 brew 'hub'
+brew 'rust'
+brew 'go'
+brew 'mono'
+brew 'node'
+brew 'macvim', args: ['with-luajit', 'with-python3', 'override-system-vim']
 
 tap 'caskroom/cask'
 tap 'caskroom/fonts'

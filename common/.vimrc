@@ -22,15 +22,12 @@ autocmd InsertLeave * :setlocal hlsearch
 colorscheme one
 set background=dark
 
-" Line numbers
+" Gutter
 set number
-set numberwidth=5
+set signcolumn=yes
 
 " Highlight current line
 set cursorline
-
-" Git gutter
-set signcolumn=yes
 
 " Indentation
 set expandtab

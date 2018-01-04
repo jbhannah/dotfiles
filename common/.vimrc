@@ -30,7 +30,7 @@ set numberwidth=5
 set cursorline
 
 " Git gutter
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 " Indentation
 set expandtab

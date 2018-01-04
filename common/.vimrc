@@ -19,8 +19,8 @@ autocmd InsertEnter * :setlocal nohlsearch
 autocmd InsertLeave * :setlocal hlsearch
 
 " Colors
+colorscheme one
 set background=dark
-colorscheme solarized8_dark
 
 " Line numbers
 set number
@@ -65,7 +65,7 @@ endif
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
-let g:airline_theme = 'base16_solarized'
+let g:airline_theme = 'one'
 
 " Fugitive (from Janus)
 nmap <Leader>gb :Gblame<CR>

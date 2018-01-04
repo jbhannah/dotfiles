@@ -120,3 +120,6 @@ macOS
 Ubuntu
 usr
 etc
+javacomplete2
+deoplete
+nvim

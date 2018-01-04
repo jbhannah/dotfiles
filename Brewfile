@@ -8,6 +8,7 @@ brew 'rust'
 brew 'go'
 brew 'mono'
 brew 'node'
+brew 'yarn'
 brew 'macvim', args: ['with-luajit', 'with-python3', 'override-system-vim']
 
 tap 'caskroom/cask'

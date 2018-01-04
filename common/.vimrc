@@ -104,10 +104,8 @@ let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:syntastic_python_pylint_exe = 'python -m pylint'
 
-" YouCompleteMe
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
+" deoplete.nvim
+let g:deoplete#enable_at_startup = 1
 
 " NERDTree
 nnoremap <Leader>nt :NERDTreeToggle<cr>

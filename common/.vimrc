@@ -96,6 +96,9 @@ let g:rustfmt_autosave = 1
 " vim-javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
+" Vue
+autocmd FileType vue syntax sync fromstart
+
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0

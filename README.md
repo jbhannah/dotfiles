@@ -15,11 +15,15 @@ tested on macOS Sierra and Ubuntu 16.04.
 
  1. Clone dotfiles:
 
-        git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
+    ```bash
+    $ git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
+    ```
 
  2. Bootstrap:
 
-        ./bootstrap.sh
+    ```bash
+    $ ./bootstrap.sh
+    ```
 
     This:
 
@@ -47,7 +51,9 @@ from Git, and `up.sh` is run to silently update Prezto and add any new files.
 If, for any reason, you want to manually update without opening a new shell,
 simply run:
 
-    $STOW_DIR/up.sh
+```bash
+$ $STOW_DIR/up.sh
+```
 
 You may have to launch a new shell anyway, however, for any changes to `zsh`
 configuration files or any updates to Prezto to take effect.
@@ -56,11 +62,15 @@ configuration files or any updates to Prezto to take effect.
 
  1. Create an empty copy of a file to adopt in the appropriate package:
 
-        touch $STOW_DIR/common/.new_file
+    ```bash
+    $ touch $STOW_DIR/common/.new_file
+    ```
 
  2. Adopt the file into the package:
 
-        stow --no-folding -t $HOME --adopt -R common
+    ```bash
+    $ stow --no-folding -t $HOME --adopt -R common
+    ```
 
 ## Contents
 

@@ -8,6 +8,10 @@ set nowrap
 set textwidth=80
 set colorcolumn=+1
 
+" Comment formatting
+set formatoptions+=j
+set formatoptions-=o
+
 " Backup and temp files
 set backupdir=~/.vim/_backup//
 set directory=~/.vim/_temp//

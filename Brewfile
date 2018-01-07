@@ -4,12 +4,17 @@ brew 'ctags'
 brew 'python3'
 brew 'thefuck'
 brew 'hub'
-brew 'rust'
+brew 'rustup'
 brew 'go'
 brew 'mono'
 brew 'node'
 brew 'yarn'
-brew 'macvim', args: ['with-luajit', 'with-python3', 'override-system-vim']
+
+if system 'uname -a | grep Darwin'
+  brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']
+else
+  brew 'vim', args: ['with-luajit', 'with-python3', 'with-override-system-vi']
+end
 
 tap 'caskroom/cask'
 tap 'caskroom/fonts'

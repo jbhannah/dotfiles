@@ -6,11 +6,12 @@ endif
 set autowrite
 set nowrap
 set textwidth=80
-set colorcolumn=+1
+set colorcolumn=+0
 
-" Comment formatting
+" Text formatting
 set formatoptions+=j
 set formatoptions-=o
+set formatoptions-=t
 
 " Backup and temp files
 set backupdir=~/.vim/_backup//

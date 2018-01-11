@@ -40,6 +40,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Custom filetypes
+autocmd BufRead,BufNewFile Brewfile setfiletype ruby
 autocmd BufRead,BufNewFile Envfile setfiletype ruby
 
 " Spell checking

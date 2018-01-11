@@ -9,7 +9,10 @@ brew 'go'
 brew 'mono'
 brew 'node'
 brew 'yarn'
-brew 'macvim', args: ['with-luajit', 'with-python3', 'override-system-vim']
+brew 'ruby'
+brew 'fasd'
+brew 'neovim'
+brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']
 
 tap 'caskroom/cask'
 tap 'caskroom/fonts'

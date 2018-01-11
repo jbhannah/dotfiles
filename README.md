@@ -7,7 +7,8 @@ tested on macOS Sierra and Ubuntu 16.04.
 
 ### Prerequisites
 
-  * Xcode and command line tools (macOS only)
+  * Xcode installed from the App Store and with required components installed
+      (required for MacVim to compile from Homebrew)
   * Git
   * An account that can run as `sudo`
 

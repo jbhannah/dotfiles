@@ -32,4 +32,5 @@ ls -A -1 $STOW_DIR/desktop | xargs rm -rf
 ls -A -1 $STOW_DIR/server | xargs rm -rf
 $STOW_DIR/up.sh
 chsh -s /bin/zsh
+chmod 700 $HOME/.gnupg
 cd $dotfiles

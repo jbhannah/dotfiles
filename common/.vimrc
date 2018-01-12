@@ -106,13 +106,15 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 " Vue
 autocmd FileType vue syntax sync fromstart
 
+" vim-javascript
+let g:javascript_plugin_jsdoc = 1
+
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_filetype_map = { 'html.handlebars': 'handlebars'  }
 let g:syntastic_html_tidy_empty_tags = ['i']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['mri', 'reek', 'rubocop']

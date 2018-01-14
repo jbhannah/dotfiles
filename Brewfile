@@ -14,6 +14,13 @@ brew 'fasd'
 brew 'neovim'
 brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']
 
+cask 'alfred'
+cask 'docker'
+cask 'dropbox'
+cask 'gpg-suite'
+cask 'iterm2'
+cask 'keybase'
+
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 cask 'font-hack'

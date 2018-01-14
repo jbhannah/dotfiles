@@ -160,4 +160,4 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # Integrate tmux with iTerm2
 zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
-zstyle ':prezto:module:autosuggestions:color' found 'fg=10'
+zstyle ':prezto:module:autosuggestions:color' found 'fg=8'

@@ -5,7 +5,7 @@ brew 'python3'
 brew 'httpie'
 brew 'thefuck'
 brew 'hub'
-brew 'rust'
+brew 'rust', args: ['with-racer']
 brew 'go'
 brew 'mono'
 brew 'node'

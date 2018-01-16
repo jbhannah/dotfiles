@@ -124,6 +124,7 @@ let g:syntastic_python_pylint_exe = 'python -m pylint'
 
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#filetypes = ['jsx', 'javascript.jsx']
 let g:deoplete#sources#rust#racer_binary = '/usr/local/bin/racer'
 let g:deoplete#sources#rust#rust_source_path = '/usr/local/share/rust/rust_src'
 

@@ -4,6 +4,7 @@ brew 'ctags'
 brew 'python3'
 brew 'httpie'
 brew 'thefuck'
+brew 'jrnl'
 brew 'hub'
 brew 'rust', args: ['with-racer']
 brew 'go'

@@ -7,8 +7,8 @@
   "default_minute": 0,
   "highlight": true,
   "journals": {
-    "default": "/keybase/private/jbhannah/journal.txt",
-    "rmn": "/keybase/private/jbhannah/rmn.txt"
+    "default": "/keybase/private/jbhannah/jrnl/journal.txt",
+    "rmn": "/keybase/private/jbhannah/jrnl/rmn.txt"
   },
   "tagsymbols": "@"
 }

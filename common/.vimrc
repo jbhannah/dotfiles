@@ -24,6 +24,10 @@ autocmd InsertEnter * :setlocal nohlsearch
 autocmd InsertLeave * :setlocal hlsearch
 
 " Colors
+if has("termguicolors")
+  set termguicolors
+endif
+
 colorscheme one
 set background=dark
 

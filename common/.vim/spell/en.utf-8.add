@@ -1,3 +1,4 @@
+ACLs
 API
 AWS
 ActiveModel
@@ -17,7 +18,9 @@ DLite
 Django
 Dockerfile
 Dotfiles
+ECR
 FactoryGirl
+GCPLAT
 GitHub
 HTML5
 HTML5's
@@ -57,12 +60,14 @@ ShipStation
 SuperTab
 Syntastic
 TZInfo
+TeamCity
 Thoughtbot
 Thoughtbot's
 Ubuntu
 Uglifier
 VimL
 WEBrick
+WONTFIX
 Webpacker
 Xcode
 YouCompleteMe

@@ -14,8 +14,8 @@ alias j="jrnl"
 alias jt="j -on today"
 alias jy="j -on yesterday"
 alias jx="j --export text"
-alias jxy="jx -on yesterday -o $(date -v -1d '+%Y-%m-%d').txt"
-alias jxf="jx -on friday -o $(date -v -3d '+%Y-%m-%d').txt"
+alias jxy="date -v -1d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
+alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
 
 # Python
 alias pylint="python3 -m pylint"

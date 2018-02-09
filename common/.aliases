@@ -9,6 +9,11 @@ alias dcr="docker-compose run --rm"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 
+drpwd() {
+    ARGS=$@
+    docker run --rm -it -v `pwd`:`pwd` -w `pwd` $ARGS
+}
+
 # jrnl
 alias j="jrnl"
 alias jt="j -on today"

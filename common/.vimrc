@@ -132,10 +132,6 @@ let g:deoplete#sources#ternjs#filetypes = ['jsx', 'javascript.jsx']
 let g:deoplete#sources#rust#racer_binary = '/usr/local/bin/racer'
 let g:deoplete#sources#rust#rust_source_path = '/usr/local/share/rust/rust_src'
 
-" NERDTree
-nnoremap <Leader>nt :NERDTreeToggle<cr>
-nnoremap <Leader>nf :NERDTreeFind<cr>
-
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
 nnoremap <Leader>cb :TagbarToggle<cr>

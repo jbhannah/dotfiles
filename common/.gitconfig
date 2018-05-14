@@ -48,3 +48,10 @@
 	path = .gitconfig.local
 [hub]
 	protocol = https
+[alias]
+	switch = !legit switch
+	sync = !legit sync
+	publish = !legit publish
+	unpublish = !legit unpublish
+	undo = !legit undo
+	branches = !legit branches

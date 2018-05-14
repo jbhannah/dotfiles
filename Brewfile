@@ -6,6 +6,7 @@ brew 'python3'
 brew 'httpie'
 brew 'thefuck'
 brew 'pipenv'
+brew 'legit'
 brew 'jrnl'
 brew 'hub'
 brew 'rust', args: ['with-racer']

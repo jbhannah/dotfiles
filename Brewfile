@@ -1,4 +1,5 @@
 brew 'git'
+brew 'gitup'
 brew 'stow'
 brew 'ag'
 brew 'ctags'

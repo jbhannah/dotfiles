@@ -44,8 +44,6 @@
 	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [interactive]
 	diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
-[include]
-	path = .gitconfig.local
 [hub]
 	protocol = https
 [alias]
@@ -55,3 +53,5 @@
 	unpublish = !legit unpublish
 	undo = !legit undo
 	branches = !legit branches
+[include]
+	path = .gitconfig.local

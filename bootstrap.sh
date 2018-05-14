@@ -10,12 +10,12 @@ echo "= Dotfiles Setup ="
 if echo $platform | grep -q Darwin; then
   echo "== macOS Installation =="
 
-  xcodeselect -s /Applications/Xcode.app
-
   if ! command -v brew >/dev/null 2>&1; then
     echo "=== Installing Homebrew ==="
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
+
+  xcodeselect -s /Applications/Xcode.app
 
   brew tap Homebrew/bundle
   brew bundle

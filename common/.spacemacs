@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     erlang
      auto-completion
      better-defaults
      c-c++
@@ -347,3 +348,6 @@ you should place your code here."
    )
   (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
   )
+
+;; Do not write anything past this comment. This is where Emacs will
+;; auto-generate custom variable definitions.

@@ -343,6 +343,7 @@ you should place your code here."
    git-commit-fill-column 72
    git-commit-summary-max-length 50
    js-indent-level 2
+   line-spacing 0.2
    org-agenda-use-time-grid nil
    powerline-default-separator 'utf-8
    )

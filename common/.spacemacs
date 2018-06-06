@@ -31,7 +31,6 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     erlang
      auto-completion
      better-defaults
      c-c++
@@ -39,6 +38,7 @@ values."
      docker
      elixir
      emacs-lisp
+     erlang
      git
      github
      go

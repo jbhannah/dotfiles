@@ -10,7 +10,7 @@ brew 'pipenv'
 brew 'legit'
 brew 'jrnl'
 brew 'hub'
-brew 'rust', args: ['with-racer']
+brew 'rustup'
 brew 'go'
 brew 'mono'
 brew 'node'

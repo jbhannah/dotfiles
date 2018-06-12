@@ -7,6 +7,7 @@ set autowrite
 set nowrap
 set textwidth=80
 set colorcolumn=+0
+set noshowmode
 
 " Text formatting
 set formatoptions+=j
@@ -133,6 +134,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:syntastic_python_pylint_exe = 'python -m pylint'
 
 " deoplete.nvim
+set completeopt-=preview
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#ternjs#filetypes = ['jsx', 'javascript.jsx']
 let g:deoplete#sources#rust#racer_binary = '/usr/local/bin/racer'

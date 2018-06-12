@@ -8,6 +8,7 @@ set nowrap
 set textwidth=80
 set colorcolumn=+0
 set noshowmode
+set hidden
 
 " Text formatting
 set formatoptions+=j
@@ -93,8 +94,6 @@ let g:rooter_use_lcd = 1
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_toml_frontmatter = 1
-let g:vim_markdown_json_frontmatter = 1
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -110,9 +109,6 @@ let g:rubycomplete_rails = 1
 
 " rust.vim
 let g:rustfmt_autosave = 1
-
-" vim-javacomplete2
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " Vue
 autocmd FileType vue syntax sync fromstart
@@ -137,16 +133,19 @@ let g:syntastic_python_pylint_exe = 'python -m pylint'
 set completeopt-=preview
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#ternjs#filetypes = ['jsx', 'javascript.jsx']
-let g:deoplete#sources#rust#racer_binary = '/usr/local/bin/racer'
-let g:deoplete#sources#rust#rust_source_path = '/usr/local/share/rust/rust_src'
+
+let g:LanguageClient_serverCommands = {
+    \ 'ruby': ['solargraph', 'socket'],
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls']
+    \ }
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 " Ctags integration
 nnoremap <Leader>ct :CtrlPTag<cr>
-nnoremap <Leader>cb :TagbarToggle<cr>
 
 " Transpose characters
 nnoremap <silent> <Plug>TransposeCharacters xp
-      \:call repeat#set("\<Plug>TransposeCharacters")<CR>
+    \ :call repeat#set("\<Plug>TransposeCharacters")<CR>
 nmap cp <Plug>TransposeCharacters
 
 " Because letting go of the shift key is for suckers

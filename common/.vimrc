@@ -81,6 +81,8 @@ nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gs :Gstatus<CR>
+" https://github.com/airblade/vim-gitgutter/issues/502#issuecomment-375887091
+autocmd BufWritePost * GitGutter
 
 " Rooter
 let g:rooter_silent_chdir = 1

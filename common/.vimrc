@@ -82,6 +82,10 @@ nmap <Leader>gl :Glog<CR>
 nmap <Leader>gp :Gpush<CR>
 nmap <Leader>gs :Gstatus<CR>
 
+" Rooter
+let g:rooter_silent_chdir = 1
+let g:rooter_use_lcd = 1
+
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1

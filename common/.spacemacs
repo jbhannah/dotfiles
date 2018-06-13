@@ -31,47 +31,49 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-snippets-in-popup t
+                      auto-completion-enable-sort-by-usage t)
      better-defaults
-     c-c++
+     colors
      csv
+     dash
      docker
      elixir
      emacs-lisp
      erlang
+     fasd
      git
      github
-     go
      helm
      html
      javascript
-     latex
      markdown
-     (org :variables
-          org-enable-github-support t
-          org-projectile-file "~/Dropbox/org/projects.org")
+     nginx
+     org
      osx
      python
-     (ruby :variables ruby-enable-enh-ruby-mode t)
-     ruby-on-rails
+     react
+     restclient
      rust
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
+     shell-scripts
      spell-checking
-     sql
      syntax-checking
+     typescript
+     vagrant
      version-control
+     vinegar
      yaml
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages
-   '(
-     vue-mode
-     )
+   dotspacemacs-additional-packages '()
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -107,7 +109,7 @@ values."
    ;; when the current branch is not `develop'. Note that checking for
    ;; new versions works via git commands, thus it calls GitHub services
    ;; whenever you start Emacs. (default nil)
-   dotspacemacs-check-for-update t
+   dotspacemacs-check-for-update nil
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
@@ -276,7 +278,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers '(:relative nil
+   dotspacemacs-line-numbers '(:relative t
                                :disabled-for-modes dired-mode
                                                    doc-view-mode
                                                    pdf-view-mode)
@@ -307,10 +309,10 @@ values."
    dotspacemacs-default-package-repository nil
    ;; Delete whitespace while saving buffer. Possible values are `all'
    ;; to aggressively delete empty line and long sequences of whitespace,
-   ;; `trailing' to delete only the whitespace at end of lines, `changed' to
+   ;; `trailing' to delete only the whitespace at end of lines, `changed'to
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
-   dotspacemacs-whitespace-cleanup 'trailing
+   dotspacemacs-whitespace-cleanup 'changed
    ))
 
 (defun dotspacemacs/user-init ()
@@ -321,9 +323,6 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
-  (setq-default
-   ispell-program-name "aspell"
-   )
   (setq custom-file "~/.emacs.d/private/custom.el")
   )
 
@@ -334,21 +333,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (add-to-list 'auto-mode-alist '("*.vue\\'" . vue-mode))
-  (add-to-list 'auto-mode-alist '("Dockerfile.*\\'" . dockerfile-mode))
   (setq-default
-   calendar-week-start-day 1
-   css-indent-offset 2
-   evil-want-Y-yank-to-eol nil
    git-commit-fill-column 72
    git-commit-summary-max-length 50
-   js-indent-level 2
    line-spacing 0.2
-   org-agenda-use-time-grid nil
    powerline-default-separator 'utf-8
    )
-  (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
   )
-
-;; Do not write anything past this comment. This is where Emacs will
-;; auto-generate custom variable definitions.

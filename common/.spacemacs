@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     ansible
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t
@@ -46,23 +47,36 @@ values."
      fasd
      git
      github
+     (go :variables
+         go-use-gometalinter t
+         gofmt-command "goimports")
      helm
      html
      javascript
      markdown
      nginx
-     org
+     (org :variables
+          org-enable-github-support t
+          org-projectile-file "TODOs.org")
      osx
-     python
+     prodigy
+     (python :variables
+             python-enable-yapf-format-on-save t)
      react
      restclient
+     (ruby :variables
+           ruby-enable-enh-ruby-mode t
+           ruby-version-manager 'rvm)
+     ruby-on-rails
      rust
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
      shell-scripts
      spell-checking
+     sql
      syntax-checking
+     themes-megapack
      typescript
      vagrant
      version-control

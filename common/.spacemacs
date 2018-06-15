@@ -342,6 +342,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
   (setq custom-file "~/.emacs.d/private/custom.el")
+  (load custom-file)
   )
 
 (defun dotspacemacs/user-config ()

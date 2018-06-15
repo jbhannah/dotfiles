@@ -37,6 +37,8 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t)
      better-defaults
+     (c-c++ :variables
+            c-c++-enable-clang-support t)
      colors
      csv
      dash
@@ -53,6 +55,7 @@ values."
      helm
      html
      javascript
+     latex
      markdown
      nginx
      (org :variables
@@ -80,6 +83,7 @@ values."
      typescript
      vagrant
      version-control
+     vimscript
      vinegar
      yaml
      )

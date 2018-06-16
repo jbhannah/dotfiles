@@ -340,9 +340,12 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
   (setq custom-file "~/.emacs.d/private/custom.el")
   (load custom-file)
+  (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
+  (setq-default
+   ispell-program-name "aspell"
+   )
   )
 
 (defun dotspacemacs/user-config ()

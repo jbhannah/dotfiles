@@ -253,7 +253,7 @@ It should only modify the values of Spacemacs settings."
    ;; to create your own spaceline theme. Value can be a symbol or list with\
    ;; additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(spacemacs :separator utf-8 :separator-scale 1.0)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
@@ -521,6 +521,5 @@ before packages are loaded."
    git-commit-fill-column 72
    git-commit-summary-max-length 50
    line-spacing 0.2
-   powerline-default-separator 'utf-8
    )
   )

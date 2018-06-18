@@ -21,7 +21,11 @@ fi
 
 if [ ! -d $HOME/.emacs.d ]; then
   echo "Installing Spacemacs...\c"
-  ( git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d ) &> /dev/null
+  ( git clone -b develop https://github.com/syl20bnr/spacemacs $HOME/.emacs.d ) &> /dev/null
+  echo "done!"
+else
+  echo "Switching to Spacemacs develop branch...\c"
+  ( cd $HOME/.emacs.d && git checkout develop ) &> /dev/null
   echo "done!"
 fi
 

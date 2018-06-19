@@ -45,6 +45,7 @@ This function should only modify configuration layer settings."
      colors
      csv
      dash
+     django
      docker
      elixir
      emacs-lisp

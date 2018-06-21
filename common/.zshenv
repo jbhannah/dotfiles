@@ -13,3 +13,4 @@ fi
 command -v yarn > /dev/null 2>&1 && export PATH=`yarn global bin`:$PATH
 
 [[ -d "$HOME/.cargo" ]] && source "$HOME/.cargo/env"
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"

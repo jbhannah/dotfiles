@@ -14,3 +14,6 @@ command -v yarn > /dev/null 2>&1 && export PATH=`yarn global bin`:$PATH
 
 [[ -d "$HOME/.cargo" ]] && source "$HOME/.cargo/env"
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
+command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
+command -v pyenv-virtualenv 1>/dev/null 2>&1 && eval "$(pyenv virtualenv-init -)"

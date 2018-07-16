@@ -77,7 +77,8 @@ This function should only modify configuration layer settings."
            ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rvm)
      ruby-on-rails
-     rust
+     (rust :variables
+           rust-format-on-save t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)

@@ -17,3 +17,6 @@ test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
 command -v pyenv-virtualenv 1>/dev/null 2>&1 && eval "$(pyenv virtualenv-init -)"
+
+command -v rustc 1>/dev/null 2>&1 && RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+[[ -d $RUST_SRC_PATH ]] && export RUST_SRC_PATH=$RUST_SRC_PATH

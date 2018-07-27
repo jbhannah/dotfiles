@@ -519,6 +519,7 @@ before packages are loaded."
   (add-hook 'prog-mode-hook #'(lambda ()
                                 (dtrt-indent-mode)
                                 (dtrt-indent-adapt)))
+  (add-to-list 'auto-mode-alist '("Brewfile\\'" . ruby-mode))
   (setq-default
    git-commit-fill-column 72
    git-commit-summary-max-length 50

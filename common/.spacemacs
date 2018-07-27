@@ -75,7 +75,7 @@ This function should only modify configuration layer settings."
      restclient
      (ruby :variables
            ruby-enable-enh-ruby-mode t
-           ruby-version-manager 'rvm)
+           ruby-version-manager 'rbenv)
      ruby-on-rails
      (rust :variables
            rust-format-on-save t)

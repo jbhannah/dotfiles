@@ -19,6 +19,7 @@ brew 'mono'
 brew 'node'
 brew 'yarn'
 brew 'ruby'
+brew 'rbenv'
 brew 'fasd'
 brew 'neovim'
 brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']

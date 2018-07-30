@@ -520,6 +520,7 @@ before packages are loaded."
                                 (dtrt-indent-mode)
                                 (dtrt-indent-adapt)))
   (add-to-list 'auto-mode-alist '("Brewfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("\\.vimrc" . vimrc-mode))
   (setq-default
    git-commit-fill-column 72
    git-commit-summary-max-length 50

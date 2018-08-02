@@ -46,6 +46,8 @@
 	diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
 [hub]
 	protocol = https
+[github]
+	user = jbhannah
 [alias]
 	switch = !legit switch
 	sync = !legit sync

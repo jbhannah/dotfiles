@@ -1,4 +1,5 @@
 .*.swp
+.#*
 .classpath
 .DS_Store
 .project
@@ -8,6 +9,7 @@
 .swn
 .swo
 .swp
+.tern-port
 .vscode
 *~
 tags

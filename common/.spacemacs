@@ -525,6 +525,7 @@ before packages are loaded."
   (setq-default
    ansi-color-faces-vector
      [default bold shadow italic underline bold bold-italic bold]
+   auth-sources '("~/.authinfo.gpg" "~/.authinfo" "~/.netrc")
    calendar-week-start-day 1
    evil-want-Y-yank-to-eol nil
    fci-rule-color "#37474f"

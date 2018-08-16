@@ -106,6 +106,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-additional-packages
    '(
      dtrt-indent
+     org-jira
      )
 
    ;; A list of packages that cannot be updated.

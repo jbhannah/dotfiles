@@ -522,6 +522,7 @@ before packages are loaded."
                                 (dtrt-indent-adapt)))
   (add-to-list 'auto-mode-alist '("Brewfile\\'" . ruby-mode))
   (add-to-list 'auto-mode-alist '("\\.vimrc" . vimrc-mode))
+  (require 'org-habit)
   (setq-default
    ansi-color-faces-vector
      [default bold shadow italic underline bold bold-italic bold]

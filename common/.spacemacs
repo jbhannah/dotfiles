@@ -536,7 +536,7 @@ before packages are loaded."
    git-commit-summary-max-length 50
    line-spacing 0.2
    org-agenda-files '("~/Dropbox/org/gtd.org")
-   org-archive-location "~/Dropbox/org/gtd_archive.org::* Tasks"
+   org-archive-location "~/Dropbox/org/gtd_archive.org::datetree/* Archive"
    org-default-notes-file "~/Dropbox/org/gtd.org"
    vc-annotate-background nil
    vc-annotate-color-map

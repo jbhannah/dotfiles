@@ -22,7 +22,7 @@ if echo $platform | grep -q Darwin; then
 
   [[ -f /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zshrc
   # TODO: move /usr/local/bin to the top of /etc/paths
-elif echo $platform | grep -q Ubuntu; then
+elif echo $platform | grep -q Linux; then
   echo "== Ubuntu Installation =="
   sudo apt-get install build-essential zsh vim-nox luajit python3 python3-dev python3-pip silversearcher-ag stow exuberant-ctags
   sudo -H pip3 install thefuck

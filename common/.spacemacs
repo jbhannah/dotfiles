@@ -525,40 +525,18 @@ before packages are loaded."
   (add-to-list 'auto-mode-alist '("\\.vimrc" . vimrc-mode))
   (require 'org-habit)
   (setq-default
-   ansi-color-faces-vector
-     [default bold shadow italic underline bold bold-italic bold]
    auth-sources '("~/.authinfo.gpg" "~/.authinfo" "~/.netrc")
    calendar-week-start-day 1
    evil-want-Y-yank-to-eol nil
-   fci-rule-color "#37474f"
-   hl-sexp-background-color "#1c1f26"
    git-commit-fill-column 72
    git-commit-summary-max-length 50
    line-spacing 0.2
-   org-agenda-files '("~/Dropbox/org/gtd.org")
-   org-archive-location "~/Dropbox/org/gtd_archive.org::datetree/* Archive"
-   org-default-notes-file "~/Dropbox/org/gtd.org"
-   vc-annotate-background nil
-   vc-annotate-color-map
-     (quote
-      ((20 . "#f36c60")
-       (40 . "#ff9800")
-       (60 . "#fff59d")
-       (80 . "#8bc34a")
-       (100 . "#81d4fa")
-       (120 . "#4dd0e1")
-       (140 . "#b39ddb")
-       (160 . "#f36c60")
-       (180 . "#ff9800")
-       (200 . "#fff59d")
-       (220 . "#8bc34a")
-       (240 . "#81d4fa")
-       (260 . "#4dd0e1")
-       (280 . "#b39ddb")
-       (300 . "#f36c60")
-       (320 . "#ff9800")
-       (340 . "#fff59d")
-       (360 . "#8bc34a")))
-   vc-annotate-very-old-color nil
+   org-directory "~/Dropbox/org"
+   org-capture-templates '(("t" "Task" entry
+        (file+headline org-default-notes-file "Inbox")
+        "* TODO %?\n  %T\n  %a\n  %i"))
+   org-agenda-files '((concat org-directory "/gtd.org"))
+   org-archive-location (concat org-directory "/gtd_archive.org::datetree/* Archive")
+   org-default-notes-file (concat org-directory "/gtd.org")
   )
 )

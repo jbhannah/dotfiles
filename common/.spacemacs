@@ -51,6 +51,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      erlang
      fasd
+     finance
      git
      github
      (go :variables

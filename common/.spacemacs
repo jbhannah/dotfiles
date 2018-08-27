@@ -535,7 +535,7 @@ before packages are loaded."
    org-capture-templates '(("t" "Task" entry
         (file+headline org-default-notes-file "Inbox")
         "* TODO %?\n  %T\n  %a\n  %i"))
-   org-agenda-files '((concat org-directory "/gtd.org"))
+   org-agenda-files (list (concat org-directory "/gtd.org"))
    org-archive-location (concat org-directory "/gtd_archive.org::datetree/* Archive")
    org-default-notes-file (concat org-directory "/gtd.org")
   )

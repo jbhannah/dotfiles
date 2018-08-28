@@ -531,6 +531,13 @@ before packages are loaded."
    evil-want-Y-yank-to-eol nil
    git-commit-fill-column 72
    git-commit-summary-max-length 50
+   ledger-reports
+    '(
+      ("bbal" "%(binary) -f %(ledger-file) bal -B not Funds and not Equity and not Investments and not Loans and not Income")
+      ("bal" "%(binary) -f %(ledger-file) bal")
+      ("reg" "%(binary) -f %(ledger-file) reg")
+      ("payee" "%(binary) -f %(ledger-file) reg @%(payee)")
+      ("account" "%(binary) -f %(ledger-file) reg %(account)"))
    line-spacing 0.2
    org-directory "~/Dropbox/org"
    org-capture-templates '(("t" "Task" entry

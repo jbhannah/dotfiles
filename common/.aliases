@@ -23,3 +23,6 @@ alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.tx
 
 # Python
 alias pylint="python3 -m pylint"
+
+# tmux
+alias mux=tmuxinator

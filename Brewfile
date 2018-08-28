@@ -23,6 +23,8 @@ brew 'rbenv'
 brew 'fasd'
 brew 'neovim'
 brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']
+brew 'tmux'
+brew 'tmuxinator-completion'
 
 cask 'alfred'
 cask 'docker'

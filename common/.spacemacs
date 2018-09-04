@@ -539,6 +539,8 @@ before packages are loaded."
       ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")
       ("account" "%(binary) -f %(ledger-file) reg -B %(account)"))
    line-spacing 0.2
+   ns-alternate-modifier 'meta
+   ns-right-alternate-modifier 'none
    org-directory "~/Dropbox/org"
    org-capture-templates '(("t" "Task" entry
         (file+headline org-default-notes-file "Inbox")

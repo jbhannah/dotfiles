@@ -533,11 +533,11 @@ before packages are loaded."
    git-commit-summary-max-length 50
    ledger-reports
     '(
-      ("bbal" "%(binary) -f %(ledger-file) bal -B not Funds and not Equity and not Investments and not Loans and not Income")
-      ("bal" "%(binary) -f %(ledger-file) bal")
-      ("reg" "%(binary) -f %(ledger-file) reg")
-      ("payee" "%(binary) -f %(ledger-file) reg @%(payee)")
-      ("account" "%(binary) -f %(ledger-file) reg %(account)"))
+      ("bbal" "%(binary) -f %(ledger-file) bal -B not Equity and not Investments and not '^Liabilities:Loans' and not Income and not Expenses")
+      ("bal" "%(binary) -f %(ledger-file) bal -B")
+      ("reg" "%(binary) -f %(ledger-file) reg -B")
+      ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")
+      ("account" "%(binary) -f %(ledger-file) reg -B %(account)"))
    line-spacing 0.2
    org-directory "~/Dropbox/org"
    org-capture-templates '(("t" "Task" entry

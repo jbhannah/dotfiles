@@ -63,7 +63,8 @@ This function should only modify configuration layer settings."
      html
      javascript
      latex
-     markdown
+     (markdown :variables
+               markdown-live-preview-engine 'vmd)
      nginx
      (org :variables
           org-enable-github-support t

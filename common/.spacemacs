@@ -533,7 +533,7 @@ before packages are loaded."
    git-commit-summary-max-length 50
    ledger-reports
     '(
-      ("bbal" "%(binary) -f %(ledger-file) bal -B not Equity and not Investments and not '^Liabilities:Loans' and not Income and not Expenses")
+      ("bbal" "%(binary) -f %(ledger-file) bal -B not '^Equity' and not Investments and not '^Liabilities:Loans' and not Income and not Expenses and not Property and not '^Funds'")
       ("bal" "%(binary) -f %(ledger-file) bal -B")
       ("reg" "%(binary) -f %(ledger-file) reg -B")
       ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")

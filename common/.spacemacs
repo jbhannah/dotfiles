@@ -548,7 +548,11 @@ before packages are loaded."
    '(("d" "Daily agenda and all TODOs"
       ((agenda "" ((org-agenda-span 1)))
        (alltodo ""
-                ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
+                ((org-agenda-files (list (concat org-directory "/inbox.org")))
+                 (org-agenda-overriding-header "Inbox")))
+       (alltodo ""
+                ((org-agenda-skip-function '(or (jbh-agenda-skip-file "inbox.org")
+                                                (org-agenda-skip-entry-if 'scheduled 'deadline)))
                  (org-agenda-overriding-header "Next Unscheduled Tasks"))))))
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/inbox.org")
@@ -559,4 +563,9 @@ before packages are loaded."
    org-mobile-inbox-for-pull org-default-notes-file
    org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))
   )
+)
+
+(defun jbh-agenda-skip-file (filename)
+  (when (equal (file-name-nondirectory (buffer-file-name)) filename)
+    (outline-next-heading) (1- (point)))
 )

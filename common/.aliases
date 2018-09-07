@@ -1,6 +1,7 @@
 alias crap='$(thefuck $(fc -ln -1))'
 command -v hub > /dev/null 2>&1 && alias git=hub
 alias l="ls -alh"
+alias ecl="emacsclient"
 
 # Docker
 alias dps="docker ps -a"

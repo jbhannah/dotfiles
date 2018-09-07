@@ -543,11 +543,20 @@ before packages are loaded."
    ns-alternate-modifier 'meta
    ns-right-alternate-modifier 'none
    org-directory "~/Dropbox/org"
-   org-capture-templates '(("t" "Task" entry
-        (file+headline org-default-notes-file "Inbox")
+   org-agenda-files (list org-directory)
+   org-agenda-custom-commands
+   '(("d" "Daily agenda and all TODOs"
+      ((agenda "" ((org-agenda-span 1)))
+       (alltodo ""
+                ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
+                 (org-agenda-overriding-header "Next Unscheduled Tasks"))))))
+   org-archive-location "%s_archive::datetree/"
+   org-default-notes-file (concat org-directory "/inbox.org")
+   org-capture-templates '(("t" "TODO" entry
+        (file org-default-notes-file)
         "* TODO %?\n  %T\n  %a\n  %i"))
-   org-agenda-files (list (concat org-directory "/gtd.org"))
-   org-archive-location (concat org-directory "/gtd_archive.org::datetree/* Archive")
-   org-default-notes-file (concat org-directory "/gtd.org")
+   org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
+   org-mobile-inbox-for-pull org-default-notes-file
+   org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))
   )
 )

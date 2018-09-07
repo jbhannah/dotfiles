@@ -553,12 +553,14 @@ before packages are loaded."
        (alltodo ""
                 ((org-agenda-skip-function '(or (jbh-agenda-skip-file "inbox.org")
                                                 (org-agenda-skip-entry-if 'scheduled 'deadline)))
+                 (org-agenda-sorting-strategy '(priority-down))
                  (org-agenda-overriding-header "Next Unscheduled Tasks"))))))
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/inbox.org")
    org-capture-templates '(("t" "TODO" entry
         (file org-default-notes-file)
         "* TODO %?\n  %T\n  %a\n  %i"))
+   org-habit-graph-column 50
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
    org-mobile-inbox-for-pull org-default-notes-file
    org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))

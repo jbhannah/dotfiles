@@ -563,6 +563,7 @@ before packages are loaded."
    org-habit-graph-column 50
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
    org-mobile-inbox-for-pull org-default-notes-file
+   org-outline-path-complete-in-steps nil
    org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))
   )
 )

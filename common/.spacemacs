@@ -545,7 +545,7 @@ before packages are loaded."
    org-directory "~/Dropbox/org"
    org-agenda-files (list org-directory)
    org-agenda-custom-commands
-   '(("d" "Daily agenda and all TODOs"
+   '(("a" "Daily agenda and all TODOs"
       ((agenda "" ((org-agenda-span 1)))
        (alltodo ""
                 ((org-agenda-files (list (concat org-directory "/inbox.org")))
@@ -554,7 +554,7 @@ before packages are loaded."
                 ((org-agenda-skip-function '(or (jbh-agenda-skip-file "inbox.org")
                                                 (org-agenda-skip-entry-if 'scheduled 'deadline)))
                  (org-agenda-sorting-strategy '(priority-down))
-                 (org-agenda-overriding-header "Next Unscheduled Tasks"))))))
+                 (org-agenda-overriding-header "Next unscheduled tasks"))))))
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/inbox.org")
    org-capture-templates '(("t" "TODO" entry

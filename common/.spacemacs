@@ -549,7 +549,12 @@ before packages are loaded."
        (alltodo ""
                 ((org-agenda-files (list (concat org-directory "/inbox.org")))
                  (org-agenda-overriding-header "Inbox")))
-       (alltodo ""
+       (tags-todo "-PROJECT+Effort=\"\""
+                ((org-agenda-skip-function '(jbh-agenda-skip-file "inbox.org"))
+                 (org-agenda-overriding-header "Unestimated")))
+       (tags-todo "PROJECT"
+                  ((org-agenda-overriding-header "Projects")))
+       (tags-todo "-PROJECT-Effort=\"\""
                 ((org-agenda-skip-function '(or (jbh-agenda-skip-file "inbox.org")
                                                 (org-agenda-skip-entry-if 'scheduled 'deadline)))
                  (org-agenda-sorting-strategy '(priority-down))
@@ -570,6 +575,8 @@ before packages are loaded."
    org-mobile-inbox-for-pull org-default-notes-file
    org-outline-path-complete-in-steps nil
    org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))
+   org-tags-exclude-from-inheritance '("PROJECT")
+   spaceline-org-clock-p t
   )
 )
 

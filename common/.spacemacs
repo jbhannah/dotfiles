@@ -546,9 +546,9 @@ before packages are loaded."
 
    ;; org
    org-directory "~/Dropbox/org"
-   org-agenda-files (list org-directory)
+   org-agenda-files (concat org-directory "/.index")
    org-agenda-custom-commands
-   '(("a" "Daily agenda and all TODOs"
+   '(("d" "Daily agenda and all TODOs"
       ((agenda "" ((org-agenda-span 1)))
        (alltodo ""
                 ((org-agenda-files (list (concat org-directory "/inbox.org")))

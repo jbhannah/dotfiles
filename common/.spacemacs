@@ -533,8 +533,7 @@ before packages are loaded."
    git-commit-fill-column 72
    git-commit-summary-max-length 50
    ledger-reports
-    '(
-      ("bbal" "%(binary) -f %(ledger-file) bal -B not '^Equity' and not Investments and not '^Liabilities:Loans' and not Income and not Expenses and not Property and not '^Funds'")
+    '(("bbal" "%(binary) -f %(ledger-file) bal -B not '^Equity' and not Investments and not '^Liabilities:Loans' and not Income and not Expenses and not Property and not '^Funds'")
       ("bal" "%(binary) -f %(ledger-file) bal -B")
       ("reg" "%(binary) -f %(ledger-file) reg -B")
       ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")
@@ -559,12 +558,11 @@ before packages are loaded."
    org-agenda-skip-scheduled-if-deadline-is-shown t
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/inbox.org")
-   org-capture-templates '(
-                           ("t" "TODO" entry
-                            (file org-default-notes-file)
+   org-capture-templates '(("t" "TODO"
+                            entry (file org-default-notes-file)
                             "* TODO %?\n  %U")
-                           ("r" "TODO with reference to current line" entry
-                            (file org-default-notes-file)
+                           ("r" "TODO with reference to current line"
+                            entry (file org-default-notes-file)
                             "* TODO %?\n  %U\n  %a\n  %i"))
    org-habit-graph-column 50
    org-mobile-agendas 'custom

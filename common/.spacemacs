@@ -558,9 +558,13 @@ before packages are loaded."
    org-agenda-skip-deadline-prewarning-if-scheduled t
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/inbox.org")
-   org-capture-templates '(("t" "TODO" entry
-        (file org-default-notes-file)
-        "* TODO %?\n  %T\n  %a\n  %i"))
+   org-capture-templates '(
+                           ("t" "TODO" entry
+                            (file org-default-notes-file)
+                            "* TODO %?\n  %U")
+                           ("r" "TODO with reference to current line" entry
+                            (file org-default-notes-file)
+                            "* TODO %?\n  %U\n  %a\n  %i"))
    org-habit-graph-column 50
    org-mobile-agendas 'custom
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"

@@ -532,15 +532,19 @@ before packages are loaded."
    evil-want-Y-yank-to-eol nil
    git-commit-fill-column 72
    git-commit-summary-max-length 50
-   ledger-reports
-    '(("bbal" "%(binary) -f %(ledger-file) bal -B not '^Equity' and not Investments and not '^Liabilities:Loans' and not Income and not Expenses and not Property and not '^Funds'")
-      ("bal" "%(binary) -f %(ledger-file) bal -B")
-      ("reg" "%(binary) -f %(ledger-file) reg -B")
-      ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")
-      ("account" "%(binary) -f %(ledger-file) reg -B %(account)"))
    line-spacing 0.2
    ns-alternate-modifier 'meta
    ns-right-alternate-modifier 'none
+
+   ;; finance
+   ledger-reports
+   '(("bbal" "%(binary) -f %(ledger-file) bal -B not '^Equity' and not Investments and not '^Liabilities:Loans' and not Income and not Expenses and not Property and not '^Funds'")
+     ("bal" "%(binary) -f %(ledger-file) bal -B")
+     ("reg" "%(binary) -f %(ledger-file) reg -B")
+     ("payee" "%(binary) -f %(ledger-file) reg -B @%(payee)")
+     ("account" "%(binary) -f %(ledger-file) reg -B %(account)"))
+
+   ;; org
    org-directory "~/Dropbox/org"
    org-agenda-files (list org-directory)
    org-agenda-custom-commands

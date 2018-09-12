@@ -561,6 +561,7 @@ before packages are loaded."
         (file org-default-notes-file)
         "* TODO %?\n  %T\n  %a\n  %i"))
    org-habit-graph-column 50
+   org-mobile-agendas 'custom
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
    org-mobile-inbox-for-pull org-default-notes-file
    org-outline-path-complete-in-steps nil

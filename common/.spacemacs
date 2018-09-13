@@ -547,27 +547,22 @@ before packages are loaded."
 
    ;; org
    org-directory "~/Dropbox/org"
-   org-agenda-files (concat org-directory "/.index")
+   org-agenda-files (list (concat org-directory "/agenda"))
    org-agenda-custom-commands
    '(("d" "Daily agenda and all TODOs"
       ((agenda "" ((org-agenda-span 1)))
-       (alltodo ""
-                ((org-agenda-files (list (concat org-directory "/inbox.org")))
-                 (org-agenda-overriding-header "Inbox")))
-       (tags-todo "-PROJECT+Effort=\"\""
-                ((org-agenda-skip-function '(jbh-agenda-skip-file "inbox.org"))
-                 (org-agenda-overriding-header "Unestimated")))
+       (tags-todo "+Category=\"Inbox\"|-PROJECT+Effort=\"\"|-PROJECT+PRIORITY=\"D\""
+                  ((org-agenda-overriding-header "Inbox")))
        (tags-todo "PROJECT"
                   ((org-agenda-overriding-header "Projects")))
-       (tags-todo "-PROJECT-Effort=\"\""
-                ((org-agenda-skip-function '(or (jbh-agenda-skip-file "inbox.org")
-                                                (org-agenda-skip-entry-if 'scheduled 'deadline)))
-                 (org-agenda-sorting-strategy '(priority-down))
-                 (org-agenda-overriding-header "Next unscheduled tasks"))))))
+       (tags-todo "-PROJECT-Category=\"Inbox\"-Effort=\"\"-PRIORITY=\"D\""
+                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
+                   (org-agenda-sorting-strategy '(priority-down))
+                   (org-agenda-overriding-header "Next unscheduled tasks"))))))
    org-agenda-skip-deadline-prewarning-if-scheduled t
    org-agenda-skip-scheduled-if-deadline-is-shown t
    org-archive-location "%s_archive::datetree/"
-   org-default-notes-file (concat org-directory "/inbox.org")
+   org-default-notes-file (concat org-directory "/agenda/inbox.org")
    org-capture-templates '(("t" "TODO"
                             entry (file org-default-notes-file)
                             "* TODO %?\n  %U")
@@ -580,13 +575,10 @@ before packages are loaded."
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
    org-mobile-inbox-for-pull org-default-notes-file
    org-outline-path-complete-in-steps nil
-   org-refile-targets `((,(concat org-directory "/home.org") :maxlevel . 1))
+   org-refile-use-outline-path 'file
+   org-refile-targets '((org-agenda-files :level . 1)
+                        (org-agenda-files :tag . "PROJECT"))
    org-tags-exclude-from-inheritance '("PROJECT")
    spaceline-org-clock-p t
   )
-)
-
-(defun jbh-agenda-skip-file (filename)
-  (when (equal (file-name-nondirectory (buffer-file-name)) filename)
-    (outline-next-heading) (1- (point)))
 )

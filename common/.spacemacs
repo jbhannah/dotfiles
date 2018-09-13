@@ -68,6 +68,7 @@ This function should only modify configuration layer settings."
      nginx
      (org :variables
           org-enable-github-support t
+          org-enable-org-journal-support t
           org-projectile-file "TODOs.org")
      osx
      prodigy
@@ -574,6 +575,7 @@ before packages are loaded."
                             entry (file org-default-notes-file)
                             "* TODO %?\n  %U\n  %a\n  %i"))
    org-habit-graph-column 50
+   org-journal-dir (concat org-directory "/journal/")
    org-mobile-agendas 'custom
    org-mobile-directory "~/Dropbox/Apps/MobileOrg/"
    org-mobile-inbox-for-pull org-default-notes-file

@@ -565,11 +565,11 @@ before packages are loaded."
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/agenda/inbox.org")
    org-capture-templates '(("t" "TODO"
-                            entry (file org-default-notes-file)
-                            "* TODO %?\n  %U")
+                            entry (file+headline org-default-notes-file "Inbox")
+                            "** TODO %?\n  %U")
                            ("r" "TODO with reference to current line"
-                            entry (file org-default-notes-file)
-                            "* TODO %?\n  %U\n  %a\n  %i"))
+                            entry (file+headline org-default-notes-file "Inbox")
+                            "** TODO %?\n  %U\n  %a\n  %i"))
    org-habit-graph-column 50
    org-journal-dir (concat org-directory "/journal/")
    org-mobile-agendas 'custom

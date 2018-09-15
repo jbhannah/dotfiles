@@ -521,6 +521,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (add-hook 'auto-save-hook 'org-save-all-org-buffers)
   (add-hook 'prog-mode-hook #'(lambda ()
                                 (dtrt-indent-mode)
                                 (dtrt-indent-adapt)))

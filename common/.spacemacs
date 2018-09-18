@@ -559,7 +559,8 @@ before packages are loaded."
        (tags-todo "-PROJECT-Category=\"Inbox\"-Effort=\"\"-PRIORITY=\"D\""
                   ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
                    (org-agenda-sorting-strategy '(priority-down))
-                   (org-agenda-overriding-header "Next unscheduled tasks"))))))
+                   (org-agenda-overriding-header "Next unscheduled tasks")))))
+     ("n" "Done TODOs" ((todo "DONE"))))
    org-agenda-skip-deadline-prewarning-if-scheduled t
    org-agenda-skip-scheduled-if-deadline-is-shown t
    org-archive-location "%s_archive::datetree/"

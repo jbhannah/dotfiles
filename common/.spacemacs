@@ -537,6 +537,7 @@ before packages are loaded."
    line-spacing 0.2
    ns-alternate-modifier 'meta
    ns-right-alternate-modifier 'none
+   projectile-enable-caching t
 
    ;; finance
    ledger-reports

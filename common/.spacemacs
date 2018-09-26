@@ -71,6 +71,7 @@ This function should only modify configuration layer settings."
           org-enable-org-journal-support t
           org-projectile-file "TODOs.org")
      osx
+     php
      prodigy
      (python :variables
              python-enable-yapf-format-on-save t

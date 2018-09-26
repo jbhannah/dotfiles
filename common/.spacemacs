@@ -562,7 +562,7 @@ before packages are loaded."
                   ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
                    (org-agenda-sorting-strategy '(priority-down))
                    (org-agenda-overriding-header "Next unscheduled tasks")))))
-     ("n" "Done TODOs" ((todo "DONE"))))
+     ("n" "Done TODOs" ((todo "DONE") (todo "DEFERRED") (todo "CANCELLED"))))
    org-agenda-skip-deadline-prewarning-if-scheduled t
    org-agenda-skip-scheduled-if-deadline-is-shown t
    org-archive-location "%s_archive::datetree/"

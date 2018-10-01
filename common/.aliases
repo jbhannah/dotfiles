@@ -14,6 +14,9 @@ drpwd() {
     docker run --rm -it -v `pwd`:`pwd` -w `pwd` "$@"
 }
 
+# Homebrew
+alias buc="brewu; brewc"
+
 # jrnl
 alias j="jrnl"
 alias jt="j -on today"

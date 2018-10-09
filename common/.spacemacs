@@ -564,7 +564,6 @@ before packages are loaded."
                    (org-agenda-overriding-header "Next unscheduled tasks")))))
      ("n" "Done TODOs" ((todo "DONE") (todo "DEFERRED") (todo "CANCELLED"))))
    org-agenda-skip-deadline-prewarning-if-scheduled t
-   org-agenda-skip-scheduled-if-deadline-is-shown t
    org-archive-location "%s_archive::datetree/"
    org-default-notes-file (concat org-directory "/agenda/inbox.org")
    org-capture-templates '(("t" "TODO"

@@ -7,6 +7,9 @@ if command -v nvim > /dev/null 2>&1; then
   export VISUAL=nvim
   export NVIM_TUI_ENABLE_TRUE_COLOR=1
 fi
+
+command -v code > /dev/null 2>&1 && export VISUAL="code -w"
+
 export EDITOR=$VISUAL
 
 # Timezone

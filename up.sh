@@ -2,8 +2,7 @@
 if [ -d $HOME/.zprezto/.git ]; then
   echo "Updating Prezto...\c"
   cd $HOME/.zprezto
-  ( git remote rm origin && git remote add origin https://github.com/sorin-ionescu/prezto.git ) &> /dev/null
-  ( git pull && git submodule update --init --recursive ) &> /dev/null
+  ( git pull origin master && git submodule update --init --recursive ) &> /dev/null
   echo "done!"
 else
   echo "Installing Prezto...\c"

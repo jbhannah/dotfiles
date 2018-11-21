@@ -15,4 +15,6 @@ export EDITOR=$VISUAL
 # Timezone
 export TZ=US/Arizona
 
+command -v xcrun > /dev/null 2>&1 && export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
+
 [[ -f "${ZDOTDIR:-$HOME}/.zprofile.local" ]] && source "${ZDOTDIR:-$HOME}/.zprofile.local"

@@ -1,6 +1,5 @@
 alias crap='$(thefuck $(fc -ln -1))'
 command -v hub > /dev/null 2>&1 && alias git=hub
-alias l="ls -alh"
 alias ecl="emacsclient"
 
 # Docker
@@ -30,3 +29,7 @@ alias pylint="python3 -m pylint"
 
 # tmux
 alias mux=tmuxinator
+
+# exa
+command -v exa > /dev/null 2>&1 && alias ls="exa --group-directories-first"
+alias l="ls -alh"

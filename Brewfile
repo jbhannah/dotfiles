@@ -27,6 +27,7 @@ brew 'neovim'
 brew 'macvim', args: ['with-luajit', 'with-python3', 'with-override-system-vim']
 brew 'tmux'
 brew 'tmuxinator-completion'
+brew 'exa'
 
 cask 'alfred'
 cask 'docker'

@@ -1,34 +1,41 @@
-alias crap='$(thefuck $(fc -ln -1))'
+command -v thefuck > /dev/null 2>&1 && alias crap='$(thefuck $(fc -ln -1))'
 command -v hub > /dev/null 2>&1 && alias git=hub
-alias ecl="emacsclient"
+command -v emacsclient > /dev/null 2>&1 && alias ecl="emacsclient"
 
 # Docker
-alias dps="docker ps -a"
-alias dco="docker-compose"
-alias dcr="docker-compose run --rm"
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
+if command -v docker > /dev/null 2>&1; then
+    alias dps="docker ps -a"
 
-drpwd() {
-    docker run --rm -it -v `pwd`:`pwd` -w `pwd` "$@"
-}
+    drpwd() {
+        docker run --rm -it -v `pwd`:`pwd` -w `pwd` "$@"
+    }
+fi
+
+if command -v docker-compose > /dev/null 2>&1; then
+    alias dco="docker-compose"
+    alias dcr="docker-compose run --rm"
+    alias dcu="docker-compose up"
+    alias dcd="docker-compose down"
+fi
 
 # Homebrew
-alias buc="brewu; brewc"
+command -v brew > /dev/null 2>&1 && alias buc="brewu; brewc"
 
 # jrnl
-alias j="jrnl"
-alias jt="j -on today"
-alias jy="j -on yesterday"
-alias jx="j --export text"
-alias jxy="date -v -1d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
-alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
+if command -v jrnl > /dev/null 2>&1; then
+    alias j="jrnl"
+    alias jt="j -on today"
+    alias jy="j -on yesterday"
+    alias jx="j --export text"
+    alias jxy="date -v -1d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
+    alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
+fi
 
 # Python
 alias pylint="python3 -m pylint"
 
 # tmux
-alias mux=tmuxinator
+command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator
 
 # exa
 command -v exa > /dev/null 2>&1 && alias ls="exa --group-directories-first"

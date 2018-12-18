@@ -16,6 +16,7 @@ if command -v docker-compose > /dev/null 2>&1; then
     alias dcr="docker-compose run --rm"
     alias dcu="docker-compose up"
     alias dcd="docker-compose down"
+    alias dcda="docker-compose down --remove-orphans --volumes --rmi all"
 fi
 
 # Homebrew

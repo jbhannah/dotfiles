@@ -29,11 +29,11 @@ brew 'tmux'
 brew 'tmuxinator-completion'
 brew 'exa'
 
+cask 'alacritty'
 cask 'alfred'
 cask 'docker'
 cask 'dropbox'
 cask 'gpg-suite'
-cask 'iterm2'
 cask 'keybase'
 cask 'visual-studio-code'
 

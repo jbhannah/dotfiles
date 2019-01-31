@@ -7,40 +7,39 @@ tested on macOS Sierra and Ubuntu 16.04.
 
 ### Prerequisites
 
-  * Xcode installed from the App Store and with required components installed
-      (required for MacVim to compile from Homebrew)
-  * Git
-  * An account that can run as `sudo`
+- Xcode installed from the App Store and with required components installed
+- Git
+- An account that can run as `sudo`
 
 ### Instructions
 
- 1. Clone dotfiles:
+1.  Clone dotfiles:
 
     ```bash
-    $ git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
+    git clone https://github.com/jbhannah/dotfiles.git ~/.dotfiles && cd $_
     ```
 
- 2. Bootstrap:
+2.  Bootstrap:
 
     ```bash
-    $ ./bootstrap.sh
+    ./bootstrap.sh
     ```
 
     This:
 
-    * Installs [Homebrew][brew] and [Brew Bundle][bundle] on macOS
-    * Installs dependencies with your platform's package manager
-    * Clones [Prezto][prezto] and [dein.vim][dein]
-    * Installs common dotfiles with [GNU Stow][stow]
-    * Changes your shell to [`zsh`][zsh]
+    - Installs [Homebrew][brew] and [Brew Bundle][bundle] on macOS
+    - Installs dependencies with your platform's package manager
+    - Clones [Prezto][prezto] and [dein.vim][dein]
+    - Installs common dotfiles with [GNU Stow][stow]
+    - Changes your shell to [`zsh`][zsh]
 
     The Vim plugins listed in `vimrc.bundles` will be installed the next time
     you launch Vim.
 
- 3. On macOS, edit `/etc/paths` so that `/usr/local/bin` is at the top of the
+3.  On macOS, edit `/etc/paths` so that `/usr/local/bin` is at the top of the
     file.
 
- 4. Launch a new terminal session.
+4.  Launch a new terminal session.
 
 ## Maintenance
 
@@ -53,7 +52,7 @@ If, for any reason, you want to manually update without opening a new shell,
 simply run:
 
 ```bash
-$ $STOW_DIR/up.sh
+$STOW_DIR/up.sh
 ```
 
 You may have to launch a new shell anyway, however, for any changes to `zsh`
@@ -61,24 +60,24 @@ configuration files or any updates to Prezto to take effect.
 
 ### Adding files
 
- 1. Create an empty copy of a file to adopt in the appropriate package:
+1.  Create an empty copy of a file to adopt in the appropriate package:
 
     ```bash
-    $ touch $STOW_DIR/common/.new_file
+    touch $STOW_DIR/common/.new_file
     ```
 
- 2. Adopt the file into the package:
+2.  Adopt the file into the package:
 
     ```bash
-    $ stow --no-folding -t $HOME --adopt -R common
+    stow --no-folding -t $HOME --adopt -R common
     ```
 
 ## Contents
 
-  * Prezto
-  * Dein.vim
-  * Homebrew (macOS only)
-  * Brew Bundle (macOS only)
+- Prezto
+- Dein.vim
+- Homebrew (macOS only)
+- Brew Bundle (macOS only)
 
 See the contents of `vimrc.bundles` and `Brewfile` for other installed packages.
 
@@ -86,11 +85,11 @@ See the contents of `vimrc.bundles` and `Brewfile` for other installed packages.
 
 See [`LICENSE`][license].
 
-[tb]:      https://github.com/thoughtbot/dotfiles
-[brew]:    http://brew.sh/
-[bundle]:  https://github.com/Homebrew/homebrew-brewdler
-[stow]:    https://www.gnu.org/software/stow/
-[prezto]:  https://github.com/zsh-users/prezto
-[dein]:    https://github.com/Shougo/dein.vim
-[zsh]:     http://www.zsh.org/
+[tb]: https://github.com/thoughtbot/dotfiles
+[brew]: http://brew.sh/
+[bundle]: https://github.com/Homebrew/homebrew-brewdler
+[stow]: https://www.gnu.org/software/stow/
+[prezto]: https://github.com/zsh-users/prezto
+[dein]: https://github.com/Shougo/dein.vim
+[zsh]: http://www.zsh.org/
 [license]: https://github.com/jbhannah/dotfiles/blob/master/LICENSE

@@ -11,6 +11,17 @@ else
   echo "done!"
 fi
 
+if [ -d $HOME/.tmux ]; then
+  echo "Updating .tmux...\c"
+  cd $HOME/.tmux
+  git pull origin master &> /dev/null
+else
+  echo "Installing .tmux...\c"
+  git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux &> /dev/null
+  ln -fs $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
+  echo "done!"
+fi
+
 if [ ! -d $HOME/.vim/bundle/repos/github.com/Shougo/dein.vim ]; then
   echo "Installing Dein.vim...\c"
   [ -d $HOME/.vim/bundle ] && rm -rf $HOME/.vim/bundle

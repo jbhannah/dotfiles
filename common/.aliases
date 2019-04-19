@@ -1,6 +1,7 @@
 command -v thefuck > /dev/null 2>&1 && alias crap='$(thefuck $(fc -ln -1))'
 command -v hub > /dev/null 2>&1 && alias git=hub
 command -v emacsclient > /dev/null 2>&1 && alias ecl="emacsclient"
+command -v npm > /dev/null 2>&1 && alias npr="npm run-script"
 
 # Docker
 if command -v docker > /dev/null 2>&1; then

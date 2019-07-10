@@ -12,6 +12,13 @@ if command -v docker > /dev/null 2>&1; then
     }
 fi
 
+# kubectl
+if command -v kubectl > /dev/null 2>&1; then
+    kcr() {
+        kubectl run $(date "+%m%d%H%M%Y%S") --generator=run-pod/v1 --rm -it --image $1 $2
+    }
+fi
+
 if command -v docker-compose > /dev/null 2>&1; then
     alias dco="docker-compose"
     alias dcr="docker-compose run --rm"
@@ -41,4 +48,4 @@ command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator
 
 # exa
 command -v exa > /dev/null 2>&1 && alias ls="exa --group-directories-first"
-alias l="ls -alh"
+alias l="ls -algh"

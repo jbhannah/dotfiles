@@ -68,3 +68,22 @@ command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator
 # exa
 command -v exa > /dev/null 2>&1 && alias ls="exa --group-directories-first"
 alias l="ls -algh"
+
+# Git
+git_clone_and_cd() {
+    url=$2
+    repopath=$GOPATH/src/$(echo $url | gsed -nr 's/^((https?|ssh):\/\/)?(.+@)?([A-Za-z0-9_\.-]+)(:[0-9]+)?[:\/](.*)\.git$/\4\/\6/gp')
+    eval $1 $url $repopath
+    cd $repopath
+}
+
+alias gfcd="git_clone_and_cd gfc"
+alias gfcrd="git_clone_and_cd gfcr"
+
+git_clone_and_cd_and_open() {
+    git_clone_and_cd $1 $2
+    code .
+}
+
+alias gfcdo="git_clone_and_cd_and_open gfc"
+alias gfcrdo="git_clone_and_cd_and_open gfcr"

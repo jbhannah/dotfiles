@@ -62,9 +62,6 @@ if command -v jrnl > /dev/null 2>&1; then
     alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
 fi
 
-# Python
-alias pylint="python3 -m pylint"
-
 # tmux
 command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator
 

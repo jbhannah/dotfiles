@@ -42,3 +42,6 @@ cask 'font-hack'
 
 tap 'd12frosted/emacs-plus'
 brew 'emacs-plus'
+
+tap 'kryptco/tap'
+brew 'kr'

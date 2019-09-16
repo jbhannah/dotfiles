@@ -35,7 +35,7 @@
 	smudge = git media smudge %f
 	required = true
 [commit]
-	gpgsign = true
+	gpgSign = true
 [diff]
 	compactionHeuristic = true
 [pager]
@@ -63,3 +63,7 @@
 	includeStatusHeader = false
 	includePullRequestsSection = true
 	includeIssuesSection = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[tag]
+	forceSignAnnotated = true

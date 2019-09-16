@@ -19,8 +19,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 
   if [[ -d "$(brew --prefix python)" ]]; then
-    [[ ! -h "$(pyenv root)/versions/homebrew" ]] && ln -s "$(brew --prefix python)/libexec/bin"
-    [[ ! -h "$(pyenv root)/versions/homebrew3" ]] && ln -s "$(brew --prefix python)/bin"
+    [[ ! -h "$(pyenv root)/versions/homebrew" ]] && ln -s "$(brew --prefix python)/libexec/bin" "$(pyenv root)/versions/homebrew"
+    [[ ! -h "$(pyenv root)/versions/homebrew3" ]] && ln -s "$(brew --prefix python)/bin" "$(pyenv root)/versions/homebrew3"
   fi
 fi
 

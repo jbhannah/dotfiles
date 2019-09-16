@@ -15,8 +15,14 @@ command -v yarn > /dev/null 2>&1 && export PATH=`yarn global bin`:$PATH
 [[ -d "$HOME/.cargo" ]] && source "$HOME/.cargo/env"
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
-command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
-command -v pyenv-virtualenv 1>/dev/null 2>&1 && eval "$(pyenv virtualenv-init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+
+  if [[ -d "$(brew --prefix python)" ]]; then
+    [[ ! -h "$(pyenv root)/versions/homebrew" ]] && ln -s "$(brew --prefix python)/libexec/bin"
+    [[ ! -h "$(pyenv root)/versions/homebrew3" ]] && ln -s "$(brew --prefix python)/bin"
+  fi
+fi
 
 command -v rustc 1>/dev/null 2>&1 && RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 [[ -d $RUST_SRC_PATH ]] && export RUST_SRC_PATH=$RUST_SRC_PATH

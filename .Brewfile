@@ -26,7 +26,6 @@ brew "stow"
 brew "thefuck"
 brew "tmux"
 brew "tmuxinator-completion"
-brew "yarn"
 
 cask "alacritty"
 cask "alfred"

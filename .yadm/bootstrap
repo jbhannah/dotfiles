@@ -24,4 +24,4 @@ elif echo $platform | grep -q Linux; then
   sudo -H pip3 install thefuck
 fi
 
-[[ $SHELL != "/bin/zsh" ]] && chsh -s /bin/zsh
+[[ $SHELL == "/bin/zsh" ]] || chsh -s /bin/zsh

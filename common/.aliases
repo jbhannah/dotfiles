@@ -6,6 +6,7 @@ command -v npm > /dev/null 2>&1 && alias npr="npm run-script"
 # Docker
 if command -v docker > /dev/null 2>&1; then
     alias dps="docker ps -a"
+    alias dpsl="docker ps -lq"
 
     drpwd() {
         docker run --rm -it -v `pwd`:`pwd` -w `pwd` "$@"

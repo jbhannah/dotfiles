@@ -1,4 +1,4 @@
-;; -*- mode: emacs-lisp -*-
+;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 
@@ -40,16 +40,16 @@ This function should only modify configuration layer settings."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t)
      better-defaults
-     (c-c++ :variables
-            c-c++-enable-clang-support t)
+    ;;  (c-c++ :variables
+    ;;         c-c++-enable-clang-support t)
      colors
      csv
      dash
-     django
+    ;;  django
      docker
      elixir
      emacs-lisp
-     erlang
+    ;;  erlang
      fasd
      finance
      git
@@ -62,7 +62,7 @@ This function should only modify configuration layer settings."
            helm-no-header t)
      html
      javascript
-     latex
+    ;;  latex
      (markdown :variables
                markdown-live-preview-engine 'vmd)
      nginx
@@ -71,7 +71,7 @@ This function should only modify configuration layer settings."
           org-enable-org-journal-support t
           org-projectile-file "TODOs.org")
      osx
-     php
+    ;;  php
      prodigy
      (python :variables
              python-enable-yapf-format-on-save t
@@ -81,7 +81,7 @@ This function should only modify configuration layer settings."
      (ruby :variables
            ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rbenv)
-     ruby-on-rails
+    ;;  ruby-on-rails
      (rust :variables
            rust-format-on-save t)
      (shell :variables
@@ -93,7 +93,7 @@ This function should only modify configuration layer settings."
      syntax-checking
      themes-megapack
      typescript
-     vagrant
+    ;;  vagrant
      version-control
      vimscript
      vinegar
@@ -109,8 +109,8 @@ This function should only modify configuration layer settings."
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages
    '(
-     dtrt-indent
-     org-jira
+    ;;  dtrt-indent
+    ;;  org-jira
      )
 
    ;; A list of packages that cannot be updated.
@@ -142,10 +142,10 @@ It should only modify the values of Spacemacs settings."
    ;; (default nil)
    dotspacemacs-enable-emacs-pdumper nil
 
-   ;; File path pointing to emacs 27.1 executable compiled with support
-   ;; for the portable dumper (this is currently the branch pdumper).
-   ;; (default "emacs-27.0.50")
-   dotspacemacs-emacs-pdumper-executable-file "emacs-27.0.50"
+   ;; Name of executable file pointing to emacs 27+. This executable must be
+   ;; in your PATH.
+   ;; (default "emacs")
+   dotspacemacs-emacs-pdumper-executable-file "emacs"
 
    ;; Name of the Spacemacs dump file. This is the file will be created by the
    ;; portable dumper in the cache directory under dumps sub-directory.
@@ -241,6 +241,11 @@ It should only modify the values of Spacemacs settings."
    ;; True if the home buffer should respond to resize events. (default t)
    dotspacemacs-startup-buffer-responsive t
 
+   ;; Default major mode for a new empty buffer. Possible values are mode
+   ;; names such as `text-mode'; and `nil' to use Fundamental mode.
+   ;; (default `text-mode')
+   dotspacemacs-new-empty-buffer-major-mode 'text-mode
+
    ;; Default major mode of the scratch buffer (default `text-mode')
    dotspacemacs-scratch-mode 'text-mode
 
@@ -255,11 +260,11 @@ It should only modify the values of Spacemacs settings."
                          spacemacs-light)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
-   ;; `all-the-icons', `custom', `vim-powerline' and `vanilla'. The first three
-   ;; are spaceline themes. `vanilla' is default Emacs mode-line. `custom' is a
-   ;; user defined themes, refer to the DOCUMENTATION.org for more info on how
-   ;; to create your own spaceline theme. Value can be a symbol or list with\
-   ;; additional properties.
+   ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
+   ;; first three are spaceline themes. `doom' is the doom-emacs mode-line.
+   ;; `vanilla' is default Emacs mode-line. `custom' is a user defined themes,
+   ;; refer to the DOCUMENTATION.org for more info on how to create your own
+   ;; spaceline theme. Value can be a symbol or list with additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
    dotspacemacs-mode-line-theme '(spacemacs :separator utf-8 :separator-scale 1.0)
 
@@ -272,8 +277,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-default-font '("Hack"
                                :size 13
                                :weight normal
-                               :width normal
-                               )
+                               :width normal)
 
    ;; The leader key (default "SPC")
    dotspacemacs-leader-key "SPC"
@@ -374,6 +378,11 @@ It should only modify the values of Spacemacs settings."
    ;; (default nil) (Emacs 24.4+ only)
    dotspacemacs-maximized-at-startup nil
 
+   ;; If non-nil the frame is undecorated when Emacs starts up. Combine this
+   ;; variable with `dotspacemacs-maximized-at-startup' in OSX to obtain
+   ;; borderless fullscreen. (default nil)
+   dotspacemacs-undecorated-at-startup nil
+
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -401,10 +410,14 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-smooth-scrolling t
 
    ;; Control line numbers activation.
-   ;; If set to `t' or `relative' line numbers are turned on in all `prog-mode' and
-   ;; `text-mode' derivatives. If set to `relative', line numbers are relative.
+   ;; If set to `t', `relative' or `visual' then line numbers are enabled in all
+   ;; `prog-mode' and `text-mode' derivatives. If set to `relative', line
+   ;; numbers are relative. If set to `visual', line numbers are also relative,
+   ;; but lines are only visual lines are counted. For example, folded lines
+   ;; will not be counted and wrapped lines are counted as multiple lines.
    ;; This variable can also be set to a property list for finer control:
    ;; '(:relative nil
+   ;;   :visual nil
    ;;   :disabled-for-modes dired-mode
    ;;                       doc-view-mode
    ;;                       markdown-mode
@@ -412,8 +425,10 @@ It should only modify the values of Spacemacs settings."
    ;;                       pdf-view-mode
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
+   ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
    dotspacemacs-line-numbers '(:relative t
+                               :visual t
                                :disabled-for-modes dired-mode
                                                    doc-view-mode
                                                    pdf-view-mode)
@@ -427,7 +442,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-smartparens-strict-mode nil
 
    ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
-   ;; over any automatically added closing parenthesis, bracket, quote, etc…
+   ;; over any automatically added closing parenthesis, bracket, quote, etc...
    ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)
    dotspacemacs-smart-closing-parenthesis t
 
@@ -495,12 +510,21 @@ It should only modify the values of Spacemacs settings."
    ;; (default nil)
    dotspacemacs-pretty-docs nil))
 
+(defun dotspacemacs/user-env ()
+  "Environment variables setup.
+This function defines the environment variables for your Emacs session. By
+default it calls `spacemacs/load-spacemacs-env' which loads the environment
+variables declared in `~/.spacemacs.env' or `~/.spacemacs.d/.spacemacs.env'.
+See the header of this file for more information."
+  (spacemacs/load-spacemacs-env))
+
 (defun dotspacemacs/user-init ()
   "Initialization for user code:
 This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
   (setq custom-file "~/.emacs.d/private/custom.el")
   (load custom-file)
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend)
@@ -511,9 +535,9 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 
 (defun dotspacemacs/user-load ()
   "Library to load while dumping.
-This function is called while dumping Spacemacs configuration. You can
-`require' or `load' the libraries of your choice that will be included
-in the dump."
+This function is called only while dumping Spacemacs configuration. You can
+`require' or `load' the libraries of your choice that will be included in the
+dump."
   )
 
 (defun dotspacemacs/user-config ()
@@ -523,9 +547,9 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (add-hook 'auto-save-hook 'org-save-all-org-buffers)
-  (add-hook 'prog-mode-hook #'(lambda ()
-                                (dtrt-indent-mode)
-                                (dtrt-indent-adapt)))
+  ;; (add-hook 'prog-mode-hook #'(lambda ()
+  ;;                               (dtrt-indent-mode)
+  ;;                               (dtrt-indent-adapt)))
   (add-to-list 'auto-mode-alist '("Brewfile\\'" . ruby-mode))
   (add-to-list 'auto-mode-alist '("\\.vimrc" . vimrc-mode))
   (require 'org-habit)
@@ -585,3 +609,6 @@ before packages are loaded."
    spaceline-org-clock-p t
   )
 )
+
+;; Do not write anything past this comment. This is where Emacs will
+;; auto-generate custom variable definitions.

@@ -1,9 +1,6 @@
 #!/bin/sh
 
 platform=`uname -a`
-dotfiles="`dirname \"$0\"`"
-export STOW_DIR="`( cd \"$dotfiles\" && pwd )`"
-echo $STOW_DIR > $HOME/.stowdir
 
 echo "= Dotfiles Setup ="
 
@@ -29,10 +26,5 @@ elif echo $platform | grep -q Linux; then
 fi
 
 cd $HOME
-ls -A -1 $STOW_DIR/common | xargs rm -rf
-ls -A -1 $STOW_DIR/desktop | xargs rm -rf
-ls -A -1 $STOW_DIR/server | xargs rm -rf
-$STOW_DIR/up.sh
 chsh -s /bin/zsh
 chmod 700 $HOME/.gnupg
-cd $dotfiles

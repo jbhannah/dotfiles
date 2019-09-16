@@ -1,5 +1,3 @@
-[[ -f "$HOME/.stowdir" ]] && export STOW_DIR=$(cat $HOME/.stowdir) # Set dotfiles directory
-
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" # Source Prezto
 
 # system-wide environment settings for zsh(1)

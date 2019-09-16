@@ -55,8 +55,6 @@
 	unpublish = !legit unpublish
 	undo = !legit undo
 	branches = !legit branches
-[include]
-	path = .gitconfig.local
 [magithub]
 	online = true
 [magithub "status"]
@@ -67,3 +65,5 @@
 	program = /usr/local/MacGPG2/bin/gpg2
 [tag]
 	forceSignAnnotated = true
+[include]
+	path = .gitconfig.local

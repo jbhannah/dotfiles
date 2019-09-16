@@ -36,8 +36,8 @@ cask 'gpg-suite'
 cask 'keybase'
 cask 'visual-studio-code'
 
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 cask 'font-hack'
 
 tap 'd12frosted/emacs-plus'

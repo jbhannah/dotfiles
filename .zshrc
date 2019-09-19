@@ -14,4 +14,5 @@ eval "$(fasd --init auto)"
 # added by Travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+[ -f $HOME/.fubectl/fubectl.source ] && source $HOME/.fubectl/fubectl.source

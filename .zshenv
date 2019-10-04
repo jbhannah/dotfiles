@@ -14,6 +14,13 @@ command -v yarn > /dev/null 2>&1 && export PATH=`yarn global bin`:$PATH
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 [[ -d "$(brew --prefix python)" ]] && export PATH=$(brew --prefix python)/libexec/bin:$PATH
+if [[ -d "$(brew --prefix ruby)" ]]; then
+  rbpath=$(brew --prefix ruby)
+  export PATH=${rbpath}/bin:$PATH
+  export LDFLAGS="-L${rbpath}/lib ${LDFLAGS:-}"
+  export CPPFLAGS="-I${rbpath}/include ${CPPFLAGS:-}"
+  export PKG_CONFIG_PATH=${rbpath}/lib/pkgconfig:${PKG_CONFIG_PATH:-}
+fi
 
 command -v rustc 1>/dev/null 2>&1 && RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 [[ -d $RUST_SRC_PATH ]] && export RUST_SRC_PATH=$RUST_SRC_PATH

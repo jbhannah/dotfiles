@@ -11,6 +11,9 @@ PROMPT=%B%F{magenta}%m%f\ $PROMPT
 
 eval "$(fasd --init auto)"
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # added by Travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 

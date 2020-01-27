@@ -53,16 +53,6 @@ fi
 # Homebrew
 command -v brew > /dev/null 2>&1 && alias buc="brewu; brewc; brew cask upgrade"
 
-# jrnl
-if command -v jrnl > /dev/null 2>&1; then
-    alias j="jrnl"
-    alias jt="j -on today"
-    alias jy="j -on yesterday"
-    alias jx="j --export text"
-    alias jxy="date -v -1d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
-    alias jxf="date -v -3d '+%Y-%m-%d' | xargs -I % jrnl --export text -on % -o %.txt"
-fi
-
 # tmux
 command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator
 

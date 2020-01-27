@@ -19,3 +19,6 @@ eval "$(jenv init -)"
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 [ -f $HOME/.fubectl/fubectl.source ] && source $HOME/.fubectl/fubectl.source
+
+# Created by `userpath` on 2019-11-12 22:55:12
+export PATH="$PATH:/Users/jessehannah/.local/bin"

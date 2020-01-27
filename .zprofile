@@ -18,3 +18,8 @@ export TZ=US/Arizona
 command -v xcrun > /dev/null 2>&1 && export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
 
 [[ -f "${ZDOTDIR:-$HOME}/.zprofile.local" ]] && source "${ZDOTDIR:-$HOME}/.zprofile.local"
+
+# Created by `userpath` on 2019-11-12 22:55:12
+export PATH="$PATH:/Users/jessehannah/.local/bin"
+
+export PATH="$HOME/.cargo/bin:$PATH"

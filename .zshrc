@@ -2,6 +2,7 @@ if [[ ! $TMUX ]] && (( $+commands[lodge] )); then
   cd "$HOME/Code/src/github.com/jbhannah/dotfiles"
   git pull
   lodge
+  cd $HOME
 fi
 
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto

@@ -51,7 +51,7 @@ if command -v docker-compose > /dev/null 2>&1; then
 fi
 
 # Homebrew
-command -v brew > /dev/null 2>&1 && alias buc="brewu; brewc; brew cask upgrade"
+command -v brew > /dev/null 2>&1 && alias buc="brew upgrade; brew cleanup; brew cask upgrade"
 
 # tmux
 command -v tmuxinator > /dev/null 2>&1 && alias mux=tmuxinator

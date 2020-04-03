@@ -7,9 +7,9 @@ if [[ ! $TMUX ]] && (( $+commands[stow] )); then
   cd $HOME
 fi
 
-[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
+eval "$(starship init zsh)"
 
-PROMPT=%B%F{magenta}%m%f\ $PROMPT
+[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" # Source Prezto
 
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" # Aliases
 

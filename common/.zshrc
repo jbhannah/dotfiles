@@ -1,7 +1,9 @@
-if [[ ! $TMUX ]] && (( $+commands[lodge] )); then
+export STOW_DIR=$HOME/Code/src/github.com/jbhannah/dotfiles
+
+if [[ ! $TMUX ]] && (( $+commands[stow] )); then
   cd "$HOME/Code/src/github.com/jbhannah/dotfiles"
   git pull
-  lodge
+  stow -t $HOME -R common
   cd $HOME
 fi
 

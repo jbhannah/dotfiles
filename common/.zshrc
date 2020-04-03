@@ -3,7 +3,7 @@ export STOW_DIR=$HOME/Code/src/github.com/jbhannah/dotfiles
 if [[ ! $TMUX ]] && (( $+commands[stow] )); then
   cd "$HOME/Code/src/github.com/jbhannah/dotfiles"
   git pull
-  stow -t $HOME -R common
+  stow -t $HOME -R common -R unfold
   cd $HOME
 fi
 

@@ -6,7 +6,7 @@ platform=`uname -a`
 echo "= Dotfiles Setup ="
 
 echo "== Initialize Submodules =="
-yadm submodule update --recursive --init
+git submodule update --recursive --init
 
 if echo $platform | grep -q Darwin; then
   echo "== macOS Installation =="
@@ -21,8 +21,11 @@ if echo $platform | grep -q Darwin; then
   [[ -f /etc/zprofile ]] && sudo mv /etc/zprofile "/etc/zprofile~orig"
 elif echo $platform | grep -q Linux; then
   echo "== Ubuntu Installation =="
-  sudo apt-get install build-essential zsh vim-nox luajit python3 python3-dev python3-pip silversearcher-ag stow exuberant-ctags
+  sudo apt-get install build-essential zsh vim-nox luajit python3 python3-dev python3-pip silversearcher-ag stow exuberant-ctags stow
   sudo -H pip3 install thefuck
 fi
+
+echo "== Installing Dotfiles =="
+stow -t $HOME -S common -S unfold
 
 [[ $SHELL == "/bin/zsh" ]] || chsh -s /bin/zsh

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd $HOME
 platform=`uname -a`
 
 echo "= Dotfiles Setup ="
@@ -16,7 +15,7 @@ if echo $platform | grep -q Darwin; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
 
-  [[ -f "$HOME/.Brewfile" ]] && brew bundle --global
+  brew bundle
   [[ -f /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zshrc
   [[ -f /etc/zprofile ]] && sudo mv /etc/zprofile "/etc/zprofile~orig"
 elif echo $platform | grep -q Linux; then

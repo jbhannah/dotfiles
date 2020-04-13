@@ -39,7 +39,8 @@ cask "keybase"
 cask "visual-studio-code"
 
 tap "homebrew/cask-fonts"
-cask "font-hack"
+cask "font-hack-nerd-font"
+cask "font-jetbrainsmono-nerd-font"
 
 tap "d12frosted/emacs-plus"
 brew "emacs-plus"

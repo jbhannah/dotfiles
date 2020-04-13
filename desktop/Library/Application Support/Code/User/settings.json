@@ -46,18 +46,6 @@
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.tabSize": 2
   },
-  "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
-  "atlascode.jira.jqlList": [
-    {
-      "enabled": true,
-      "id": "cb1e149d-b196-42e6-9c33-a4a3185ddd85",
-      "monitor": true,
-      "name": "My Nextiva Issues",
-      "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
-      "siteId": "b494d453-6528-4c80-ab1a-97fd0ec5cc81"
-    }
-  ],
-  "atlascode.jira.statusbar.enabled": false,
   "atomKeymap.promptV3Features": true,
   "dart.sdkPath": "/usr/local/opt/dart/libexec",
   "debug.console.lineHeight": 20,
@@ -76,7 +64,7 @@
     "source.organizeImports": true
   },
   "editor.cursorBlinking": "phase",
-  "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Hack, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.formatOnPaste": true,
@@ -238,6 +226,7 @@
   "python.linting.pylintEnabled": true,
   "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 80,
+  "ruby.useLanguageServer": true,
   "ruby.useBundler": true,
   "rust-client.channel": "stable",
   "rust.all_features": true,
@@ -247,7 +236,7 @@
   "search.showLineNumbers": true,
   "search.smartCase": true,
   "search.useGlobalIgnoreFiles": true,
-  "sync.autoDownload": true,
+  "sync.autoDownload": false,
   "sync.autoUpload": true,
   "sync.gist": "d6a7731579b427f874bf96c1bf39b4e5",
   "sync.quietSync": true,
@@ -327,7 +316,7 @@
   "workbench.startupEditor": "none",
   "yaml.customTags": ["!vault"],
   "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/action.schema.json": "/action.yml",
-    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/workflow.schema.json": "/.github/workflows/*.yml"
+    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/workflow.schema.json": "/.github/workflows/*.yml",
+    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/action.schema.json": "/action.yml"
   }
 }

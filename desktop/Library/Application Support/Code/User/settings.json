@@ -134,6 +134,7 @@
   "git.scanRepositories": ["~/Code/src"],
   "git.suggestSmartCommit": false,
   "git.untrackedChanges": "separate",
+  "git.detectSubmodules": false,
   "gitProjectManager.baseProjectsFolders": ["~/Code/src"],
   "gitProjectManager.displayProjectPath": true,
   "gitProjectManager.ignoredFolders": ["node_modules"],

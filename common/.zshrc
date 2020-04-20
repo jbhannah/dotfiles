@@ -3,6 +3,7 @@ export STOW_DIR=$HOME/Code/src/github.com/jbhannah/dotfiles
 if [[ ! $TMUX ]] && (( $+commands[stow] )); then
   cd "$HOME/Code/src/github.com/jbhannah/dotfiles"
   git pull
+  git submodule update --recursive
   stow -t $HOME -R common -R unfold
   cd $HOME
 fi

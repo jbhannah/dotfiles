@@ -3,16 +3,10 @@
     "editor.snippetSuggestions": "none"
   },
   "[javascript]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": false
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[javascriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": false
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },

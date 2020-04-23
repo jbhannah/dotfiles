@@ -23,7 +23,6 @@ eval "$(jenv init -)"
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
-[ -f $HOME/.fubectl/fubectl.source ] && source $HOME/.fubectl/fubectl.source
+export FZF_CTRL_R_OPTS="--sort --layout=reverse"
 
-# Created by `userpath` on 2019-11-12 22:55:12
-export PATH="$PATH:/Users/jessehannah/.local/bin"
+[ -f $HOME/.fubectl/fubectl.source ] && source $HOME/.fubectl/fubectl.source

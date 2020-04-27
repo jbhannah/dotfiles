@@ -68,7 +68,9 @@
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.semanticHighlighting.enabled": true,
   "editor.snippetSuggestions": "top",
   "editor.stablePeek": true,
@@ -122,16 +124,22 @@
   "git.autoStash": true,
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.detectSubmodules": false,
   "git.enableCommitSigning": true,
   "git.fetchOnPull": true,
   "git.rebaseWhenSync": true,
-  "git.scanRepositories": ["~/Code/src"],
+  "git.scanRepositories": [
+    "~/Code/src"
+  ],
   "git.suggestSmartCommit": false,
   "git.untrackedChanges": "separate",
-  "git.detectSubmodules": false,
-  "gitProjectManager.baseProjectsFolders": ["~/Code/src"],
+  "gitProjectManager.baseProjectsFolders": [
+    "~/Code/src"
+  ],
   "gitProjectManager.displayProjectPath": true,
-  "gitProjectManager.ignoredFolders": ["node_modules"],
+  "gitProjectManager.ignoredFolders": [
+    "node_modules"
+  ],
   "gitProjectManager.maxDepthRecursion": 0,
   "gitProjectManager.openInNewWindow": true,
   "gitProjectManager.searchInsideProjects": false,
@@ -167,7 +175,9 @@
   "go.gotoSymbol.includeGoroot": true,
   "go.gotoSymbol.includeImports": true,
   "go.inferGopath": true,
-  "go.lintFlags": ["run"],
+  "go.lintFlags": [
+    "run"
+  ],
   "go.lintOnSave": "workspace",
   "go.lintTool": "golangci-lint",
   "go.liveErrors": {
@@ -221,6 +231,15 @@
   "python.linting.pylintEnabled": true,
   "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 80,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "reek": {
+      "useBundler": true
+    },
+    "rubocop": {
+      "useBundler": true
+    }
+  },
   "ruby.useBundler": true,
   "rust-client.channel": "stable",
   "rust.all_features": true,
@@ -244,7 +263,10 @@
   "terraform.indexing": {
     "delay": 500,
     "enabled": false,
-    "exclude": [".terraform/**/*", "**/.terraform/**/*"],
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ],
     "liveIndexing": false
   },
   "terraform.languageServer": {
@@ -256,7 +278,10 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": [],
-      "before": ["[", " "],
+      "before": [
+        "[",
+        " "
+      ],
       "commands": [
         {
           "command": "editor.action.insertLineBefore"
@@ -268,7 +293,10 @@
     },
     {
       "after": [],
-      "before": ["]", " "],
+      "before": [
+        "]",
+        " "
+      ],
       "commands": [
         {
           "command": "editor.action.insertLineAfter"
@@ -280,7 +308,10 @@
     },
     {
       "after": [],
-      "before": ["[", "e"],
+      "before": [
+        "[",
+        "e"
+      ],
       "commands": [
         {
           "command": "editor.action.moveLinesUpAction"
@@ -289,7 +320,10 @@
     },
     {
       "after": [],
-      "before": ["]", "e"],
+      "before": [
+        "]",
+        "e"
+      ],
       "commands": [
         {
           "command": "editor.action.moveLinesDownAction"
@@ -309,9 +343,11 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "yaml.customTags": ["!vault"],
+  "yaml.customTags": [
+    "!vault"
+  ],
   "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/workflow.schema.json": "/.github/workflows/*.yml",
-    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/action.schema.json": "/action.yml"
+    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/action.schema.json": "/action.yml",
+    "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/workflow.schema.json": "/.github/workflows/*.yml"
   }
 }

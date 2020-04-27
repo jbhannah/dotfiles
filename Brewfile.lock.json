@@ -728,6 +728,12 @@
         "options": {
           "full_name": "chromedriver"
         }
+      },
+      "minecraft": {
+        "version": "latest",
+        "options": {
+          "full_name": "minecraft"
+        }
       }
     },
     "tap": {

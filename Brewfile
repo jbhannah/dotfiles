@@ -48,8 +48,10 @@ cask "google-chrome"
 cask "gpg-suite"
 cask "keybase"
 cask "minecraft"
+cask "notion"
 cask "postgres"
 cask "slack"
+cask "ticktick"
 cask "visual-studio-code"
 
 tap "AdoptOpenJDK/openjdk"
@@ -64,5 +66,3 @@ brew "emacs-plus"
 
 tap "kryptco/tap"
 brew "kr"
-
-mas "Todoist", id: 585829637

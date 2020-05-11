@@ -66,3 +66,5 @@ brew "emacs-plus"
 
 tap "kryptco/tap"
 brew "kr"
+
+mas "Xcode", id: 497799835

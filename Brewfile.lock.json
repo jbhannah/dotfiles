@@ -441,28 +441,28 @@
         }
       },
       "tmux": {
-        "version": "3.1a",
+        "version": "3.1b",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/tmux-3.1a.catalina.bottle.tar.gz",
-              "sha256": "62ca6f2c2c7c06ddbcb535daa4c7b163cb10cce51a381cabb8b15d2e756e60f1"
+              "url": "https://homebrew.bintray.com/bottles/tmux-3.1b.catalina.bottle.tar.gz",
+              "sha256": "f26bd0c3f5696350dcaf229d0fadaf6ab677c0ebbb550fc499ca0a37da59ab55"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/tmux-3.1a.mojave.bottle.tar.gz",
-              "sha256": "1bf482fdb31919d337e652842a40d4622910a70c5c0a8eaa550ae5f2270ce3d8"
+              "url": "https://homebrew.bintray.com/bottles/tmux-3.1b.mojave.bottle.tar.gz",
+              "sha256": "e9995ca765078be9cfdef4f1b6a628bcded0e96e36649e084a7f5480d165547a"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/tmux-3.1a.high_sierra.bottle.tar.gz",
-              "sha256": "66a01e075ecdb88908ffc08175b17ee68d185293332ee5f1ebc02da262f08948"
+              "url": "https://homebrew.bintray.com/bottles/tmux-3.1b.high_sierra.bottle.tar.gz",
+              "sha256": "7a04ece8143c0647be18bb14c160a984a5a9f855fa2ee888d21fc19374790ee5"
             }
           }
         }
       },
       "tmuxinator-completion": {
-        "version": "2.0.0",
+        "version": "2.0.1",
         "bottle": false
       },
       "emacs-plus": {
@@ -521,22 +521,22 @@
       },
       "kubectl": null,
       "node": {
-        "version": "14.1.0",
+        "version": "14.2.0",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/node-14.1.0.catalina.bottle.tar.gz",
-              "sha256": "de5e656b84b03f2f9c432623d5ba203af61786d851d626fbf1277c4bfc7b11c8"
+              "url": "https://homebrew.bintray.com/bottles/node-14.2.0.catalina.bottle.tar.gz",
+              "sha256": "5f4cd0d4487f026110ca8e80e39e920c8de9abd9de2590bcbf4460ae1a8ad872"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/node-14.1.0.mojave.bottle.tar.gz",
-              "sha256": "af18bd8c57c1c92eedfe10cb7df4b3881979ba5771f919b4881f614fc85f2961"
+              "url": "https://homebrew.bintray.com/bottles/node-14.2.0.mojave.bottle.tar.gz",
+              "sha256": "7024e321dc5e6ca079ad80f44eb4115e729d9809a87360fe6c727a62ba7c4491"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/node-14.1.0.high_sierra.bottle.tar.gz",
-              "sha256": "9191acb82f49f7317908489431011a657bf57933dbadb5d7628fef111e77bcfc"
+              "url": "https://homebrew.bintray.com/bottles/node-14.2.0.high_sierra.bottle.tar.gz",
+              "sha256": "4a3fb0e0f8db6ca628011d50c0f63daef7a5b99a82a3a9860df6274d37348423"
             }
           }
         }
@@ -571,29 +571,29 @@
         }
       },
       "elasticsearch": {
-        "version": "6.8.7",
+        "version": "6.8.8",
         "bottle": false,
         "options": {
           "restart_service": "changed"
         }
       },
       "redis": {
-        "version": "5.0.9",
+        "version": "6.0.1",
         "bottle": {
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/redis-5.0.9.catalina.bottle.tar.gz",
-              "sha256": "4d8c4759c1429c11f586bcf870f94f218d6352fd56ac5e4ee1d5dfadbc6e0304"
+              "url": "https://homebrew.bintray.com/bottles/redis-6.0.1.catalina.bottle.tar.gz",
+              "sha256": "75862c2ab5ea9f0e558e677d8c099c62f087b80f6e207814517938ce55abb310"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/redis-5.0.9.mojave.bottle.tar.gz",
-              "sha256": "4cad6cbf05beaab5549a12dc66650a4936f3e468ae421c8fcf9fd38ede66c793"
+              "url": "https://homebrew.bintray.com/bottles/redis-6.0.1.mojave.bottle.tar.gz",
+              "sha256": "8ed824ce30bde04609bdb15b4cecf73210b240675b3ca9cf59d35a77fb122eed"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/redis-5.0.9.high_sierra.bottle.tar.gz",
-              "sha256": "ef9ac989dd55b0aae732ded463ae82e248795a77fd0f7d9021fd9c6f4fdbee73"
+              "url": "https://homebrew.bintray.com/bottles/redis-6.0.1.high_sierra.bottle.tar.gz",
+              "sha256": "dc0610e9b6d8725b0933ef24643ea8322d34aa9a8617976b54c93b6dfd776ab6"
             }
           }
         },
@@ -724,7 +724,7 @@
         }
       },
       "chromedriver": {
-        "version": "81.0.4044.69",
+        "version": "81.0.4044.138",
         "options": {
           "full_name": "chromedriver"
         }
@@ -753,10 +753,10 @@
         "revision": "a132141499c17f3351c9956dcc533e2b8c76cbf6"
       },
       "homebrew/cask-fonts": {
-        "revision": "f8551cec9eca212d72c0b5f559c0ae0365a9729f"
+        "revision": "2997a377d214b56d9f5ee864bea6b5c7f2581ca6"
       },
       "d12frosted/emacs-plus": {
-        "revision": "30d1b86144561d7047b6cf92f093b3bd9506c762"
+        "revision": "9b68df715d9f6a7463ea7c0bb9e476d9aa30339c"
       },
       "kryptco/tap": {
         "revision": "e8319a25d1fa9e8f008cf34f9f4cd405ab736638"
@@ -766,15 +766,19 @@
       }
     },
     "mas": {
-      "Todoist": null
+      "Todoist": null,
+      "Xcode": {
+        "id": "497799835",
+        "version": "11.4.1"
+      }
     }
   },
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.14",
+        "HOMEBREW_VERSION": "2.2.15",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4a62b7c60c6e693f981abb31a1da42611a63c1ed",
+        "Homebrew/homebrew-core": "3f0004eff2e2b7f8a2829accc992178f10a29f52",
         "CLT": "11.4.1.0.1.1586360307",
         "Xcode": "11.4.1",
         "macOS": "10.15.4"

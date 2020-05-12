@@ -38,6 +38,9 @@ brew "yarn"
 tap "d12frosted/emacs-plus"
 brew "emacs-plus"
 
+tap "heroku/brew"
+brew "heroku"
+
 tap "kryptco/tap"
 brew "kr"
 
@@ -57,6 +60,7 @@ cask "keybase"
 cask "minecraft"
 cask "notion"
 cask "postgres"
+cask "rocket"
 cask "slack"
 cask "ticktick"
 cask "visual-studio-code"

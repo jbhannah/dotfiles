@@ -642,6 +642,10 @@
         "options": {
           "restart_service": "changed"
         }
+      },
+      "heroku": {
+        "version": "7.41.1",
+        "bottle": false
       }
     },
     "tap": {
@@ -659,6 +663,9 @@
       },
       "homebrew/cask-fonts": {
         "revision": "2997a377d214b56d9f5ee864bea6b5c7f2581ca6"
+      },
+      "heroku/brew": {
+        "revision": "f7fa3b71a7fd3b93dacd9c3b31d2e5f856ba8e3a"
       }
     },
     "cask": {
@@ -798,6 +805,12 @@
         "version": "2.1.0",
         "options": {
           "full_name": "font-jetbrainsmono-nerd-font"
+        }
+      },
+      "rocket": {
+        "version": "1.7.4,69",
+        "options": {
+          "full_name": "rocket"
         }
       }
     },

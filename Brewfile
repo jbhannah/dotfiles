@@ -1,7 +1,7 @@
 brew "ag"
 brew "bat"
 brew "ctags"
-brew "elasticsearch", restart_service: :changed
+# brew "elasticsearch", restart_service: :changed
 brew "exa"
 brew "fasd"
 brew "fzf"
@@ -34,6 +34,12 @@ brew "tmux"
 brew "tmuxinator-completion"
 brew "yarn"
 
+tap "d12frosted/emacs-plus"
+brew "emacs-plus"
+
+tap "kryptco/tap"
+brew "kr"
+
 cask "1password"
 cask "alacritty"
 cask "alfred"
@@ -57,14 +63,12 @@ cask "visual-studio-code"
 tap "AdoptOpenJDK/openjdk"
 cask "adoptopenjdk14-openj9"
 
+tap "elastic/tap"
+brew "elasticsearch-oss", restart_service: :changed
+
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 cask "font-jetbrainsmono-nerd-font"
 
-tap "d12frosted/emacs-plus"
-brew "emacs-plus"
-
-tap "kryptco/tap"
-brew "kr"
-
 mas "Xcode", id: 497799835
+mas "Yoink", id: 457622435

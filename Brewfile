@@ -64,6 +64,7 @@ cask "rocket"
 cask "slack"
 cask "ticktick"
 cask "visual-studio-code"
+cask "xscreensaver"
 cask "zoomus"
 
 tap "AdoptOpenJDK/openjdk"

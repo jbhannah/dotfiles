@@ -812,6 +812,12 @@
         "options": {
           "full_name": "rocket"
         }
+      },
+      "xscreensaver": {
+        "version": "5.44.1",
+        "options": {
+          "full_name": "xscreensaver"
+        }
       }
     },
     "mas": {

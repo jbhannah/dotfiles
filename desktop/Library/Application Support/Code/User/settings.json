@@ -200,6 +200,7 @@
     ".gemrc": "ruby",
     ".gitignore.local": "git",
     ".railsrc": "ruby",
+    "Procfile.dev": "heroku",
     "tsconfig.json": "raml",
     "tslint.json": "raml"
   },
@@ -231,12 +232,7 @@
   "search.showLineNumbers": true,
   "search.smartCase": true,
   "search.useGlobalIgnoreFiles": true,
-  "sync.autoDownload": false,
-  "sync.autoUpload": true,
-  "sync.gist": "d6a7731579b427f874bf96c1bf39b4e5",
-  "sync.quietSync": true,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
+  "solargraph.bundlerPath": "/Users/jbhannah/.rbenv/shims/bundle",
   "team.showWelcomeMessage": false,
   "terminal.external.osxExec": "Alacritty.app",
   "terminal.integrated.fontSize": 13,
@@ -303,6 +299,6 @@
   "yaml.schemas": {
     "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/action.schema.json": "/action.yml",
     "file:///Users/jbhannah/.vscode/extensions/me-dutour-mathieu.vscode-github-actions-2.2.7/schemas/workflow.schema.json": "/.github/workflows/*.yml",
-    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.5.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   }
 }

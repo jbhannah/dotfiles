@@ -77,5 +77,6 @@ tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 cask "font-jetbrainsmono-nerd-font"
 
+mas "Spark", id: 1176895641
 mas "Xcode", id: 497799835
 mas "Yoink", id: 457622435

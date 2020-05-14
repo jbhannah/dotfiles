@@ -4,6 +4,7 @@ brew "crystal"
 brew "ctags"
 brew "exa"
 brew "fasd"
+brew "fish"
 brew "fzf"
 brew "git"
 brew "git-delta"
@@ -37,6 +38,9 @@ brew "yarn"
 
 tap "d12frosted/emacs-plus"
 brew "emacs-plus"
+
+tap "fabianishere/personal"
+brew "pam_reattach"
 
 tap "heroku/brew"
 brew "heroku"

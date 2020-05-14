@@ -29,4 +29,7 @@ fi
 echo "== Installing Dotfiles =="
 stow -t $HOME -S common -S unfold
 
-[[ $SHELL == "/bin/zsh" ]] || chsh -s /bin/zsh
+if [[ $SHELL != "/usr/local/bin/fish" ]]; then
+  echo /usr/local/bin/fish | sudo tee -a /etc/shells
+  chsh -s /usr/local/bin/fish
+fi

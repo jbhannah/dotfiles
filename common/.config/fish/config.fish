@@ -1,0 +1,4 @@
+not set -q VISUAL
+and set -x VISUAL vim
+
+set -x EDITOR $VISUAL

@@ -14,3 +14,6 @@
 [submodule ".fubectl"]
 	path = common/.fubectl
 	url = https://github.com/kubermatic/fubectl.git
+[submodule "common/.config/fish/fisher"]
+	path = common/.config/fish/fisher
+	url = https://github.com/jorgebucaran/fisher.git

@@ -51,12 +51,12 @@ abbr -a -g gcY git cherry -v
 
 # Conflict (C)
 abbr -a -g gCl git --no-pager diff --name-only --diff-filter=U
-alias gCa 'git add (gCl)'
-alias gCe 'git mergetool (gCl)'
+abbr -a -g gCa 'git add (gCl)'
+abbr -a -g gCe 'git mergetool (gCl)'
 abbr -a -g gCo git checkout --ours --
-alias gCO 'gCo (gCl)'
+abbr -a -g gCO 'gCo (gCl)'
 abbr -a -g gCt git checkout --theirs --
-alias gCT 'gCt (gCl)'
+abbr -a -g gCT 'gCt (gCl)'
 
 # Data (d)
 abbr -a -g gd git ls-files
@@ -65,7 +65,7 @@ abbr -a -g gdx git ls-files --deleted
 abbr -a -g gdm git ls-files --modified
 abbr -a -g gdu git ls-files --other --exclude-standard
 abbr -a -g gdk git ls-files --killed
-alias gdi 'git status --porcelain --short --ignored | sed -n "s/^!! //p"'
+abbr -a -g gdi 'git status --porcelain --short --ignored | sed -n "s/^!! //p"'
 
 # Fetch (f)
 abbr -a -g gf git fetch
@@ -181,10 +181,10 @@ abbr -a -g gp git push
 abbr -a -g gpf git push --force-with-lease
 abbr -a -g gpF git push --force
 abbr -a -g gpa git push --all
-alias gpA 'git push --all && git push --tags'
+abbr -a -g gpA 'git push --all && git push --tags'
 abbr -a -g gpt git push --tags
-alias gpc 'git push --set-upstream origin "(git-branch-current 2> /dev/null)"'
-alias gpp 'git pull origin "(git-branch-current 2> /dev/null)" && git push origin "(git-branch-current 2> /dev/null)"'
+abbr -a -g gpc 'git push --set-upstream origin (__git_branch_current 2> /dev/null)'
+abbr -a -g gpp 'git pull origin (__git_branch_current 2> /dev/null) && git push origin (__git_branch_current 2> /dev/null)'
 
 # Rebase (r)
 abbr -a -g gr git rebase

@@ -247,3 +247,8 @@ alias gwc 'git clean -n'
 alias gwC 'git clean -f'
 alias gwx 'git rm -r'
 alias gwX 'git rm -rf'
+
+alias gfcd '__git_clone_and_cd gfc'
+alias gfcrd '__git_clone_and_cd gfcr'
+alias gfcdo '__git_clone_and_cd_and_open gfc'
+alias gfcrdo '__git_clone_and_cd_and_open gfcr'

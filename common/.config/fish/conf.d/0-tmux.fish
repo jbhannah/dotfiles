@@ -1,3 +1,3 @@
-if status is-interactive; and not set -q TMUX
-    exec tmux new-session -A -s fish
-end
+status is-interactive
+and not set -q TMUX
+and exec tmux new-session -A -s fish

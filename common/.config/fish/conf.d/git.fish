@@ -160,12 +160,12 @@ abbr -a -g gix git rm -r --cached
 abbr -a -g giX git rm -rf --cached
 
 # Log (l)
-abbr -a -g gl git log --topo-order --pretty=format:"$_git_log_medium_format"
-abbr -a -g gls git log --topo-order --stat --pretty=format:"$_git_log_medium_format"
-abbr -a -g gld git log --topo-order --stat --patch --full-diff --pretty=format:"$_git_log_medium_format"
-abbr -a -g glo git log --topo-order --pretty=format:"$_git_log_oneline_format"
-abbr -a -g glg git log --topo-order --all --graph --pretty=format:"$_git_log_oneline_format"
-abbr -a -g glb git log --topo-order --pretty=format:"$_git_log_brief_format"
+abbr -a -g gl git log --topo-order --pretty=format:\"$_git_log_medium_format\"
+abbr -a -g gls git log --topo-order --stat --pretty=format:\"$_git_log_medium_format\"
+abbr -a -g gld git log --topo-order --stat --patch --full-diff --pretty=format:\"$_git_log_medium_format\"
+abbr -a -g glo git log --topo-order --pretty=format:\"$_git_log_oneline_format\"
+abbr -a -g glg git log --topo-order --all --graph --pretty=format:\"$_git_log_oneline_format\"
+abbr -a -g glb git log --topo-order --pretty=format:\"$_git_log_brief_format\"
 abbr -a -g glc git shortlog --summary --numbered
 abbr -a -g glS git log --show-signature
 

@@ -1,3 +1,3 @@
-alias rbb 'bundle'
-alias rbbe 'bundle exec'
-alias rbbi 'bundle install'
+abbr -a -g rbb bundle
+abbr -a -g rbbe bundle exec
+abbr -a -g rbbi bundle install

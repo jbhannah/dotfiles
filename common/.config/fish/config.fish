@@ -1,13 +1,18 @@
-set fish_greeting
-set -g fish_key_bindings fish_vi_key_bindings
+test -n $fish_greeting
+or set fish_greeting
 
-not set -q VISUAL
-and set -x VISUAL vim
+set -q fish_key_bindings
+and test $fish_key_bindings = "fish_vi_key_bindings"
+or set -U fish_key_bindings fish_vi_key_bindings
+
+set -q VISUAL
+or set -x VISUAL vim
 
 set -x EDITOR $VISUAL
 
-set -x TZ US/Arizona
+set -q TZ
+or set -U TZ US/Arizona
 
 abbr -a -g l ls -algh
 
-starship init fish | source
+__starship

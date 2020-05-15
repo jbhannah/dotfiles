@@ -16,5 +16,6 @@ if status is-interactive
 
     abbr -a -g l ls -algh
 
+    __fnm
     __starship
 end

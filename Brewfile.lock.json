@@ -355,10 +355,6 @@
           }
         }
       },
-      "nvm": {
-        "version": "0.35.3",
-        "bottle": false
-      },
       "overmind": {
         "version": "2.1.1",
         "bottle": {
@@ -495,22 +491,22 @@
       },
       "rustup": null,
       "starship": {
-        "version": "0.41.0",
+        "version": "0.41.3",
         "bottle": {
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.catalina.bottle.tar.gz",
-              "sha256": "a94177ea27e842888066bd0cb9e38d0053fc6611449751627f9f8356ff92edfe"
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.3.catalina.bottle.tar.gz",
+              "sha256": "49bf8bbd460536e5f7683cb6db865ecf40bca4d030a8c41d60ae9c43cc2d7f5f"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.mojave.bottle.tar.gz",
-              "sha256": "38c7147237a43f5d8b331b354a8cceea27b1bfb4e1e80da2f83fb720c3000327"
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.3.mojave.bottle.tar.gz",
+              "sha256": "2c7da646a724e2e5cc2e40673e6f0502c604a531afd9e29799e09689a7a95ab6"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.high_sierra.bottle.tar.gz",
-              "sha256": "c0c99306e85a9ae9ca13a94a33e61fc1241d7d458df8213e9489ed14e25796c8"
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.3.high_sierra.bottle.tar.gz",
+              "sha256": "3c94fc2e09b131b5ddf94fbf84efe5a6e9a2f6d925b0c9192331c3bf906ec840"
             }
           }
         }
@@ -671,11 +667,15 @@
       "pam_reattach": {
         "version": "1.2",
         "bottle": false
+      },
+      "fnm": {
+        "version": "1.20.0",
+        "bottle": false
       }
     },
     "tap": {
       "d12frosted/emacs-plus": {
-        "revision": "9b68df715d9f6a7463ea7c0bb9e476d9aa30339c"
+        "revision": "ff6c406aed329d0709c93e6836ff7bda87250887"
       },
       "kryptco/tap": {
         "revision": "e8319a25d1fa9e8f008cf34f9f4cd405ab736638"
@@ -684,16 +684,19 @@
         "revision": "8b57564cc0fe84bffb0104078636df4ed34d0d8a"
       },
       "elastic/tap": {
-        "revision": "6f3c6c3aa69cc7751f74a77458e25f93c0af965e"
+        "revision": "cbe4d0fc954a310f48a794399d7a87709a72296a"
       },
       "homebrew/cask-fonts": {
-        "revision": "c880bad3235107326fab62bc8dd4e764054182ec"
+        "revision": "e2cf31c4691b00921066a078670a97706dbcc165"
       },
       "heroku/brew": {
         "revision": "f7fa3b71a7fd3b93dacd9c3b31d2e5f856ba8e3a"
       },
       "fabianishere/personal": {
         "revision": "a1296fe1f89000010ddf3dee26d9a0413bbe94df"
+      },
+      "schniz/tap": {
+        "revision": "6c5636b6023fecfaf6bc74435092cf0de58a7219"
       }
     },
     "cask": {
@@ -734,7 +737,7 @@
         }
       },
       "dotnet-sdk": {
-        "version": "3.1.201,905598d0-17a3-4b42-bf13-c5a69d7aac87:853aff73920dcb013c09a74f05da7f6a",
+        "version": "3.1.202,1016a722-2794-4381-88b8-29bf382901be:ea17a73205f9a7d33c2a4e38544935ba",
         "options": {
           "full_name": "dotnet-sdk"
         }
@@ -868,7 +871,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "5326934c8388b0eee5ee9dc4807e79c156d19534",
+        "Homebrew/homebrew-core": "fbb93aa63288cff77752db6cdc47d7e3d79d40f3",
         "CLT": "11.4.1.0.1.1586360307",
         "Xcode": "11.4.1",
         "macOS": "10.15.4"

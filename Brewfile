@@ -20,7 +20,6 @@ brew "macvim"
 brew "mas"
 brew "neovim"
 brew "node"
-brew "nvm"
 brew "overmind"
 brew "pyenv"
 brew "python"
@@ -47,6 +46,9 @@ brew "heroku"
 
 tap "kryptco/tap"
 brew "kr"
+
+tap "Schniz/tap"
+brew "fnm"
 
 cask "1password"
 cask "alacritty"

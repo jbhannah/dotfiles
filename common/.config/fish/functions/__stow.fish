@@ -10,11 +10,12 @@ function __stow
 
     if set -q STOW_DIR
         if not set -q TMUX
-            set -lx GIT_DIR $STOW_DIR/.git
-            set -lx GIT_WORK_TREE $STOW_DIR
+            pushd $STOW_DIR
             git stash push --include-untracked --quiet
             git pull --rebase --quiet
+            git submodule update --recursive
             git stash pop --quiet
+            popd
         end
 
         if not set -q stow_command

@@ -17,5 +17,7 @@ if status is-interactive
     abbr -a -g l ls -algh
 
     __fnm
+    __pyenv
+
     __starship
 end

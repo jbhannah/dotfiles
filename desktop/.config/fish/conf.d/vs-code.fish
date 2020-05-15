@@ -1,2 +1,2 @@
 type -q code
-and set -x VISUAL code -w
+and set -gx VISUAL code -w

@@ -8,7 +8,7 @@ function __stow
         end
     end
 
-    if set -q STOW_DIR; and status is-interactive
+    if set -q STOW_DIR
         if not set -q TMUX
             set -lx GIT_DIR $STOW_DIR/.git
             set -lx GIT_WORK_TREE $STOW_DIR

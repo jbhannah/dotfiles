@@ -1,1 +1,2 @@
-__stow
+status is-interactive
+and __stow

@@ -1,4 +1,4 @@
-if type -q brew
+if status is-interactive; and type -q brew
     abbr -a -g brewc brew cleanup
     abbr -a -g brewi brew install
     abbr -a -g brewL brew leaves

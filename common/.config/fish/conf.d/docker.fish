@@ -1,4 +1,4 @@
-if type -q docker
+if status is-interactive; and type -q docker
     # ps (ps)
     abbr -a -g dps docker ps -a
     abbr -a -g dpsl docker ps -lq

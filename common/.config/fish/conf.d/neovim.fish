@@ -1,4 +1,4 @@
-if type -q nvim
+if status is-interactive; and type -q nvim
     not set -q VISUAL
     and set -x VISUAL nvim
 

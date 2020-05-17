@@ -38,6 +38,15 @@ brew "yarn"
 tap "d12frosted/emacs-plus"
 brew "emacs-plus"
 
+tap "AdoptOpenJDK/openjdk"
+cask "adoptopenjdk14-openj9"
+
+tap "elastic/tap"
+brew "elasticsearch-full", restart_service: :changed
+brew "filebeat-full", restart_service: :changed
+brew "kibana-full", restart_service: :changed
+brew "metricbeat-full", restart_service: :changed
+
 tap "fabianishere/personal"
 brew "pam_reattach"
 
@@ -65,6 +74,7 @@ cask "gpg-suite"
 cask "keybase"
 cask "minecraft"
 cask "notion"
+cask "nordvpn"
 cask "postgres"
 cask "rocket"
 cask "slack"
@@ -73,16 +83,12 @@ cask "visual-studio-code"
 cask "xscreensaver"
 cask "zoomus"
 
-tap "AdoptOpenJDK/openjdk"
-cask "adoptopenjdk14-openj9"
-
-tap "elastic/tap"
-brew "elasticsearch-oss", restart_service: :changed
-
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 cask "font-jetbrainsmono-nerd-font"
 
+mas "Pixelmator", id: 407963104
 mas "Spark", id: 1176895641
+mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
 mas "Yoink", id: 457622435

@@ -272,22 +272,22 @@
         "bottle": false
       },
       "macvim": {
-        "version": "8.2-163",
+        "version": "8.2-163_1",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163.catalina.bottle.tar.gz",
-              "sha256": "e970af58d654178888bb0ba2a953c4c12611b666fab04f9f2e3a8820d3c4527c"
+              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163_1.catalina.bottle.tar.gz",
+              "sha256": "65218759a56943f7d0cb09684992bfcaff8ff58d0715f32281e831ce05a1e9aa"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163.mojave.bottle.tar.gz",
-              "sha256": "a74cd5165d1fd5ad7cc4c153acd6d642e4e64b1e6d0b33285bcf5be3fc95b203"
+              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163_1.mojave.bottle.tar.gz",
+              "sha256": "0346288d92af43beebaa670b84dec722a24d73fc3d099d1142a26305b7463274"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163.high_sierra.bottle.tar.gz",
-              "sha256": "aad6f1ca9577d5bd5572647420c541049778dd03e7f18a6368314118e9de9f85"
+              "url": "https://homebrew.bintray.com/bottles/macvim-8.2-163_1.high_sierra.bottle.tar.gz",
+              "sha256": "33a60d84852945d5cf98c2a232e349c749accb551e4c776525423376cfbd85e8"
             }
           }
         }
@@ -671,6 +671,34 @@
       "fnm": {
         "version": "1.20.0",
         "bottle": false
+      },
+      "elasticsearch-full": {
+        "version": "7.7.0",
+        "bottle": false,
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "kibana-full": {
+        "version": "7.7.0",
+        "bottle": false,
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "metricbeat-full": {
+        "version": "7.7.0",
+        "bottle": false,
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "filebeat-full": {
+        "version": "7.7.0",
+        "bottle": false,
+        "options": {
+          "restart_service": "changed"
+        }
       }
     },
     "tap": {
@@ -849,6 +877,18 @@
         "options": {
           "full_name": "xscreensaver"
         }
+      },
+      "nordvpn": {
+        "version": "5.5.4",
+        "options": {
+          "full_name": "nordvpn"
+        }
+      },
+      "adoptopenjdk13-openj9": {
+        "version": "13.0.2,8",
+        "options": {
+          "full_name": "adoptopenjdk13-openj9"
+        }
       }
     },
     "mas": {
@@ -863,6 +903,14 @@
       "Spark": {
         "id": "1176895641",
         "version": "2.7.0"
+      },
+      "Todoist": {
+        "id": "585829637",
+        "version": "7.2.7"
+      },
+      "Pixelmator": {
+        "id": "407963104",
+        "version": "3.9"
       }
     }
   },
@@ -871,7 +919,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "fbb93aa63288cff77752db6cdc47d7e3d79d40f3",
+        "Homebrew/homebrew-core": "2688e195ecbed273bd67f14d642a353159c38cb8",
         "CLT": "11.4.1.0.1.1586360307",
         "Xcode": "11.4.1",
         "macOS": "10.15.4"

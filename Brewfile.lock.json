@@ -699,7 +699,32 @@
         "options": {
           "restart_service": "changed"
         }
-      }
+      },
+      "d12frosted/emacs-plus/emacs-plus": null,
+      "elastic/tap/elasticsearch-full": {
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "elastic/tap/filebeat-full": {
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "elastic/tap/kibana-full": {
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "elastic/tap/metricbeat-full": {
+        "options": {
+          "restart_service": "changed"
+        }
+      },
+      "fabianishere/personal/pam_reattach": null,
+      "heroku/brew/heroku": null,
+      "kryptco/tap/kr": null,
+      "schniz/tap/fnm": null
     },
     "tap": {
       "d12frosted/emacs-plus": {
@@ -854,19 +879,19 @@
       "adoptopenjdk14-openj9": {
         "version": "14.0.1,7.2",
         "options": {
-          "full_name": "adoptopenjdk14-openj9"
+          "full_name": "AdoptOpenJDK/openjdk/adoptopenjdk14-openj9"
         }
       },
       "font-hack-nerd-font": {
         "version": "2.1.0",
         "options": {
-          "full_name": "font-hack-nerd-font"
+          "full_name": "homebrew/cask-fonts/font-hack-nerd-font"
         }
       },
       "font-jetbrainsmono-nerd-font": {
         "version": "2.1.0",
         "options": {
-          "full_name": "font-jetbrainsmono-nerd-font"
+          "full_name": "homebrew/cask-fonts/font-jetbrainsmono-nerd-font"
         }
       },
       "rocket": {

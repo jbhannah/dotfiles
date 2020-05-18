@@ -1,18 +1,39 @@
+tap "AdoptOpenJDK/openjdk"
+tap "d12frosted/emacs-plus"
+tap "elastic/tap"
+tap "fabianishere/personal"
+tap "heroku/brew"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "kryptco/tap"
+tap "Schniz/tap"
+
+# Required for elastic/tap/elasticsearch-full
+cask "AdoptOpenJDK/openjdk/adoptopenjdk14-openj9"
+
 brew "ag"
 brew "bat"
 brew "crystal"
 brew "ctags"
+brew "d12frosted/emacs-plus/emacs-plus"
+brew "elastic/tap/elasticsearch-full", restart_service: :changed
+brew "elastic/tap/filebeat-full", restart_service: :changed
+brew "elastic/tap/kibana-full", restart_service: :changed
+brew "elastic/tap/metricbeat-full", restart_service: :changed
 brew "exa"
+brew "fabianishere/personal/pam_reattach"
 brew "fasd"
 brew "fish"
 brew "fzf"
-brew "git"
 brew "git-delta"
+brew "git"
 brew "gnu-sed"
 brew "go"
+brew "heroku/brew/heroku"
 brew "httpie"
 brew "hub"
 brew "jenv"
+brew "kryptco/tap/kr"
 brew "kubectl"
 brew "legit"
 brew "m-cli"
@@ -28,36 +49,13 @@ brew "redis", restart_service: :changed
 brew "rg"
 brew "ruby"
 brew "rustup"
+brew "Schniz/tap/fnm"
 brew "starship"
 brew "stow"
 brew "thefuck"
 brew "tmux"
 brew "tmuxinator-completion"
 brew "yarn"
-
-tap "d12frosted/emacs-plus"
-brew "emacs-plus"
-
-tap "AdoptOpenJDK/openjdk"
-cask "adoptopenjdk14-openj9"
-
-tap "elastic/tap"
-brew "elasticsearch-full", restart_service: :changed
-brew "filebeat-full", restart_service: :changed
-brew "kibana-full", restart_service: :changed
-brew "metricbeat-full", restart_service: :changed
-
-tap "fabianishere/personal"
-brew "pam_reattach"
-
-tap "heroku/brew"
-brew "heroku"
-
-tap "kryptco/tap"
-brew "kr"
-
-tap "Schniz/tap"
-brew "fnm"
 
 cask "1password"
 cask "alacritty"
@@ -71,10 +69,13 @@ cask "firefox"
 cask "gitup"
 cask "google-chrome"
 cask "gpg-suite"
+cask "homebrew/cask-drivers/logitech-gaming-software"
+cask "homebrew/cask-fonts/font-hack-nerd-font"
+cask "homebrew/cask-fonts/font-jetbrainsmono-nerd-font"
 cask "keybase"
 cask "minecraft"
-cask "notion"
 cask "nordvpn"
+cask "notion"
 cask "postgres"
 cask "rocket"
 cask "slack"
@@ -82,13 +83,6 @@ cask "ticktick"
 cask "visual-studio-code"
 cask "xscreensaver"
 cask "zoomus"
-
-tap "homebrew/cask-drivers"
-cask "homebrew/cask-drivers/logitech-gaming-software"
-
-tap "homebrew/cask-fonts"
-cask "font-hack-nerd-font"
-cask "font-jetbrainsmono-nerd-font"
 
 mas "Pixelmator", id: 407963104
 mas "Spark", id: 1176895641

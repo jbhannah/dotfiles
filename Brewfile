@@ -83,6 +83,9 @@ cask "visual-studio-code"
 cask "xscreensaver"
 cask "zoomus"
 
+tap "homebrew/cask-drivers"
+cask "homebrew/cask-drivers/logitech-gaming-software"
+
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 cask "font-jetbrainsmono-nerd-font"

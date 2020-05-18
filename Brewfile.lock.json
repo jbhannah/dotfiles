@@ -725,6 +725,9 @@
       },
       "schniz/tap": {
         "revision": "6c5636b6023fecfaf6bc74435092cf0de58a7219"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "3f90910e0c64239978463cdfc3b948f2bdc4822d"
       }
     },
     "cask": {
@@ -888,6 +891,12 @@
         "version": "13.0.2,8",
         "options": {
           "full_name": "adoptopenjdk13-openj9"
+        }
+      },
+      "logitech-gaming-software": {
+        "version": "9.02.22",
+        "options": {
+          "full_name": "homebrew/cask-drivers/logitech-gaming-software"
         }
       }
     },

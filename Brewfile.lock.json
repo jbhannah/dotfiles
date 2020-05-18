@@ -923,6 +923,18 @@
         "options": {
           "full_name": "homebrew/cask-drivers/logitech-gaming-software"
         }
+      },
+      "virtualbox": {
+        "version": "6.1.6,137129",
+        "options": {
+          "full_name": "virtualbox"
+        }
+      },
+      "virtualbox-extension-pack": {
+        "version": "6.1.6",
+        "options": {
+          "full_name": "virtualbox-extension-pack"
+        }
       }
     },
     "mas": {

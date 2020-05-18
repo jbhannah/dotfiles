@@ -228,7 +228,8 @@ if status is-interactive; and type -q git
     abbr -a -g gSl git submodule status
     abbr -a -g gSm git-submodule-move
     abbr -a -g gSs git submodule sync
-    abbr -a -g gSu git submodule foreach git pull origin master
+    abbr -a -g gSu git submodule update --recursive
+    abbr -a -g gSU git submodule foreach git pull origin master
     abbr -a -g gSx git-submodule-remove
 
     # Tag (t)

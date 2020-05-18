@@ -23,7 +23,7 @@ if type -q stow
                 pushd $STOW_DIR
                 git stash push --include-untracked --quiet
                 git pull --rebase --quiet
-                git submodule update --recursive
+                git submodule update --quiet --recursive
                 git stash pop --quiet
                 popd
 

@@ -1,5 +1,5 @@
 if type -q fd
-    set -l opts "--no-sort --reverse --height=20"
+    set -l opts "--reverse --height=20"
 
     set -q FZF_DEFAULT_OPTS
     and test $FZF_DEFAULT_OPTS = $opts

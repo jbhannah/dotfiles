@@ -6,8 +6,8 @@ if type -q fd
     or set -Ux FZF_DEFAULT_OPTS $opts
 
     set -q FZF_COMPLETE
-    and test $FZF_COMPLETE -eq 0
-    or set -U FZF_COMPLETE 0
+    and test $FZF_COMPLETE -eq 2
+    or set -U FZF_COMPLETE 2
 
     set -l fd "fd --follow"
     set -l fd_t_d "--type directory"
@@ -20,4 +20,16 @@ if type -q fd
 
     set -q FZF_FIND_FILE_COMMAND
     or set -U FZF_FIND_FILE_COMMAND "$fd --type file . \$dir"
+
+    set -l exa "exa --group-directories-first -algh --color always"
+
+    set -q FZF_PREVIEW_DIR_CMD
+    and test $FZF_PREVIEW_DIR_CMD = $exa
+    or set -U FZF_PREVIEW_DIR_CMD $exa
+
+    set -l bat "bat --color always --number"
+
+    set -q FZF_PREVIEW_FILE_CMD
+    and test $FZF_PREVIEW_FILE_CMD = $bat
+    or set -U FZF_PREVIEW_FILE_CMD $bat
 end

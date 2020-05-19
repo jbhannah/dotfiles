@@ -23,6 +23,7 @@ brew "elastic/tap/metricbeat-full", restart_service: :changed
 brew "exa"
 brew "fabianishere/personal/pam_reattach"
 brew "fasd"
+brew "fd"
 brew "fish"
 brew "fzf"
 brew "git-delta"

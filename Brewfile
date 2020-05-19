@@ -1,94 +1,96 @@
-tap "AdoptOpenJDK/openjdk"
-tap "d12frosted/emacs-plus"
-tap "elastic/tap"
-tap "fabianishere/personal"
-tap "heroku/brew"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "kryptco/tap"
-tap "Schniz/tap"
+# frozen_string_literal: true
+
+tap 'AdoptOpenJDK/openjdk'
+tap 'd12frosted/emacs-plus'
+tap 'elastic/tap'
+tap 'fabianishere/personal'
+tap 'heroku/brew'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
+tap 'kryptco/tap'
+tap 'Schniz/tap'
 
 # Required for elastic/tap/elasticsearch-full
-cask "AdoptOpenJDK/openjdk/adoptopenjdk14-openj9"
+cask 'AdoptOpenJDK/openjdk/adoptopenjdk14-openj9'
 
-brew "ag"
-brew "bat"
-brew "crystal"
-brew "ctags"
-brew "d12frosted/emacs-plus/emacs-plus"
-brew "elastic/tap/elasticsearch-full", restart_service: :changed
-brew "elastic/tap/filebeat-full", restart_service: :changed
-brew "elastic/tap/kibana-full", restart_service: :changed
-brew "elastic/tap/metricbeat-full", restart_service: :changed
-brew "exa"
-brew "fabianishere/personal/pam_reattach"
-brew "fasd"
-brew "fd"
-brew "fish"
-brew "fzf"
-brew "git-delta"
-brew "git"
-brew "gnu-sed"
-brew "go"
-brew "heroku/brew/heroku"
-brew "httpie"
-brew "hub"
-brew "jenv"
-brew "kryptco/tap/kr"
-brew "kubectl"
-brew "legit"
-brew "m-cli"
-brew "macvim"
-brew "mas"
-brew "neovim"
-brew "node"
-brew "overmind"
-brew "pyenv"
-brew "python"
-brew "rbenv"
-brew "redis", restart_service: :changed
-brew "rg"
-brew "ruby"
-brew "rustup"
-brew "Schniz/tap/fnm"
-brew "starship"
-brew "stow"
-brew "thefuck"
-brew "tmux"
-brew "tmuxinator-completion"
-brew "yarn"
+brew 'ag'
+brew 'bat'
+brew 'crystal'
+brew 'ctags'
+brew 'd12frosted/emacs-plus/emacs-plus'
+brew 'elastic/tap/elasticsearch-full', restart_service: :changed
+brew 'elastic/tap/filebeat-full', restart_service: :changed
+brew 'elastic/tap/kibana-full', restart_service: :changed
+brew 'elastic/tap/metricbeat-full', restart_service: :changed
+brew 'exa'
+brew 'fabianishere/personal/pam_reattach'
+brew 'fasd'
+brew 'fd'
+brew 'fish'
+brew 'fzf'
+brew 'git-delta'
+brew 'git'
+brew 'gnu-sed'
+brew 'go'
+brew 'heroku/brew/heroku'
+brew 'httpie'
+brew 'hub'
+brew 'jenv'
+brew 'kryptco/tap/kr'
+brew 'kubectl'
+brew 'legit'
+brew 'm-cli'
+brew 'macvim'
+brew 'mas'
+brew 'neovim'
+brew 'node'
+brew 'overmind'
+brew 'pyenv'
+brew 'python'
+brew 'rbenv'
+brew 'redis', restart_service: :changed
+brew 'rg'
+brew 'ruby'
+brew 'rustup'
+brew 'Schniz/tap/fnm'
+brew 'starship'
+brew 'stow'
+brew 'thefuck'
+brew 'tmux'
+brew 'tmuxinator-completion'
+brew 'yarn'
 
-cask "1password"
-cask "alacritty"
-cask "alfred"
-cask "chromedriver"
-cask "dash"
-cask "docker"
-cask "dotnet-sdk"
-cask "dropbox"
-cask "firefox"
-cask "gitup"
-cask "google-chrome"
-cask "gpg-suite"
-cask "homebrew/cask-drivers/logitech-gaming-software"
-cask "homebrew/cask-fonts/font-hack-nerd-font"
-cask "homebrew/cask-fonts/font-jetbrainsmono-nerd-font"
-cask "keybase"
-cask "minecraft"
-cask "nordvpn"
-cask "notion"
-cask "postgres"
-cask "rocket"
-cask "slack"
-cask "ticktick"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
-cask "visual-studio-code"
-cask "xscreensaver"
-cask "zoomus"
+cask '1password'
+cask 'alacritty'
+cask 'alfred'
+cask 'chromedriver'
+cask 'dash'
+cask 'docker'
+cask 'dotnet-sdk'
+cask 'dropbox'
+cask 'firefox'
+cask 'gitup'
+cask 'google-chrome'
+cask 'gpg-suite'
+cask 'homebrew/cask-drivers/logitech-gaming-software'
+cask 'homebrew/cask-fonts/font-hack-nerd-font'
+cask 'homebrew/cask-fonts/font-jetbrainsmono-nerd-font'
+cask 'keybase'
+cask 'minecraft'
+cask 'nordvpn'
+cask 'notion'
+cask 'postgres'
+cask 'rocket'
+cask 'slack'
+cask 'ticktick'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'visual-studio-code'
+cask 'xscreensaver'
+cask 'zoomus'
 
-mas "Pixelmator", id: 407963104
-mas "Spark", id: 1176895641
-mas "Todoist", id: 585829637
-mas "Xcode", id: 497799835
-mas "Yoink", id: 457622435
+mas 'Pixelmator', id: 407_963_104
+mas 'Spark', id: 1_176_895_641
+mas 'Todoist', id: 585_829_637
+mas 'Xcode', id: 497_799_835
+mas 'Yoink', id: 457_622_435

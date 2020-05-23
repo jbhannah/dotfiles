@@ -59,6 +59,7 @@ brew 'stow'
 brew 'thefuck'
 brew 'tmux'
 brew 'tmuxinator-completion'
+brew 'travis'
 brew 'yarn'
 brew 'yq'
 

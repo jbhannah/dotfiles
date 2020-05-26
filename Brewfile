@@ -92,6 +92,7 @@ cask 'visual-studio-code'
 cask 'xscreensaver'
 cask 'zoomus'
 
+mas 'Krypton', id: 1_512_484_779
 mas 'Pixelmator', id: 407_963_104
 mas 'Spark', id: 1_176_895_641
 mas 'Todoist', id: 585_829_637

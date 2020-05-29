@@ -1,6 +1,6 @@
 if type -q fasd
     function __fasd_run -e fish_preexec
-        command fasd --proc (command fasd --sanitize "$argv" | tr -s ' ' \n) >/dev/null 2>&! &
+        command fasd --proc (command fasd --sanitize "$argv" | tr -s ' ' \n) >/dev/null 2>&1 &
         disown
     end
 end

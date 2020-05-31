@@ -1,5 +1,6 @@
 if status is-interactive; and type -q brew
-    abbr -a -g brewb brew bundle
+    abbr -a -g bb brew bundle
+    abbr -a -g bbg brew bundle --global
     abbr -a -g brewc brew cleanup
     abbr -a -g brewh brew home
     abbr -a -g brewi brew info

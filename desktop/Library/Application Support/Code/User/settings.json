@@ -219,6 +219,7 @@
     "shellscript": "console"
   },
   "material-icon-theme.showUpdateMessage": false,
+  "materialTheme.accent": "Lime",
   "python.dataScience.askForKernelRestart": false,
   "python.formatting.provider": "yapf",
   "python.jediEnabled": false,
@@ -296,7 +297,30 @@
   "window.restoreFullscreen": true,
   "window.restoreWindows": "all",
   "window.zoomLevel": 0,
-  "workbench.colorCustomizations": {},
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#7CB342",
+    "activityBarBadge.background": "#7CB342",
+    "breadcrumb.activeSelectionForeground": "#7CB342",
+    "editor.findMatchBorder": "#7CB342",
+    "editorSuggestWidget.highlightForeground": "#7CB342",
+    "editorWidget.border": "#7CB342",
+    "editorWidget.resizeBorder": "#7CB342",
+    "list.activeSelectionForeground": "#7CB342",
+    "list.highlightForeground": "#7CB342",
+    "list.inactiveSelectionForeground": "#7CB342",
+    "menu.selectionForeground": "#7CB342",
+    "menubar.selectionForeground": "#7CB342",
+    "notificationLink.foreground": "#7CB342",
+    "panelTitle.activeBorder": "#7CB342",
+    "pickerGroup.foreground": "#7CB342",
+    "progressBar.background": "#7CB342",
+    "scrollbarSlider.activeBackground": "#7CB34250",
+    "selection.background": "#7CB34240",
+    "settings.headerForeground": "#7CB342",
+    "settings.modifiedItemIndicator": "#7CB342",
+    "tab.activeBorder": "#7CB342",
+    "textLink.foreground": "#7CB342"
+  },
   "workbench.colorTheme": "Material Theme Darker",
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "material-icon-theme",
@@ -304,6 +328,6 @@
   "workbench.startupEditor": "none",
   "yaml.customTags": ["!vault"],
   "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   }
 }

@@ -45,6 +45,7 @@
     "editor.tabSize": 2
   },
   "atomKeymap.promptV3Features": true,
+  "bracketPairColorizer.showBracketsInRuler": true,
   "dart.sdkPath": "/usr/local/opt/dart/libexec",
   "debug.console.lineHeight": 20,
   "debug.inlineValues": true,
@@ -326,8 +327,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "yaml.customTags": ["!vault"],
-  "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  "yaml.customTags": ["!vault"]
 }

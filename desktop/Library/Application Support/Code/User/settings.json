@@ -14,7 +14,8 @@
     "editor.tabSize": 2
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -24,6 +25,7 @@
   },
   "[ruby]": {
     "editor.formatOnType": false,
+    "editor.rulers": [120],
     "editor.tabSize": 2
   },
   "[scss]": {
@@ -224,6 +226,7 @@
   "python.dataScience.askForKernelRestart": false,
   "python.formatting.provider": "yapf",
   "python.jediEnabled": false,
+  "python.languageServer": "Microsoft",
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": true,
@@ -327,5 +330,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "yaml.customTags": ["!vault"]
+  "yaml.customTags": ["!vault"],
+  "yaml.schemas": {
+    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  }
 }

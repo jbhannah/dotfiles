@@ -332,6 +332,6 @@
   "workbench.startupEditor": "none",
   "yaml.customTags": ["!vault"],
   "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   }
 }

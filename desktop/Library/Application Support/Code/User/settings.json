@@ -212,6 +212,7 @@
     "tslint.json": "raml"
   },
   "material-icon-theme.folders.associations": {
+    "cloud": "functions",
     "cmd": "command",
     "internal": "export",
     "pkg": "packages"
@@ -225,7 +226,6 @@
   "materialTheme.accent": "Lime",
   "python.dataScience.askForKernelRestart": false,
   "python.formatting.provider": "yapf",
-  "python.jediEnabled": false,
   "python.languageServer": "Microsoft",
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
@@ -245,7 +245,6 @@
   "solargraph.bundlerPath": "/Users/jbhannah/.rbenv/shims/bundle",
   "solargraph.folding": true,
   "solargraph.formatting": true,
-  "team.showWelcomeMessage": false,
   "terminal.external.osxExec": "Alacritty.app",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.2,
@@ -332,6 +331,6 @@
   "workbench.startupEditor": "none",
   "yaml.customTags": ["!vault"],
   "yaml.schemas": {
-    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   }
 }

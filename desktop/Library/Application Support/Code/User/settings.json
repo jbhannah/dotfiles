@@ -51,7 +51,6 @@
   "dart.sdkPath": "/usr/local/opt/dart/libexec",
   "debug.console.lineHeight": 20,
   "debug.inlineValues": true,
-  "debug.node.autoAttach": "on",
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.showInStatusBar": "always",
   "debug.showSubSessionsInToolBar": true,
@@ -69,9 +68,7 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font, Hack, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.lineHeight": 20,
   "editor.lineNumbers": "relative",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -87,8 +84,10 @@
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "yarn",
   "eslint.run": "onType",
+  "explorer.compactFolders": false,
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
+  "extensions.webWorker": true,
   "files.associations": {
     "*.conf.local": "properties",
     "*.geojson": "json",
@@ -197,6 +196,7 @@
   "jest.runAllTestsFirst": true,
   "jest.showCoverageOnLoad": true,
   "latex-workshop.message.update.show": false,
+  "liveshare.publishWorkspaceInfo": true,
   "markdownlint.config": {
     "MD013": true,
     "MD024": false,
@@ -206,18 +206,28 @@
   },
   "material-icon-theme.files.associations": {
     "*.cson": "raml",
+    "*.pub": "certificate",
+    ".ansible-password": "key",
     ".gemrc": "ruby",
     ".gitignore.local": "git",
     ".railsrc": "ruby",
     "Procfile.dev": "heroku",
+    "id_ed25519": "key",
     "tsconfig.json": "raml",
     "tslint.json": "raml"
   },
   "material-icon-theme.folders.associations": {
+    ".git-crypt": "secure",
+    ".ssh": "keys",
     "cloud": "functions",
     "cmd": "command",
+    "defaults": "config",
+    "group_vars": "custom",
+    "host_vars": "custom",
     "internal": "export",
-    "pkg": "packages"
+    "inventory": "server",
+    "pkg": "packages",
+    "roles": "resource"
   },
   "material-icon-theme.languages.associations": {
     "dockerfile": "docker",
@@ -256,6 +266,10 @@
   "terminal.integrated.lineHeight": 1.2,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "",
+  "vim.autoSwitchInputMethod.switchIMCmd": "",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": [],
@@ -300,6 +314,7 @@
       ]
     }
   ],
+  "vim.useSystemClipboard": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.newWindowDimensions": "fullscreen",
   "window.openFoldersInNewWindow": "on",
@@ -335,7 +350,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "yaml.customTags": ["!vault"],
   "yaml.schemas": {
     "file:///Users/jbhannah/.vscode/extensions/atlassian.atlascode-2.6.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   }

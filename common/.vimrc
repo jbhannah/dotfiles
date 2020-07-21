@@ -34,6 +34,7 @@ colorscheme one
 set background=dark
 
 " Gutter
+set number
 set relativenumber
 set signcolumn=yes
 

@@ -22,6 +22,7 @@ ECR
 FactoryGirl
 GCPLAT
 GitHub
+GitHub
 HTML5
 HTML5's
 Haml
@@ -54,6 +55,7 @@ RESTful
 RGB
 RSpec
 RailsAdmin
+Redis
 Redis
 SCSS
 ShipStation
@@ -88,6 +90,7 @@ deoplete
 docblock
 doctype
 dotfiles
+dropdown
 etc
 filetypes
 fmt
@@ -131,4 +134,3 @@ vimrc
 virtualenv
 vue
 zsh
-Redis

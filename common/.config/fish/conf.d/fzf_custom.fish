@@ -9,6 +9,12 @@ if type -q fd
     and test $FZF_COMPLETE -eq 2
     or set -U FZF_COMPLETE 2
 
+    set -l rg "rg --files --no-ignore-vcs --hidden"
+
+    set -g FZF_DEFAULT_COMMAND
+    and test $FZF_DEFAULT_COMMAND
+    or set -Ux FZF_DEFAULT_COMMAND $rg
+
     set -l fd "fd --follow"
     set -l fd_t_d "--type directory"
 

@@ -34,7 +34,7 @@ colorscheme one
 set background=dark
 
 " Gutter
-set number
+set relativenumber
 set signcolumn=yes
 
 " Highlight current line
@@ -60,15 +60,11 @@ set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-" CtrlP
-let g:ctrlp_extensions = ['tag', 'branches', 'quickfix', 'undo']
+" FZF
+nnoremap <C-p> :Files<CR>
 
-" Use The Silver Searcher for Ctrl+P and searching
-" http://robots.thoughtbot.com/faster-grepping-in-vim
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor\ --hidden
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-  let g:ctrlp_use_caching = 0
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 endif
 
 " Airline
@@ -143,7 +139,7 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 " Ctags integration
-nnoremap <Leader>ct :CtrlPTag<cr>
+" nnoremap <Leader>ct :CtrlPTag<cr>
 
 " Transpose characters
 nnoremap <silent> <Plug>TransposeCharacters xp

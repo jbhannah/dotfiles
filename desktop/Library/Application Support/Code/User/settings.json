@@ -48,6 +48,8 @@
   },
   "atomKeymap.promptV3Features": true,
   "bracketPairColorizer.showBracketsInRuler": true,
+  "dart.flutterSdkPath": "/Users/jbhannah/.asdf/installs/flutter/1.17.5-stable",
+  "dart.openDevTools": "flutter",
   "dart.sdkPath": "/usr/local/opt/dart/libexec",
   "debug.console.lineHeight": 20,
   "debug.inlineValues": true,

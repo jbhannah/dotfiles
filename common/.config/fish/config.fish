@@ -16,6 +16,8 @@ if status is-interactive
 
     abbr -a -g l ls -algh
 
+    source (brew --prefix asdf)/asdf.fish
+
     __fnm
     __starship
 end

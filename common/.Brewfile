@@ -14,6 +14,7 @@ tap 'Schniz/tap'
 cask 'AdoptOpenJDK/openjdk/adoptopenjdk14-openj9'
 
 brew 'ag'
+brew 'asdf'
 brew 'automake'
 brew 'bat'
 brew 'cocoapods'

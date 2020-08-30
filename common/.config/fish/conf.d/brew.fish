@@ -21,5 +21,5 @@ if status is-interactive; and type -q brew
     abbr -a -g casku brew cask upgrade
     abbr -a -g caskx brew cask uninstall
 
-    abbr -a -g buc 'brew upgrade && brew cask upgrade'
+    abbr -a -g buc 'brew upgrade; brew cleanup'
 end

@@ -15,7 +15,7 @@ if echo $platform | grep -q Darwin; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
 
-  brew bundle
+  brew bundle --file common/.Brewfile
   [[ -f /etc/zshenv ]] && sudo mv /etc/zshenv /etc/zshrc
   [[ -f /etc/zprofile ]] && sudo mv /etc/zprofile "/etc/zprofile~orig"
 

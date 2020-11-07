@@ -12,7 +12,7 @@ if echo $platform | grep -q Darwin; then
 
   if ! command -v brew >/dev/null 2>&1; then
     echo "=== Installing Homebrew ==="
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   fi
 
   brew bundle --file common/.Brewfile

@@ -2,16 +2,10 @@
 
 tap 'AdoptOpenJDK/openjdk'
 tap 'd12frosted/emacs-plus'
-tap 'elastic/tap'
 tap 'fabianishere/personal'
 tap 'heroku/brew'
-tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'kryptco/tap'
-tap 'Schniz/tap'
-
-# Required for elastic/tap/elasticsearch-full
-cask 'AdoptOpenJDK/openjdk/adoptopenjdk14-openj9'
 
 brew 'ag'
 brew 'asdf'
@@ -21,15 +15,12 @@ brew 'cocoapods'
 brew 'crystal'
 brew 'ctags'
 brew 'd12frosted/emacs-plus/emacs-plus'
-brew 'elastic/tap/elasticsearch-full', restart_service: :changed
-brew 'elastic/tap/filebeat-full', restart_service: :changed
-brew 'elastic/tap/kibana-full', restart_service: :changed
-brew 'elastic/tap/metricbeat-full', restart_service: :changed
 brew 'exa'
 brew 'fabianishere/personal/pam_reattach'
 brew 'fasd'
 brew 'fd'
 brew 'fish'
+brew 'fnm'
 brew 'fonttools'
 brew 'fzf'
 brew 'gh'
@@ -63,7 +54,6 @@ brew 'redis', restart_service: :changed
 brew 'rg'
 brew 'ruby'
 brew 'rustup'
-brew 'Schniz/tap/fnm'
 brew 'starship'
 brew 'stow'
 brew 'thefuck'
@@ -76,7 +66,7 @@ brew 'yq'
 
 cask '1password'
 cask '1password-cli'
-cask 'adoptopenjdk8-openj9-jre'
+cask 'AdoptOpenJDK/openjdk/adoptopenjdk15-openj9'
 cask 'alacritty'
 cask 'alfred'
 cask 'alt-tab'
@@ -93,9 +83,8 @@ cask 'gitup'
 cask 'gnucash'
 cask 'google-chrome'
 cask 'gpg-suite'
-cask 'homebrew/cask-drivers/logitech-gaming-software'
 cask 'homebrew/cask-fonts/font-hack-nerd-font'
-cask 'homebrew/cask-fonts/font-jetbrainsmono-nerd-font'
+cask 'homebrew/cask-fonts/font-jetbrains-mono-nerd-font'
 cask 'imageoptim'
 cask 'keybase'
 cask 'metabase'
@@ -118,7 +107,6 @@ cask 'xscreensaver'
 cask 'zoomus'
 
 mas 'AdGuard for Safari', id: 1_440_147_259
-mas 'Ecosia', id: 1_463_400_445
 mas 'Grammarly for Safari', id: 1_462_114_288
 mas 'Jira Cloud by Atlassian', id: 1_475_897_096
 mas 'Krypton', id: 1_512_484_779

@@ -11,6 +11,7 @@ brew 'ag'
 brew 'asdf'
 brew 'automake'
 brew 'bat'
+brew 'cfssl'
 brew 'cocoapods'
 brew 'crystal'
 brew 'ctags'
@@ -60,6 +61,7 @@ brew 'thefuck'
 brew 'tmux'
 brew 'tmuxinator-completion'
 brew 'travis'
+brew 'vault'
 brew 'watch'
 brew 'yarn'
 brew 'yq'
@@ -72,6 +74,7 @@ cask 'alfred'
 cask 'alt-tab'
 cask 'audio-hijack'
 cask 'balenaetcher'
+cask 'battle-net'
 cask 'chromedriver'
 cask 'dash'
 cask 'discord'
@@ -114,6 +117,7 @@ cask 'zoomus'
 
 mas 'AdGuard for Safari', id: 1_440_147_259
 mas 'Grammarly for Safari', id: 1_462_114_288
+mas 'Horo', id: 1_437_226_581
 mas 'Jira Cloud by Atlassian', id: 1_475_897_096
 mas 'Krypton', id: 1_512_484_779
 mas 'Name Mangler 3', id: 603_637_384

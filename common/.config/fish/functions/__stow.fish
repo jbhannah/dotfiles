@@ -12,7 +12,7 @@ if type -q stow
                 set -l stow_args -R common -R unfold
 
                 contains Darwin (uname)
-                and set -l stow_args $stow_args -R desktop -R unfold-desktop
+                and set -l stow_args $stow_args -R desktop
 
                 set -U stow_command stow -t $HOME $stow_args
             end

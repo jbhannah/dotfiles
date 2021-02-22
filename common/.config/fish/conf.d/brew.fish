@@ -12,14 +12,14 @@ if status is-interactive; and type -q brew
     abbr -a -g brewu brew upgrade
     abbr -a -g brewx brew uninstall
 
-    abbr -a -g cask brew cask
-    abbr -a -g caskh brew cask home
-    abbr -a -g caski brew cask info
-    abbr -a -g caskI brew cask install
-    abbr -a -g caskl brew cask list
-    abbr -a -g casko brew cask outdated
-    abbr -a -g casku brew cask upgrade
-    abbr -a -g caskx brew cask uninstall
+    abbr -a -g caskh brew home --cask
+    abbr -a -g caski brew info --cask
+    abbr -a -g caskI brew install --cask
+    abbr -a -g caskl brew list --cask
+    abbr -a -g casko brew outdated --cask
+    abbr -a -g casks brew search --cask
+    abbr -a -g casku brew upgrade --cask
+    abbr -a -g caskx brew uninstall --cask
 
     abbr -a -g buc 'brew upgrade; brew cleanup'
 end

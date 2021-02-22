@@ -73,6 +73,7 @@ cask 'AdoptOpenJDK/openjdk/adoptopenjdk15-openj9'
 cask 'alacritty'
 cask 'alfred'
 cask 'alt-tab'
+cask 'appcleaner'
 cask 'audio-hijack'
 cask 'balenaetcher'
 cask 'battle-net'
@@ -94,8 +95,10 @@ cask 'hey'
 cask 'homebrew/cask-fonts/font-hack-nerd-font'
 cask 'homebrew/cask-fonts/font-jetbrains-mono-nerd-font'
 cask 'imageoptim'
+cask 'inkscape'
 cask 'keybase'
 cask 'loopback'
+cask 'messenger'
 cask 'microsoft-edge'
 cask 'minecraft'
 cask 'nordvpn'
@@ -115,12 +118,12 @@ cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vivaldi'
 cask 'xscreensaver'
-cask 'zoomus'
+cask 'zoom'
 
 mas 'AdGuard for Safari', id: 1_440_147_259
 mas 'Grammarly for Safari', id: 1_462_114_288
 mas 'Horo', id: 1_437_226_581
-mas 'Jira Cloud by Atlassian', id: 1_475_897_096
+# mas 'Jira Cloud by Atlassian', id: 1_475_897_096
 mas 'Krypton', id: 1_512_484_779
 mas 'Name Mangler 3', id: 603_637_384
 mas 'Pixelmator', id: 407_963_104

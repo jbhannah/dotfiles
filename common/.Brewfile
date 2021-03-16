@@ -15,7 +15,7 @@ brew 'cfssl'
 brew 'cocoapods'
 brew 'crystal'
 brew 'ctags'
-brew 'd12frosted/emacs-plus/emacs-plus'
+# brew 'd12frosted/emacs-plus/emacs-plus'
 brew 'exa'
 brew 'fabianishere/personal/pam_reattach'
 brew 'fasd'
@@ -77,6 +77,7 @@ cask 'appcleaner'
 cask 'audio-hijack'
 cask 'balenaetcher'
 cask 'battle-net'
+cask 'choosy'
 cask 'chromedriver'
 cask 'dash'
 cask 'discord'
@@ -109,6 +110,7 @@ cask 'postgres'
 cask 'quip'
 cask 'responsively'
 cask 'rocket'
+cask 'signal'
 cask 'slack'
 cask 'steam'
 cask 'twitch'
@@ -123,7 +125,7 @@ cask 'zoom'
 mas 'AdGuard for Safari', id: 1_440_147_259
 mas 'Grammarly for Safari', id: 1_462_114_288
 mas 'Horo', id: 1_437_226_581
-# mas 'Jira Cloud by Atlassian', id: 1_475_897_096
+mas 'Jira Cloud by Atlassian', id: 1_475_897_096
 mas 'Krypton', id: 1_512_484_779
 mas 'Name Mangler 3', id: 603_637_384
 mas 'Pixelmator', id: 407_963_104

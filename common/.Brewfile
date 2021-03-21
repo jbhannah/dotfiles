@@ -123,6 +123,7 @@ cask 'xscreensaver'
 cask 'zoom'
 
 mas 'AdGuard for Safari', id: 1_440_147_259
+mas 'Day One', id: 1_055_511_498
 mas 'Grammarly for Safari', id: 1_462_114_288
 mas 'Horo', id: 1_437_226_581
 mas 'Jira Cloud by Atlassian', id: 1_475_897_096

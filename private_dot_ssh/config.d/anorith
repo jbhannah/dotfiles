@@ -1,0 +1,3 @@
+Host 10.*.*.*
+    User jhannah
+    IdentityFile ~/.ssh/id_ed25519_andros

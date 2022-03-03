@@ -1,2 +1,6 @@
 LICENSE
 README.md
+
+{{- if ne .chezmoi.hostname "anorith" }}
+private_dot_ssh/config.d/anorith
+{{- end }}

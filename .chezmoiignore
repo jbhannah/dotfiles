@@ -3,6 +3,7 @@ README.md
 
 {{- if ne .chezmoi.os "darwin" }}
 home/dot_config/fish/conf.d/brew.fish
+home/dot_config/fish/conf.d/pb.fish
 {{- end }}
 
 {{- if ne .chezmoi.hostname "anorith" }}

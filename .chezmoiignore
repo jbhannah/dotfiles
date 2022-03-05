@@ -1,6 +1,10 @@
 LICENSE
 README.md
 
+{{- if ne .chezmoi.os "darwin" }}
+home/dot_config/fish/conf.d/brew.fish
+{{- end }}
+
 {{- if ne .chezmoi.hostname "anorith" }}
-private_dot_ssh/config.d/anorith
+home/private_dot_ssh/config.d/anorith
 {{- end }}

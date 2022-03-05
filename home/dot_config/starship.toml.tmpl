@@ -1,0 +1,36 @@
+"add_newline" = false
+"command_timeout" = "1000ms"
+[aws]
+"disabled" = true
+[battery]
+"disabled" = true
+[docker_context]
+"symbol" = " "
+[git_branch]
+"symbol" = " "
+[golang]
+"symbol" = " "
+[java]
+"symbol" = " "
+[kubernetes]
+"disabled" = false
+"style" = "blue bold"
+[line_break]
+"disabled" = true
+[nodejs]
+"symbol" = " "
+[package]
+"symbol" = " "
+[php]
+"symbol" = " "
+[python]
+"symbol" = " "
+[ruby]
+"symbol" = " "
+[rust]
+"symbol" = " "
+
+{{- if eq .chezmoi.hostname "anorith" }}
+[kubernetes.context_aliases]
+"arn:aws:eks:us-east-1:181657471068:cluster/devqa" = "andros/devqa"
+{{- end }}

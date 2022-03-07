@@ -1,69 +1,4 @@
-call plug#begin(stdpath('data') . '/plugged')
-Plug('airblade/vim-gitgutter')
-Plug('blankname/vim-fish')
-Plug('hashivim/vim-terraform')
-Plug('hrsh7th/nvim-compe')
-Plug('jiangmiao/auto-pairs')
-Plug('junegunn/fzf.vim')
-Plug('junegunn/vim-easy-align')
-Plug('kabouzeid/nvim-lspinstall')
-Plug('kaicataldo/material.vim')
-Plug('kristijanhusak/vim-dadbod-ui')
-Plug('neovim/nvim-lspconfig')
-Plug('tpope/vim-bundler')
-Plug('tpope/vim-commentary')
-Plug('tpope/vim-dadbod')
-Plug('tpope/vim-dispatch')
-Plug('tpope/vim-endwise')
-Plug('tpope/vim-fugitive')
-Plug('tpope/vim-rails')
-Plug('tpope/vim-repeat')
-Plug('tpope/vim-rhubarb')
-Plug('tpope/vim-sensible')
-Plug('tpope/vim-sleuth')
-Plug('tpope/vim-speeddating')
-Plug('tpope/vim-surround')
-Plug('tpope/vim-unimpaired')
-Plug('vim-airline/vim-airline')
-call plug#end()
-
-set mouse=a
-set number relativenumber
-
-set expandtab
-set shiftwidth =4
-set tabstop    =4
-set textwidth  =80
-
-set background =dark
-colorscheme material
-
-if (has('termguicolors'))
-  set termguicolors
-endif
-
-command! DeleteFile :call delete(expand('%')) | bdelete!
-
-nmap <leader>sv :source $MYVIMRC<CR>
-
-" airline
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#tab_nr_type = 1
-
-" fzf
-set rtp+=/usr/local/opt/fzf
-nmap <C-P> :Files<CR>
-let g:fzf_buffers_jump = 1
-
-" fugitive
-nmap <Leader>gs :Git<CR>
-nmap <Leader>gb :Git blame<CR>
-
-" vim-easy-align
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+source $HOME/.vimrc
 
 " nvim-compe
 set completeopt=menuone,noselect
@@ -80,7 +15,7 @@ let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 
 lua <<EOF
-local nvim_lsp = require('lspconfig')
+local lsp_installer = require("nvim-lsp-installer")
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -114,21 +49,21 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<space>f",  "<cmd>lua vim.lsp.buf.formatting()<CR>",                                 opts)
 end
 
-local function setup_servers()
-  require'lspinstall'.setup()
-  local servers = require'lspinstall'.installed_servers()
-  for _, server in pairs(servers) do
-    nvim_lsp[server].setup{
-      on_attach = on_attach
+-- Register a handler that will be called for each installed server when it's ready (i.e. when installation is finished
+-- or if the server is already installed).
+lsp_installer.on_server_ready(function(server)
+    local opts = {
+        on_attach = on_attach,
     }
-  end
-end
 
-setup_servers()
+    -- (optional) Customize the options passed to the server
+    -- if server.name == "tsserver" then
+    --     opts.root_dir = function() ... end
+    -- end
 
--- Automatically reload after `:LspInstall <server>` so we don't have to restart neovim
-require'lspinstall'.post_install_hook = function ()
-  setup_servers() -- reload installed servers
-  vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
-end
+    -- This setup() function will take the provided server configuration and decorate it with the necessary properties
+    -- before passing it onwards to lspconfig.
+    -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+    server:setup(opts)
+end)
 EOF

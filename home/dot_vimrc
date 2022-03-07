@@ -1,0 +1,69 @@
+call plug#begin('~/.vim/plugged')
+    Plug('airblade/vim-gitgutter')
+    Plug('blankname/vim-fish')
+    Plug('hashivim/vim-terraform')
+    Plug('jiangmiao/auto-pairs')
+    Plug('junegunn/fzf.vim')
+    Plug('junegunn/vim-easy-align')
+    Plug('kaicataldo/material.vim')
+    Plug('kristijanhusak/vim-dadbod-ui')
+    Plug('tpope/vim-bundler')
+    Plug('tpope/vim-commentary')
+    Plug('tpope/vim-dadbod')
+    Plug('tpope/vim-dispatch')
+    Plug('tpope/vim-endwise')
+    Plug('tpope/vim-fugitive')
+    Plug('tpope/vim-rails')
+    Plug('tpope/vim-repeat')
+    Plug('tpope/vim-rhubarb')
+    Plug('tpope/vim-sensible')
+    Plug('tpope/vim-sleuth')
+    Plug('tpope/vim-speeddating')
+    Plug('tpope/vim-surround')
+    Plug('tpope/vim-unimpaired')
+    Plug('vim-airline/vim-airline')
+
+    if (has('nvim'))
+        Plug('hrsh7th/nvim-compe')
+        Plug('neovim/nvim-lspconfig')
+        Plug('williamboman/nvim-lsp-installer')
+    endif
+call plug#end()
+
+set mouse=a
+set number relativenumber
+
+set expandtab
+set shiftwidth =4
+set tabstop    =4
+set textwidth  =80
+
+set background =dark
+colorscheme material
+
+if (has('termguicolors'))
+  set termguicolors
+endif
+
+command! DeleteFile :call delete(expand('%')) | bdelete!
+
+nmap <leader>sv :source $MYVIMRC<CR>
+
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
+
+" fzf
+set rtp+=/usr/local/opt/fzf
+nmap <C-P> :Files<CR>
+let g:fzf_buffers_jump = 1
+
+" fugitive
+nmap <Leader>gs :Git<CR>
+nmap <Leader>gb :Git blame<CR>
+
+" vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)

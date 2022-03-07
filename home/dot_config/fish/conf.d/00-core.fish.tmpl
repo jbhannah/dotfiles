@@ -3,3 +3,11 @@ set -gx LANG $LC_ALL
 {{- if eq .chezmoi.os "darwin" }}
 set -gx TZ (readlink /etc/localtime | string split '/' | tail -n 2 | string join '/')
 {{- end }}
+
+if command -sq nvim
+    set -gx EDITOR nvim
+else
+    set -gx EDITOR vi
+end
+
+set -gx VISUAL $EDITOR

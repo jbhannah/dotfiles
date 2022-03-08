@@ -1,5 +1,1 @@
 Include config.d/*
-
-Host *
-    UseKeychain yes
-    AddKeysToAgent yes

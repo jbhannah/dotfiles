@@ -13,4 +13,7 @@ home/run_once_postgres_app.sh
 
 {{- if ne .chezmoi.hostname "anorith" }}
 home/private_dot_ssh/config.d/10-host-anorith
+home/private_dot_ssh/credsimple_2016.pem.pub
+home/private_dot_ssh/id_ed25519_andros.pub
+home/private_dot_ssh/sre-20190824.pem.pub
 {{- end }}

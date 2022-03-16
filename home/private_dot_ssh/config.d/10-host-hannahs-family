@@ -1,0 +1,3 @@
+Host *.hannahs.family
+    User infrastructure
+    IdentityFile ~/.ssh/id_ed25519_infra.pub

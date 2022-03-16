@@ -1,1 +1,8 @@
-sourceDir = "~/Code/src/github.com/jbhannah/dotfiles"
+sourceDir = "{{ .chezmoi.homeDir }}/Code/src/github.com/jbhannah/dotfiles"
+encryption = "gpg"
+
+[git]
+autoAdd = true
+
+[gpg]
+recipient = "jesse@jbhannah.net"

@@ -8,6 +8,7 @@ home/dot_config/fish/conf.d/pb.fish
 home/dot_config/fish/conf.d/postgres_app.fish
 home/private_dot_1password/
 home/private_dot_ssh/config.d/00-os-darwin
+home/run_once_pam_rettach.sh
 home/run_once_postgres_app.sh
 {{- end }}
 

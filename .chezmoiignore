@@ -1,6 +1,3 @@
-LICENSE
-README.md
-
 {{- if ne .chezmoi.os "darwin" }}
 home/dot_config/fish/conf.d/01-op-ssh-agent.fish
 home/dot_config/fish/conf.d/brew.fish
@@ -10,6 +7,7 @@ home/private_dot_1password/
 home/private_dot_ssh/config.d/00-os-darwin
 home/run_once_pam_rettach.sh
 home/run_once_postgres_app.sh
+home/run_once_before_brew_bundle.sh
 {{- end }}
 
 {{- if ne .chezmoi.hostname "anorith" }}

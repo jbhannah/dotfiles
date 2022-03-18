@@ -1,6 +1,9 @@
 brew "fish"
+brew "jq"
 brew "pam-reattach"
+brew "rustup"
 brew "tmux"
+brew "yq"
 
 cask "1password-beta"
 cask "1password-cli-beta"

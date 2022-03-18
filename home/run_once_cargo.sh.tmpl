@@ -1,7 +1,0 @@
-#!/bin/sh
-
-{{- if eq .chezmoi.os "darwin" }}
-brew install rustup
-{{- end }}
-
-rustup-init -y

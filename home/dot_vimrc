@@ -30,13 +30,13 @@ call plug#begin('~/.vim/plugged')
     endif
 call plug#end()
 
-set mouse=a
+set mouse = a
 set number relativenumber
 
 set expandtab
-set shiftwidth =4
-set tabstop    =4
-set textwidth  =80
+set shiftwidth = 4
+set tabstop = 4
+set textwidth  = 80
 
 set background =dark
 colorscheme material

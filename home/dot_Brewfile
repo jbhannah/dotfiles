@@ -11,4 +11,4 @@ brew "yq"
 
 cask "1password-beta"
 cask "1password-cli-beta"
-cask "postgres"
+cask "postgres-unofficial"

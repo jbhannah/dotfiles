@@ -1,2 +1,2 @@
 test -d $HOME/.cargo/bin
-and fish_add_path $HOME/.cargo/bin
+and set -gpx PATH $HOME/.cargo/bin

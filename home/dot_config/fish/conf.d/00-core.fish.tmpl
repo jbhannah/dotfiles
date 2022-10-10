@@ -1,7 +1,17 @@
-set -gx LANG $LC_ALL
+set -Ux LANG $LC_ALL
 
 {{- if eq .chezmoi.os "darwin" }}
-set -gx TZ (readlink /etc/localtime | string split '/' | tail -n 2 | string join '/')
+set -Ux TZ (readlink /etc/localtime | string split '/' | tail -n 2 | string join '/')
+{{- if eq .chezmoi.arch "arm64" }}
+if test -d /opt/homebrew
+    set -Ux HOMEBREW_PREFIX /opt/homebrew
+    set -Ux HOMEBREW_CELLAR $HOMEBREW_PREFIX/Cellar
+    set -Ux HOMEBREW_REPOSITORY $HOMEBREW_PREFIX
+    set -Upx PATH $HOMEBREW_PREFIX/bin $HOMEBREW_PREFIX/sbin
+    set -Upx MANPATH $HOMEBREW_PREFIX/share/man
+    set -Upx INFOPATH $HOMEBREW_PREFIX/share/info
+end
+{{- end }}
 {{- end }}
 
 if command -sq nvim

@@ -36,4 +36,5 @@ cask "nordvpn"
 cask "postgres-unofficial"
 cask "visual-studio-code"
 
+cask "homebrew/cask-fonts/font-caskaydia-cove-nerd-font"
 cask "homebrew/cask-fonts/font-jetbrains-mono-nerd-font"

@@ -19,7 +19,12 @@
         gpgSign = true
 [core]
         autocrlf = input
+        pager = delta
+[delta]
+        navigate = true
+        light = false
 [diff]
+        colorMoved = default
         compactionHeuristic = true
 [fetch]
         prune = true
@@ -31,8 +36,14 @@
         protocol = https
 [init]
         defaultBranch = trunk
+[interactive]
+        diffFilter = delta --color-only
+[add.interactive]
+        useBuiltin = false
 [log]
         showSignature = true
+[merge]
+        conflictStyle = diff3
 [pretty]
         custom-brief = "format:%C(green)%h%C(reset) %s%n%C(blue)(%ar by %an)%C(red)%d%C(reset)%n"
         custom-medium = "format:%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B"

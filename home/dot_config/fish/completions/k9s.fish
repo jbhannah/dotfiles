@@ -1,6 +1,6 @@
 if command -sq k9s; and command -sq yq
-    test -f /usr/local/share/fish/vendor_completions.d/k9s.fish
-    and source /usr/local/share/fish/vendor_completions.d/k9s.fish
+    test -f (brew --prefix)/share/fish/vendor_completions.d/k9s.fish
+    and source (brew --prefix)/share/fish/vendor_completions.d/k9s.fish
 
     set -q KUBECONFIG
     or set -l KUBECONFIG ~/.kube/config

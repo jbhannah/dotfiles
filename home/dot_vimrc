@@ -56,7 +56,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
 
 " fzf
-set rtp+=/usr/local/opt/fzf
+let $fzf_rtp = trim(system('brew --prefix fzf'))
+set rtp+=$fzf_rtp
 nmap <C-P> :Files<CR>
 let g:fzf_buffers_jump = 1
 

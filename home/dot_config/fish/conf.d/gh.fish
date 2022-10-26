@@ -1,4 +1,4 @@
-if status is-interarctive; and command -sq gh
+if status is-interactive; and command -sq gh
     # Pull requests (p)
     abbr -a -g ghp gh pr
     abbr -a -g ghpc gh pr checkout

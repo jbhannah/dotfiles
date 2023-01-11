@@ -3,6 +3,7 @@ if status is-interactive; and command -sq chezmoi
     abbr -a -g cma chezmoi add
     abbr -a -g cmaa chezmoi re-add
     abbr -a -g cmA chezmoi apply
+    abbr -a -g cmAA chezmoi apply --refresh-externals
     abbr -a -g cmc chezmoi cd
     abbr -a -g cmC chezmoi edit-config
     abbr -a -g cmd chezmoi diff

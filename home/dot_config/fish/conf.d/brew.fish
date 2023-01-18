@@ -22,4 +22,6 @@ if status is-interactive; and command -sq brew
     abbr -a -g caskx brew uninstall --cask
 
     abbr -a -g buc 'brew upgrade; brew cleanup'
+
+    set -gx HOMEBREW_NO_ENV_HINTS 1
 end

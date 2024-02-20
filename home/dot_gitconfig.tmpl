@@ -20,6 +20,7 @@
 [core]
         autocrlf = input
         pager = delta
+        excludesFile = ~/.gitignore
 [delta]
         navigate = true
         light = false
@@ -53,10 +54,10 @@
 [tag]
         forceSignAnnotated = true
 [filter "lfs"]
-       smudge = git-lfs smudge -- %f
-       process = git-lfs filter-process
-       required = true
-       clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+        clean = git-lfs clean -- %f
 
 {{- if eq .chezmoi.os "darwin" }}
 [credential]

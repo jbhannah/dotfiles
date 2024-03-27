@@ -256,8 +256,8 @@ tmux_conf_battery_vbar_palette='gradient'
 #tmux_conf_battery_status_charging='⚡️'    # U+26A1
 #tmux_conf_battery_status_charging='🔌'    # U+1F50C
 #tmux_conf_battery_status_discharging='🔋' # U+1F50B
-tmux_conf_battery_status_charging='󱊦'
-tmux_conf_battery_status_discharging='󱊢'
+tmux_conf_battery_status_charging='󰂄'
+tmux_conf_battery_status_discharging='󰁹'
 
 # clock style
 tmux_conf_theme_clock_colour='#89ddff'  # light blue

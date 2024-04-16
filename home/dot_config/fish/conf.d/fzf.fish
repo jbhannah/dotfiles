@@ -1,4 +1,5 @@
 if status is-interactive
+    set -gx FZF_TMUX_OPTS "-d 30%"
     set -gx FZF_DEFAULT_OPTS "--reverse --height=20"
 
     if command -sq fd

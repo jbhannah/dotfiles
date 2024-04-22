@@ -1,11 +1,13 @@
+{{- if ne .chezmoi.hostname "Meowscarada" }}
 sourceDir = "{{ .chezmoi.homeDir }}/Code/src/github.com/jbhannah/dotfiles"
 encryption = "gpg"
-
-[git]
-autoAdd = true
 
 [gpg]
 recipient = "jesse@jbhannah.net"
 
 [pinentry]
 command = "pinentry-mac"
+{{- end }}
+
+[git]
+autoAdd = true

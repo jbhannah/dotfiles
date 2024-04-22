@@ -1,7 +1,7 @@
 brew "bat"
 brew "chezmoi"
 brew "corepack"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "fish"
 brew "fnm"

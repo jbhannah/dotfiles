@@ -13,8 +13,8 @@ if status is-interactive
         and set -gx FZF_DEFAULT_COMMAND "rg --files --hidden"
     end
 
-    command -sq exa
-    and set -gx FZF_PREVIEW_DIR_CMD "exa --group-directories-first -algh --color always"
+    command -sq eza
+    and set -gx FZF_PREVIEW_DIR_CMD "eza --group-directories-first -algh --color always"
 
     command -sq bat
     and set -gx FZF_PREVIEW_FILE_CMD "bat --color always --number"

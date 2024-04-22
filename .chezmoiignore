@@ -9,3 +9,7 @@ home/run_once_postgres_app.sh
 home/run_once_before_brew_bundle.sh
 {{- end }}
 
+{{- if ne .chezmoi.hostname "Meowscarada" }}
+home/private_dot_1password/
+home/private_dot_ssh/
+{{- end }}

@@ -1,5 +1,6 @@
-{{- if ne .chezmoi.hostname "Meowscarada" }}
 sourceDir = "{{ .chezmoi.homeDir }}/Code/src/github.com/jbhannah/dotfiles"
+
+{{- if eq .chezmoi.hostname "Meowscarada" }}
 encryption = "gpg"
 
 [gpg]

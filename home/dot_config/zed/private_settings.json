@@ -22,7 +22,11 @@
   },
   "relative_line_numbers": true,
   "terminal": {
-    "env": {}
+    "detect_venv": {
+      "on": {
+        "activate_script": "fish"
+      }
+    }
   },
   "theme": {
     "mode": "system",

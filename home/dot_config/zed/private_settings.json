@@ -21,6 +21,9 @@
     "enabled": true
   },
   "relative_line_numbers": true,
+  "terminal": {
+    "env": {}
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",

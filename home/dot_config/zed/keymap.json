@@ -18,5 +18,14 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "[ e": "editor::MoveLineUp",
+      "] e": "editor::MoveLineDown",
+      "[ space": "editor::NewlineAbove",
+      "] space": "editor::NewlineBelow"
+    }
   }
 ]

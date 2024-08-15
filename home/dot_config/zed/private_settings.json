@@ -14,6 +14,7 @@
     },
     "version": "2"
   },
+  "base_keymap": "Atom",
   "buffer_font_family": "Cascadia Code NF",
   "cursor_blink": false,
   "inlay_hints": {

@@ -20,6 +20,24 @@
   "inlay_hints": {
     "enabled": true
   },
+  "languages": {
+    "Python": {
+      "formatter": [
+        {
+          "code_actions": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ],
+      "language_servers": ["pyright", "ruff"]
+    }
+  },
   "relative_line_numbers": true,
   "terminal": {
     "detect_venv": {

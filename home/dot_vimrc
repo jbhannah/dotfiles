@@ -16,7 +16,7 @@ endif
 
 Plug('jiangmiao/auto-pairs')
 Plug('junegunn/vim-easy-align')
-Plug('tpope/vim-commentary')
+Plug('tomtom/tcomment_vim')
 Plug('tpope/vim-dispatch')
 Plug('tpope/vim-endwise')
 Plug('tpope/vim-repeat')

@@ -7,17 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "show_inline_completions": false,
-  "features": {
-    "inline_completion_provider": "supermaven"
-  },
-  "assistant": {
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-1.5-flash"
-    },
-    "version": "2"
-  },
+  "show_edit_predictions": true,
   "base_keymap": "Atom",
   "buffer_font_family": "Cascadia Code NF",
   "cursor_blink": false,
